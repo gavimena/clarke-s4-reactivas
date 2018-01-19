@@ -111,7 +111,7 @@ function deleteContact() {
 
 var contactDelete = document.querySelector('.delete-contact');
 contactDelete.addEventListener('click', deleteContact);
-
+/*Acaba la parte de Gala-----------------------------------------------------*/
 //SECCION EXPERIENCIA LABORAL//////////////////////////////////////////////////////
 var jobTitle = document.querySelector("#position");
 var jobExperience = document.querySelector('#experience');
@@ -211,7 +211,7 @@ function deleteStudies() {
 
 var botonPrueba = document.querySelector('.prueba');
 botonPrueba.addEventListener('click', addStudy);
-
+/*Acaba la parte de Laura-----------------------------------------------*/
 //SECCION IDIOMAS//////////////////////////////////////////////////////
 
 
@@ -312,7 +312,7 @@ function deleteSkills(){
 		inputSkillLevels[i].value = '';
 	}
 
-
+/*Acaba la parte de Gabi------------------------------------------------------*/
 	//inputLevel.style.width = '';
 }
 function deleteAdditional() {
@@ -438,3 +438,4 @@ function printCurriculum(){
 	window.print();
 	document.body.innerHTML = viewPrint;
 }
+/*Acaba la parte Mamen-------------------------------------------------*/
