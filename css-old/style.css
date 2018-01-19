@@ -178,7 +178,7 @@ input{
 	background-color: #eeeeee;
 	margin-bottom: 1em;
 }
-
+/*Acaba la parte de Gala-------------------------------------------*/
 .skillName {
 	text-align: left;
 	color: #263d42;
@@ -367,7 +367,7 @@ div#preview2 {
 	padding-top: 20px;
 	width: 100%;
 }
-
+/*Acaba la parte de Laura------------------------------------------------*/
 .hide {
 	display: flex;
 	align-self: flex-end;
@@ -548,6 +548,7 @@ iframe{
 	text-align: center;
 	padding-top: 100px;
 }
+/*Acaba la parte de Gabi----------------------------------------------------*/
 .show{
 	display: block;
 }
@@ -586,7 +587,7 @@ iframe{
 		width: 128px;
 		height: 128px;
 	}
-	
+
 	/*Formulario*/
 	.formfeedback{
 		display: flex;
@@ -730,6 +731,4 @@ iframe{
 		width: 250px;
 		height: auto;
 	}
-
-
-}
+	/*Acaba la parte de Mamen-------------------------------------------------*/
