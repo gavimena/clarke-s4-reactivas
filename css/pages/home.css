@@ -1,2 +1,29 @@
+.resume__title {
+  text-align: center;
+  color: #263D42;
+  font-size: 38px;
+}
+
+.resume__heade-profession {
+  margin: 5px 0 8px 0;
+  font-size: 23px;
+}
+
+.resume__header-summary {
+  margin: 10px 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.line__top {
+  border: 1px solid #b0c0bc;
+  width: 80%;
+}
+
+.line__bottom {
+  border: 1px solid #b0c0bc;
+  width: 100%;
+}
 
 /*# sourceMappingURL=home.css.map */
