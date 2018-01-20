@@ -3,11 +3,6 @@
 @import "core/functions";
 @import "core/mixins";
 
-@import "pages/about-us";
-@import "pages/contact";
-@import "pages/home";
-@import "old/style";
-
 @import "components/buttons";
 @import "components/forms";
 @import "components/typography";
@@ -15,3 +10,8 @@
 @import "layout/header";
 @import "layout/footer";
 @import "layout/grid";
+
+@import "pages/about-us";
+@import "pages/contact";
+@import "pages/home";
+@import "old/style";

@@ -1,0 +1,55 @@
+//form feedback
+
+.feedback {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #022F40;
+}
+
+.feedback__fields {
+	display: flex;
+	flex-direction: column;
+}
+
+.feedback__options{
+	display: flex;
+}
+
+.feedback__textarea{
+	margin-top: 2px;
+}
+
+.feedback__button--send{
+	width: 25%;
+	height: 30px;
+	box-shadow: 0 5px 2px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	border-radius: 5px;
+}
+
+.feedback__button--backhome {
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+
+.feedback__button--backhome:hover {
+	background-color: #C1EDCC;
+	color: $primary-color;
+	border-radius: 10px;
+	padding: 25px;
+}
+
+.feedback__thanks {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #599675;
+	color: white;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+	transition: all .3s;
+	text-align: center;
+	padding-top: 100px;
+}

@@ -369,55 +369,8 @@ div#preview2 {
 }
 /*Acaba la parte de Laura------------------------------------------------*/
 
-/*Footer*/
 
-/*Cuestionario feeback*/
-.formfeedback {
-	padding: 20px;
-	border: 1px solid #022F40;
-	margin: 20px;
-}
-.fields{
-	display: flex;
-	flex-direction: column;
-}
-.options{
-	display: flex;
-}
-.formfeedback textarea{
-	margin-top: 2px;
-}
-.sendfeedback{
-	width: 25%;
-	height: 30px;
-	box-shadow: 0 5px 2px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-	border-radius: 5px;
-}
-.backhome a{
-	display: block;
-	text-decoration: none;
-	color: white;
-}
-.backhome:hover {
-	background-color: #C1EDCC;
-	color: #263D42;
-	border-radius: 10px;
-	padding: 25px;
-}
-.thanks{
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: #599675;
-	color: white;
-	width: 100vw;
-	height: 100vh;
-	z-index: 1;
-	transition: all .3s;
-	text-align: center;
-	padding-top: 100px;
-}
+
 /*Acaba la parte de Gabi----------------------------------------------------*/
 .show{
 	display: block;

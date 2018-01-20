@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="shortcut icon" href="images/favicon.ico"/>
 
 	<title>Feedback</title>
@@ -13,19 +13,19 @@
 	<div class="overflow">
 		<header class="cabecera">
 			<a href="index.html"><img src="images/Mediaqueers.png" class="logen" alt="logo"></a>
-			<div class="backhome"><a href="index.html">Home</a></div>
+			<div class="feedback__button--backhome"><a href="index.html">Home</a></div>
 		</header>
 
 		<main>
-			<form class="formfeedback" method="post">
+			<form class="feedback" method="post">
 				<h1>Cuéntanos qué tal lo hemos hecho</h1>
 				<br><p>Queremos mejorar, así que te agradeceríamos que contestases a estas preguntas para poder trabajar sobre ellas</p>
 
-				<div class="fields">
+				<div class="feedback__fields">
 					<br><p> Por favor, valora las siguientes características de la página:</p>
 					<p> <br>Cómo de fácil te ha parecido usar la herramienta de CV:</p>
 					<br>
-					<div class="options">
+					<div class="feedback__options">
 						<label for="1">Difícil</label>
 						<input id="1" name="option" type="radio">
 						<label for="2">Neutro</label>
@@ -36,7 +36,7 @@
 
 					<br><p> Cómo de útil te ha parecido la herramienta de creación de CV:</p>
 					<br>
-					<div class="options">
+					<div class="feedback__options">
 						<label for="1">Nada útil</label>
 						<input id="1" name="option1" type="radio">
 						<label for="2">Algo útil</label>
@@ -45,11 +45,11 @@
 						<input id="3" name="option1" type="radio">
 					</div>
 
-					<br><textarea name="comments" placeholder="Escribe aquí tus sugerencias, comentarios y tu experiencia al usar nuestra herramienta" rows="4" cols="5"></textarea>
-					<br><input type="button" class="sendfeedback" id="fd" name="submit" value="Enviar">
+					<br><textarea class="feedback__textarea" name="comments" placeholder="Escribe aquí tus sugerencias, comentarios y tu experiencia al usar nuestra herramienta" rows="4" cols="5"></textarea>
+					<br><input type="button" class="feedback__button--send" id="fd" name="submit" value="Enviar">
 				</div>
 
-				<div class="thanks">
+				<div class="feedback__thanks">
 					<h2>¡Muchas gracias!</h2>
 					<p>Su respuesta ha sido registrada con éxito</p>
 					<a href="index.html"><img src="images/Medianames.png" class="logo_thanks"alt="logo"></a>
