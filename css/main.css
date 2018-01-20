@@ -43,6 +43,11 @@
   align-items: flex-start;
 }
 
+.preview__section__subtitle {
+  font-size: 19px;
+  font-weight: 400;
+}
+
 .resume__title {
   text-align: center;
   color: #263D42;
@@ -548,16 +553,7 @@ div#preview2 {
   margin: 0 auto;
   padding-top: 20px;
   width: 100%;
-}/*Acaba la parte de Laura------------------------------------------------*/.section-preview li {
-  list-style-type: none;
-}
-
-.span-titles {
-  font-size: 19px;
-  font-weight: 400;
-}
-
-.titles {
+}/*Acaba la parte de Laura------------------------------------------------*/.titles {
   color: #263D42;
   background-color: #b0c0bc;
   text-align: left;
