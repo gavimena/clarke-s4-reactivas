@@ -43,14 +43,33 @@
   align-items: flex-start;
 }
 
+.titles {
+  color: #263d42;
+  background-color: #b0c0bc;
+  text-align: left;
+}
+
 .preview__section__subtitle {
   font-size: 19px;
   font-weight: 400;
 }
 
+.preview__data__languages,.preview__data__studies {
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.preview__data__studies li {
+  margin: 5px 0;
+}
+
+.preview__data__languages li {
+  margin: 5px 0;
+}
+
 .resume__title {
   text-align: center;
-  color: #263D42;
+  color: #263d42;
   font-size: 38px;
 }
 
@@ -553,32 +572,7 @@ div#preview2 {
   margin: 0 auto;
   padding-top: 20px;
   width: 100%;
-}/*Acaba la parte de Laura------------------------------------------------*/.titles {
-  color: #263D42;
-  background-color: #b0c0bc;
-  text-align: left;
-}
-
-.data-studies {
-  list-style-type: none;
-  margin-top: 10px;
-  margin-left: 5px;
-}
-
-.data-studies li {
-  margin: 5px 0;
-}
-
-ul#data-languages {
-  margin-left: 5px;
-  margin-top: 10px;
-}
-
-#data-languages li {
-  margin: 5px 0;
-}
-
-ul#data-interest {
+}/*Acaba la parte de Laura------------------------------------------------*/ul#data-interest {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -589,10 +583,6 @@ ul#data-interest {
   background: #b0c0bc;
   border-radius: 3px;
   margin: 0 5px;
-}
-
-.data-list {
-  list-style-type: none;
 }/*Footer*/footer {
   display: -webkit-box;
   display: -ms-flexbox;
