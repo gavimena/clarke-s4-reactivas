@@ -369,63 +369,8 @@ div#preview2 {
 }
 /*Acaba la parte de Laura------------------------------------------------*/
 
-
-
-ul#data-interest {
-	display: flex;
-}
-
-#data-interest li {
-	padding: 5px;
-	background: #b0c0bc;
-	border-radius: 3px;
-	margin: 0 5px;
-}
-
 /*Footer*/
-footer {
-	display:flex;
-	background-color: #022F40;
-	justify-content: space-around;
-	padding: 9px;
-	color:white;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.itemsfooter{
-	padding: 8px 0;
-}
-.itemsfooter a{
-	text-decoration: none;
-	color:white;
-}
-.itemsfooter:hover{
-	background-color: #C1EDCC;
-	color: #263D42;
-	border-radius: 10px;
-}
-.itemsfooter a:hover {
-	color: #263D42;
-}
-footer .logen{
-	width: 128px;
-	height: 128px;
-}
-.map{
-	padding: 15px;
-}
-iframe{
-	width: 250px;
-	height: 150px;
-}
-.questions{
-	display: flex;
-	flex-direction: column;
-}
-.lapiz{
-	margin-top: 20px;
-}
+
 /*Cuestionario feeback*/
 .formfeedback {
 	padding: 20px;

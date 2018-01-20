@@ -17,8 +17,8 @@
 }
 
 .titles {
-	color: #263d42;
-	background-color: #b0c0bc;
+	color: $primary-color;
+	background-color: $secondary-color;
 	text-align: left;
 }
 
@@ -33,7 +33,18 @@
 	margin-top: 10px;
 }
 
-.preview__data__studies li{
+.preview__data__interest {
+	display: flex;
+}
+
+.preview__data__interest li {
+	padding: 5px;
+	background-color: $secondary-color;
+	border-radius: 3px;
+	margin: 0 5px;
+}
+
+.preview__data__studies li {
 	margin: 5px 0;
 }
 
@@ -43,7 +54,7 @@
 
 .resume__title {
 	text-align: center;
-	color: #263d42;
+	color: $primary-color;
 	font-size: 38px;
 }
 
@@ -61,11 +72,11 @@
 
 //Lines to separete sections
 .line__top {
-	border: 1px solid #b0c0bc;
+	border: 1px solid $secondary-color;
 	width:80%;
 }
 
 .line__bottom {
-	border: 1px solid #b0c0bc;
+	border: 1px solid $secondary-color;
 	width:100%;
 }

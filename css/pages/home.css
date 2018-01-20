@@ -49,6 +49,19 @@
   margin-top: 10px;
 }
 
+.preview__data__interest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.preview__data__interest li {
+  padding: 5px;
+  background: #b0c0bc;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
 .preview__data__studies li {
   margin: 5px 0;
 }
