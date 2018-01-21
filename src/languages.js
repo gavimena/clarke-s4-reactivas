@@ -3,7 +3,7 @@
 const languageName = document.querySelector(".languages");
 const languageLevel = document.querySelector(".level");
 const languageListPreview = document.querySelector(".preview__data__languages");
-const languageList = [];
+let languageList = [];
 
 
 function addLanguage() {
@@ -12,7 +12,7 @@ function addLanguage() {
 		lvl:languageLevel.value
 	};
 	languageList.push(language);
-	const allLanguageList = '';
+	let allLanguageList = '';
 
 	for (let i = 0; i < languageList.length; i++) {
 		allLanguageList += '<li>' + languageList[i].name +'</li>';

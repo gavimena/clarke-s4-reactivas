@@ -9,6 +9,12 @@
 		],
 		"dest": "js/"
 	},
+	"es6": {
+		"src": [
+			"src/*.js"
+		],
+		"dest": "js/"
+	},
 	"images": "images/**/*.{gif,jpg,png,svg}",
 	"html": "**/*.html"
 }

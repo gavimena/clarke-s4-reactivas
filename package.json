@@ -19,9 +19,15 @@
 		"run-sequence": "*",
 		"gulp-zip": "*"
 	},
-	"devDependencies": {},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.6.1",
+		"gulp-babel": "^7.0.0"
+	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "babel src -d lib",
+		"start": "gulp"
 	},
 	"repository": {
 		"type": "git",

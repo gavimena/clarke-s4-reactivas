@@ -3,7 +3,7 @@
 const languageName = document.querySelector(".languages");
 const languageLevel = document.querySelector(".level");
 const languageListPreview = document.querySelector(".preview__data__languages");
-const languageList = [];
+let languageList = [];
 
 
 function addLanguage() {

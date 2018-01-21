@@ -12,9 +12,7 @@ var reload       = browserSync.reload;
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
-
-
-
+var babel 		 = require("gulp-babel");
 
 
 // > Gestiona los errores
@@ -108,8 +106,11 @@ gulp.task('scripts-min', function(){
 });
 
 
-
-
+gulp.task("babel", function () {
+  return gulp.src(config.es6.src)
+    .pipe(babel())
+    .pipe(gulp.dest(config.es6.dest));
+});
 
 
 // > Arranca el servidor web con BrowserSync
@@ -125,6 +126,7 @@ gulp.task('default', ['styles', 'scripts'], function () {
 	gulp.watch(config.scss.src, ['styles']);
 	gulp.watch(config.js.src, ['bs-reload', ['scripts']]);
 	gulp.watch(config.html, ['bs-reload']);
+	gulp.watch(config.es6.src, ['bs-reload', ['babel']]);
 });
 
 

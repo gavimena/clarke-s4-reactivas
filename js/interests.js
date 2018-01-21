@@ -1,3 +1,5 @@
+'use strict';
+
 var interestName = document.querySelector("#interest");
 var interestList = [];
 var interestListPreview = document.querySelector(".preview__data__interest");
@@ -10,8 +12,7 @@ function addInterest() {
 	var allInterestList = '';
 
 	for (var i = 0; i < interestList.length; i++) {
-		allInterestList += '<li>' + interestList[i].interes +'</li>';
-
+		allInterestList += '<li>' + interestList[i].interes + '</li>';
 	}
 	interestListPreview.innerHTML = allInterestList;
 	document.querySelector("#interest").value = '';
@@ -25,13 +26,13 @@ function deleteInterest() {
 	interestListPreview.innerHTML = '';
 }
 
-function fillMore(){
+function fillMore() {
 	vistaPrevia("preview");
 	var datosHabilidades1 = document.querySelector("#skills1").value;
 	var datosHabilidades2 = document.querySelector("#skills2").value;
 	var datosHabilidades3 = document.querySelector("#skills3").value;
 
-	var newSkill= document.querySelectorAll('.skillName');
+	var newSkill = document.querySelectorAll('.skillName');
 	var inputSkill = document.querySelectorAll('.skills');
 	var inputLevel = document.querySelectorAll('.level_skills');
 
@@ -46,9 +47,9 @@ function fillMore(){
 var saveMore = document.querySelector('.saveMore');
 saveMore.addEventListener('click', fillMore);
 
-function deleteSkills(){
-	var previewSkillNames= document.querySelectorAll('.skillName');
-	var previewSkillLevels= document.querySelectorAll('.levelSkill');
+function deleteSkills() {
+	var previewSkillNames = document.querySelectorAll('.skillName');
+	var previewSkillLevels = document.querySelectorAll('.levelSkill');
 
 	var inputSkillNames = document.querySelectorAll('.skills');
 	var inputSkillLevels = document.querySelectorAll('.level_skills');
@@ -58,8 +59,8 @@ function deleteSkills(){
 		previewSkillNames[i].parentElement.style.width = 0;
 	}
 
-	for (var i = 0; i < inputSkillNames.length; i++) {
-		inputSkillNames[i].value = '';
-		inputSkillLevels[i].value = '';
+	for (var _i = 0; _i < inputSkillNames.length; _i++) {
+		inputSkillNames[_i].value = '';
+		inputSkillLevels[_i].value = '';
 	}
 }
