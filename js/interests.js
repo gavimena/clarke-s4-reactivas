@@ -1,6 +1,6 @@
 var interestName = document.querySelector("#interest");
 var interestList = [];
-var interestListPreview = document.querySelector(".data-interest");
+var interestListPreview = document.querySelector(".preview__data__interest");
 
 function addInterest() {
 	var interest = {

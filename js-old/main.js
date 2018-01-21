@@ -221,7 +221,7 @@ botonPrueba.addEventListener('click', addStudy);
 
 /*Acaba la parte de Gabi------------------------------------------------------*/
 	//inputLevel.style.width = '';
-}
+
 function deleteAdditional() {
 	deleteInterest();
 	deleteLanguage();
