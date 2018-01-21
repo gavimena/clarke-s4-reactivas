@@ -7,9 +7,11 @@
 @import "components/forms";
 @import "components/typography";
 
+@import "layout/general";
 @import "layout/header";
 @import "layout/footer";
 @import "layout/grid";
+@import "layout/main";
 
 @import "pages/about-us";
 @import "pages/contact";
