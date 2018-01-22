@@ -4,6 +4,7 @@
 	"description": "CV interactivo a partir de mediaqueers",
 	"dependencies": {
 		"browser-sync": "*",
+		"gulp": "^4.0.0",
 		"gulp-autoprefixer": "*",
 		"gulp-clean-css": "*",
 		"gulp-combine-mq": "*",
@@ -15,18 +16,11 @@
 		"gulp-sourcemaps": "*",
 		"gulp-uglify": "*",
 		"gulp-util": "*",
-		"gulp": "*",
-		"run-sequence": "*",
-		"gulp-zip": "*"
-	},
-	"devDependencies": {
-		"babel-cli": "^6.26.0",
-		"babel-preset-env": "^1.6.1",
-		"gulp-babel": "^7.0.0"
+		"gulp-zip": "*",
+		"run-sequence": "*"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "babel src -d lib",
 		"start": "gulp"
 	},
 	"repository": {
