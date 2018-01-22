@@ -30,13 +30,13 @@
 	display: block;
 	text-decoration: none;
 	color: white;
-}
 
-.feedback__button--backhome:hover {
-	background-color: #C1EDCC;
-	color: $primary-color;
-	border-radius: 10px;
-	padding: 25px;
+	&:hover {
+		background-color: #C1EDCC;
+		color: $primary-color;
+		border-radius: 10px;
+		padding: 25px;
+	}
 }
 
 .feedback__thanks {
