@@ -4,7 +4,7 @@
 	"description": "CV interactivo a partir de mediaqueers",
 	"dependencies": {
 		"browser-sync": "*",
-		"gulp": "^4.0.0",
+		"gulp": "*",
 		"gulp-autoprefixer": "*",
 		"gulp-clean-css": "*",
 		"gulp-combine-mq": "*",
