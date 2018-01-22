@@ -1,0 +1,55 @@
+// header
+.cabecera {
+	background-color: #599675;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+.menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style: none;
+}
+.menu li{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 12px;
+}
+.seccion a{
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+.seccion:hover {
+	background-color: #C1EDCC;
+	color: #263D42;
+	border-radius: 10px;
+}
+
+.seccion a:hover{
+	color: #263D42;
+}
+.logen{
+	display: block;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	padding: 5px;
+}
+.vista {
+	position: relative;
+}
+.imprimir{
+	background: url('../images/printer.png');
+	background-repeat: no-repeat;
+	width: 38px;
+	height: 34px
+}
+.imprimir:hover{
+	background-color: #C1EDCC;
+	color: #263D42;
+	border-radius: 10px;
+}

@@ -114,7 +114,7 @@ gulp.task("babel", function () {
 
 
 // > Arranca el servidor web con BrowserSync
-gulp.task('default', ['styles', 'scripts'], function () {
+gulp.task('default', ['styles', 'babel', 'scripts'], function () {
 	browserSync.init({
 		server : {
 			baseDir: "./"
