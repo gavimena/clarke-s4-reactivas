@@ -112,7 +112,7 @@ function deleteContact() {
 var contactDelete = document.querySelector('.delete-contact');
 contactDelete.addEventListener('click', deleteContact);
 /*Acaba la parte de Gala-----------------------------------------------------*/
-//SECCION EXPERIENCIA LABORAL//////////////////////////////////////////////////////
+//header__menu__section EXPERIENCIA LABORAL//////////////////////////////////////////////////////
 var jobTitle = document.querySelector("#position");
 var jobExperience = document.querySelector('#experience');
 var startMonth = document.querySelector('.month');
@@ -171,7 +171,7 @@ var jobDelete = document.querySelector('.delete-experience');
 jobDelete.addEventListener('click', deleteJob);
 
 
-//SECCION EDUCACION//////////////////////////////////////////////////////
+//header__menu__section EDUCACION//////////////////////////////////////////////////////
 var studyName = document.querySelector(".education");
 var studyInstitution = document.querySelector('.education_university');
 var studyList = [];
@@ -212,12 +212,12 @@ function deleteStudies() {
 var botonPrueba = document.querySelector('.prueba');
 botonPrueba.addEventListener('click', addStudy);
 /*Acaba la parte de Laura-----------------------------------------------*/
-//SECCION IDIOMAS//////////////////////////////////////////////////////
+//header__menu__section IDIOMAS//////////////////////////////////////////////////////
 
 
 
 
-//SECCION INTERESES/////
+//header__menu__section INTERESES/////
 
 /*Acaba la parte de Gabi------------------------------------------------------*/
 	//inputLevel.style.width = '';

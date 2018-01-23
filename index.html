@@ -15,13 +15,13 @@
 
 <body class="body">
 	<div class="overflow">
-		<header class="cabecera">
-			<a href="#home"><img src="images/Mediaqueers.png" class="logen" alt="logo-menu"></a>
+		<header class="header">
+			<a href="#home"><img src="images/Mediaqueers.png" class="logo--header" alt="logo-header__menu"></a>
 			<nav>
-				<ul class="menu">
-					<li class="seccion home"><a href="#home">Home</a></li>
-					<li class="seccion vista"><a href="#vista" onclick="vistaPrevia('preview')">Vista previa</a></li>
-					<li><input class="imprimir" type="button" onclick="printCurriculum()" id="btnprint" title="Imprimir"></li>
+				<ul class="header__menu list">
+					<li class="header__menu__item header__menu__section"><a class="header__menu__section--link" href="#home">Home</a></li>
+					<li class="header__menu__item header__menu__item--vista header__menu__section"><a class="header__menu__section--link" href="#vista" onclick="vistaPrevia('preview')">Vista previa</a></li>
+					<li class="header__menu__item__print"  onclick="printCurriculum()" id="btnprint" title="Imprimir"></li>
 				</ul>
 			</nav>
 		</header>
@@ -38,7 +38,7 @@
 				<div class="split-div">
 					<form class="resume-form" action="/signup" method="post">
 
-						<div class="profile section"><!--seccion perfil-->
+						<div class="profile section"><!--header__menu__section perfil-->
 							<div class="info">
 								<h2 class="section-title">Perfil</h2>
 								<div class="section-buttons">
@@ -46,7 +46,7 @@
 								</div>
 							</div>
 
-							<div id="content-profile" class="content"> <!--SECCION OCULTA-->
+							<div id="content-profile" class="content"> <!--header__menu__section OCULTA-->
 								<input type="text" name="name" id="name" placeholder="Nombre">
 								<input type="text" name="lastname" id="lastname" placeholder="Apellidos" >
 								<input type="text" name="profession" id="profession" placeholder="Profesión">
@@ -54,7 +54,7 @@
 								<input type="button" name="delete" value="Borrar" class="delete-profile">
 								<input type="button" value="cerrar" onclick="cerrar('content-profile')">
 							</div>
-						</div><!--end seccion perfil-->
+						</div><!--end header__menu__section perfil-->
 
 						<div class="summary section"> <!--summary perfil-->
 							<div class="info">
@@ -64,7 +64,7 @@
 								</div>
 							</div>
 
-							<div id="content-summary" class="content"><!--SECCION OCULTA-->
+							<div id="content-summary" class="content"><!--header__menu__section OCULTA-->
 								<textarea name="summary" id="summary" rows="8" cols="80" placeholder="Introduce una pequeña descripción"></textarea>
 								<input type="button" name="save" value="Guardar" class="saveSumary">
 								<input type="button" name="delete" value="Borrar" class="delete-summary">
@@ -72,14 +72,14 @@
 							</div>
 						</div><!--end summary section-->
 
-						<div class="contact-information section"><!--seccion contacto-->
+						<div class="contact-information section"><!--header__menu__section contacto-->
 							<div class="info">
 								<h2 class="section-title">Datos de contacto</h2>
 								<div class="section-buttons">
 									<input type="button" class="button-info" value="Editar" onclick="editar('content-contact-info')">
 								</div>
 							</div>
-							<div id="content-contact-info" class="content"><!--SECCION OCULTA-->
+							<div id="content-contact-info" class="content"><!--header__menu__section OCULTA-->
 								<input type="tel" name="telephone" id="telephone" placeholder="Teléfono">
 								<span class="error error_telephone"></span>
 								<input type="email" name="email" id="email" placeholder="Email">
@@ -90,7 +90,7 @@
 							</div>
 						</div> <!--end contact-information-->
 
-						<div class="experience section"><!--seccion experiencia-->
+						<div class="experience section"><!--header__menu__section experiencia-->
 							<div class="info">
 								<h2 class="section-title">Experiencia laboral</h2>
 								<div class="section-buttons">
@@ -98,7 +98,7 @@
 								</div>
 							</div>
 
-							<div id="content-experience" class="content"><!--SECCION OCULTA-->
+							<div id="content-experience" class="content"><!--header__menu__section OCULTA-->
 								<div class="addMore">
 									<div class="newbutton">
 										<div class="work">
@@ -136,7 +136,7 @@
 							</div> <!-- end content-experience-->
 						</div><!--end experience section-->
 
-						<div class="additional section"><!--seccion additional-->
+						<div class="additional section"><!--header__menu__section additional-->
 							<div class="info">
 								<h2 class="section-title">Más información</h2>
 								<div class="section-buttons">
@@ -297,8 +297,8 @@
 
 			<div class="footer__items">
 				<div class="footer__questions">
-					<a class="footer__link" href="formulario.html" target="_blank" class="feedback">¿Qué tal lo hemos hecho?</a>
-					<span class="footer__pencil"><a href="formulario.html" target="_blank" class="feedback"><img src="images/writing.png" alt="dibujo hoja lapiz"></a></span>
+					<a class="footer__link" href="formulario.html" target="_blank" class="main__form">¿Qué tal lo hemos hecho?</a>
+					<span class="footer__pencil"><a href="formulario.html" target="_blank" class="main__form"><img src="images/writing.png" alt="dibujo hoja lapiz"></a></span>
 				</div>
 			</div>
 		</footer>
