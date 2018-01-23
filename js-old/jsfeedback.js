@@ -1,7 +1,7 @@
 'use strict';
 // //función alert
 var shower = document.getElementById('fd');
-var eva = document.querySelector('.feedback__thanks');
+var eva = document.querySelector('.main__form__thanks');
 function alertHandler (){
 	 eva.classList.add('show');
 }

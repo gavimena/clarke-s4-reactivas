@@ -233,16 +233,16 @@ div#preview2 {
 	}
 
 	/*Formulario*/
-	.formfeedback{
+	.formmain__form{
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
 		margin-left: 25%;
 	}
-	.formfeedback h1{
+	.formmain__form h1{
 		margin-bottom: 20px;
 	}
-	.formfeedback{
+	.formmain__form{
 		width: 50%;
 	}
 }
