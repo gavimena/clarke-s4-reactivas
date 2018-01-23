@@ -4,6 +4,19 @@
 	margin: 20px;
 	padding: 20px;
 	border: 1px solid #022F40;
+	@media all and (min-width: 481px){
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin-left: 25%;
+		width: 50%;
+	}
+}
+
+.feedback__title{
+	@media all and (min-width: 481px){
+		margin-bottom: 20px;
+	}
 }
 
 .feedback__fields {
@@ -52,4 +65,24 @@
 	transition: all .3s;
 	text-align: center;
 	padding-top: 100px;
+}
+
+.show{
+	display: block;
+}
+
+.show h2{
+	font-size: 34px;
+	margin-top: 34px;
+}
+
+.feedback__thanks.show p {
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.logo_thanks{
+	border-radius: 100%;
+	width: 200px;
+	margin-top: 28px;
 }

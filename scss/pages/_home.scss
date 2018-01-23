@@ -25,6 +25,9 @@
 .preview__section__subtitle {
 	font-size: 19px;
 	font-weight: 400;
+	@media all and (min-width: 769px){
+		font-size: 22px;
+	}
 }
 
 .preview__data__languages,
