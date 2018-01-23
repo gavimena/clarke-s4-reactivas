@@ -5,7 +5,9 @@
 	},
 	"js": {
 		"src": [
-			"js/main.js"
+			"js-old/main.js",
+			"js/languages.js",
+			"js/interests.js"
 		],
 		"dest": "js/"
 	},
