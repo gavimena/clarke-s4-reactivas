@@ -241,7 +241,7 @@
 
 .footer__pencil {
   margin-top: 20px;
-}/*Cover*/.cover {
+}/*Cover*/.main__cover {
   background: url("../images/cover.jpg");
   background-size: cover;
   width: 100vw;
@@ -257,7 +257,7 @@
   justify-content: center;
 }
 
-.create {
+.main__cover__create {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,11 +277,12 @@
   height: 100%;
 }
 
-.create h1 {
+.main__cover__create__title {
   font-family: 'Share Tech Mono', monospace;
+  font-size: 24px;
 }
 
-.create a {
+.main__cover__create__link {
   width: 40%;
   border-radius: 4px;
   background-color: #E3C18B;
@@ -291,11 +292,7 @@
   color: white;
   text-decoration: none;
   font-weight: bold;
-}
-
-.create h1 {
-  font-size: 24px;
-}/*contenedor del formulario*/.resume-container {
+}/*contenedor del formulario*/.main__resumeContainer {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,13 +305,13 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-}/*formulario*/.resume-form {
+}/*formulario*/.main__resumeContainer__form {
   padding: 20px 0;
   width: 100%;
   margin: 0 auto;
 }
 
-.resume-form * {
+.main__resumeContainer__form * {
   padding: 5px;
   margin: 5px;
 }
@@ -800,7 +797,7 @@ div#preview2 {
     flex-direction: row;
   }
 
-  .resume-form {
+  .main__resumeContainer__form {
     padding: 20px 0;
     width: 45%;
     margin-left: 10px;
@@ -858,23 +855,23 @@ div#preview2 {
     color: red;
   }
 
-  .cover {
+  .main__cover {
     background-position: center 2%;
     padding-bottom: 300px;
   }
 
-  .create {
+  .main__cover__create {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
     margin-top: 100px;
   }
 
-  .create h1 {
+  .main__cover__create__title {
     font-size: 50px;
   }
 
-  .create a {
+  .main__cover__create__link {
     width: 35%;
     border-radius: 4px;
     background-color: #E3C18B;
