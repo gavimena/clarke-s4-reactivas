@@ -434,32 +434,6 @@ input {
   font-weight: 400;
 }
 
-.preview__data__languages,.preview__data__studies {
-  margin-left: 5px;
-  margin-top: 10px;
-}
-
-.preview__data__interest {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.preview__data__interest li {
-  padding: 5px;
-  background-color: #b0c0bc;
-  border-radius: 3px;
-  margin: 0 5px;
-}
-
-.preview__data__studies li {
-  margin: 5px 0;
-}
-
-.preview__data__languages li {
-  margin: 5px 0;
-}
-
 .resume__title {
   text-align: center;
   color: #263d42;
@@ -478,6 +452,46 @@ input {
   font-weight: 300;
 }
 
+.preview__data__languages,.preview__data__studies {
+  margin-left: 5px;
+  margin-top: 10px;
+  list-style: none;
+}
+
+.preview__data__interest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.preview__data__studies li {
+  margin: 5px 0;
+}
+
+.preview__data__languages li {
+  margin: 5px 0;
+}
+
+.preview__data__skillName {
+  text-align: left;
+  color: #263d42;
+  line-height: 20px;
+  padding-left: 10px;
+}
+
+.preview__levelSkill {
+  width: 0;
+  background-color: #b0c0bc;
+}
+
+.preview__data__interest li {
+  padding: 5px;
+  background-color: #b0c0bc;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
 .line__top {
   border: 1px solid #b0c0bc;
   width: 80%;
@@ -486,22 +500,6 @@ input {
 .line__bottom {
   border: 1px solid #b0c0bc;
   width: 100%;
-}
-
-.skillName {
-  text-align: left;
-  color: #263d42;
-  line-height: 20px;
-  padding-left: 10px;
-}
-
-.levelSkill {
-  width: 0;
-  background-color: #b0c0bc;
-}
-
-.hidden {
-  display: none;
 }
 
 textarea#summary {
@@ -630,7 +628,7 @@ input#actuality {
 
 .button_blue {
   background-color: #B0C0BC;
-}/*Estilos dinámicos de color para preview*//* Theme 1 */.theme1 .titles,.theme1 .skillName,.theme1 #data-interest li {
+}/*Estilos dinámicos de color para preview*//* Theme 1 */.theme1 .titles,.theme1 .preview__data__skillName,.theme1 #data-interest li {
   background-color: #04724D;
   color: white;
 }
@@ -641,7 +639,7 @@ input#actuality {
 
 .theme1 .top-line {
   border: 1px solid #04724D;
-}/* Theme 2 */.theme2 .titles,.theme2 .skillName,.theme2 #data-interest li {
+}/* Theme 2 */.theme2 .titles,.theme2 .preview__data__skillName,.theme2 #data-interest li {
   background-color: #7A6174;
   color: white;
 }
@@ -652,7 +650,7 @@ input#actuality {
 
 .theme2 .top-line {
   border: 1px solid #7A6174;
-}/* Theme 3 */.theme3 .titles,.theme3 .skillName,.theme3 #data-interest li {
+}/* Theme 3 */.theme3 .titles,.theme3 .preview__data__skillName,.theme3 #data-interest li {
   background-color: #F6E27F;
 }
 
@@ -662,7 +660,7 @@ input#actuality {
 
 .theme3 .top-line {
   border: 1px solid #F6E27F;
-}/* Theme 4 */.theme4 .titles,.theme4 .skillName,.theme4 #data-interest li {
+}/* Theme 4 */.theme4 .titles,.theme4 .preview__data__skillName,.theme4 #data-interest li {
   background-color: #B0C0BC;
 }
 

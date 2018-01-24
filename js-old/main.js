@@ -175,7 +175,7 @@ jobDelete.addEventListener('click', deleteJob);
 var studyName = document.querySelector(".education");
 var studyInstitution = document.querySelector('.education_university');
 var studyList = [];
-var studyListPreview = document.querySelector(".data-studies");
+var studyListPreview = document.querySelector(".preview__data__studies");
 
 function addStudy() {
 	var study = {

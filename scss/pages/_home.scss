@@ -27,31 +27,6 @@
 	font-weight: 400;
 }
 
-.preview__data__languages,
-.preview__data__studies {
-	margin-left: 5px;
-	margin-top: 10px;
-}
-
-.preview__data__interest {
-	display: flex;
-}
-
-.preview__data__interest li {
-	padding: 5px;
-	background-color: $secondary-color;
-	border-radius: 3px;
-	margin: 0 5px;
-}
-
-.preview__data__studies li {
-	margin: 5px 0;
-}
-
-.preview__data__languages li {
-	margin: 5px 0;
-}
-
 .resume__title {
 	text-align: center;
 	color: $primary-color;
@@ -68,6 +43,45 @@
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
 	font-weight:300;
+}
+
+.preview__data__languages,
+.preview__data__studies {
+	margin-left: 5px;
+	margin-top: 10px;
+	list-style: none;
+}
+
+.preview__data__interest {
+	display: flex;
+	list-style: none;
+}
+
+.preview__data__studies li {
+	margin: 5px 0;
+}
+
+.preview__data__languages li {
+	margin: 5px 0;
+}
+
+.preview__data__skillName {
+	text-align: left;
+	color: #263d42;
+	line-height: 20px;
+	padding-left: 10px;
+}
+
+.preview__levelSkill {
+	width: 0;
+	background-color: #b0c0bc;
+}
+
+.preview__data__interest li {
+	padding: 5px;
+	background-color: $secondary-color;
+	border-radius: 3px;
+	margin: 0 5px;
 }
 
 //Lines to separete sections
