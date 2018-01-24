@@ -53,3 +53,19 @@
 	text-align: center;
 	padding-top: 100px;
 }
+
+.form__textarea--summary {
+	width: 90%;
+	border: none;
+}
+
+.form__newItem {
+	display: flex;
+	align-self: flex-end;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.form__newItem:hover {
+	background: #ccc;
+}

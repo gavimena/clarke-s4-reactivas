@@ -10,16 +10,16 @@
 // 	background-color: #b0c0bc;
 // }
 
-// .hidden{
+// .hidden {
 // 	display: none;
 // }
 
-textarea#summary {
-	width: 90%;
-	border: none;
-}
+// textarea#summary {
+// 	width: 90%;
+// 	border: none;
+// }
 
-.content>input[type=button]{
+.form__sectionContent>input[type=button]{
 	display: flex;
 	flex-direction: column;
 	border-radius: 5px;
@@ -29,30 +29,35 @@ textarea#summary {
 	align-items: flex-start;
 	width: auto;
 }
-input.button-info {
-	border: none;
-	border-radius: 5px;
-	background-color: white;
-}
-.content {
-	display: none;
-	background-color: rgba(226, 226, 226, 0.72);
-}
+
+// input.button-info {
+// 	border: none;
+// 	border-radius: 5px;
+// 	background-color: white;
+// }
+
+// .content {
+// 	display: none;
+// 	background-color: rgba(226, 226, 226, 0.72);
+// }
+
+// select {
+// 	display: flex;
+// 	flex-direction: column;
+// }
+
+// .newbutton {
+// 	display: flex;
+// 	align-self: flex-end;
+// 	margin-bottom: 0px;
+// 	padding-bottom: 0px;
+// }
+//
+// .newbutton:hover {
+// 	background: #ccc;
+// }
 
 
-select {
-	display: flex;
-	flex-direction: column;
-}
-.newbutton {
-	display: flex;
-	align-self: flex-end;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-}
-.newbutton:hover {
-	background: #ccc;
-}
 .period-initial, .period-end {
 	display: flex;
 	flex-direction: column;
@@ -78,9 +83,19 @@ select {
 	position: absolute;
 	left: 200px;
 }
+
 input#actuality {
 	width: 30px;
 }
+
+
+
+
+
+
+
+
+
 
 /*Estilos botones de color*/
 .color-buttons {
@@ -158,6 +173,12 @@ input#actuality {
 .theme4 .top-line{
 	border: 1px solid #B0C0BC;
 }
+
+
+
+
+
+
 
 /*preview*/
 #preview div, #preview span {
@@ -245,6 +266,7 @@ div#preview2 {
 	}
 }
 
+
 @media all and (min-width: 769px){
 
 	.logen {
@@ -270,9 +292,11 @@ div#preview2 {
 		width: 95%;
 		border: none;
 	}
-	input.button-info {
-		width: 41%;
-	}
+
+	// input.button-info {
+	// 	width: 41%;
+	// }
+
 	input#actuality {
 		width: 30px;
 	}

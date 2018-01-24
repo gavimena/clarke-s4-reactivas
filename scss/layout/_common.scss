@@ -16,3 +16,8 @@
 .list {
 	list-style-type: none;
 }
+
+.select {
+	display: flex;
+	flex-direction: column;
+}
