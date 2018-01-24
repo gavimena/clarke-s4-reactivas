@@ -9,6 +9,11 @@
 	background-size: cover;
 	display: flex;
 	justify-content: center;
+	@media all and (min-width: 769px){
+		background-position: center 2%;
+		padding-bottom: 300px;
+
+	}
 }
 .create{
 	display: flex;
@@ -19,9 +24,18 @@
 	color: white;
 	padding-top: 50px;
 	height: 100%;
+	@media all and (min-width: 769px){
+		justify-content: flex-end;
+		margin-top:100px;
+
+	}
 }
 .create h1{
 	font-family: 'Share Tech Mono', monospace;
+	@media all and (min-width: 769px){
+		font-size: 50px;
+
+	}
 }
 .create a{
 	width: 40%;
@@ -33,6 +47,19 @@
 	color: white;
 	text-decoration: none;
 	font-weight: bold;
+	@media all and (min-width: 769px){
+		width: 35%;
+		border-radius: 4px;
+		background-color: #E3C18B;
+		padding: 9px;
+		text-align: center;
+		margin-top: 20px;
+		color: #263d42;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 23px;
+
+	}
 }
 .create h1{
 	font-size: 24px;
@@ -89,10 +116,14 @@ input{
 	display: flex;
 	flex-direction: column;
 }
+
 .prueba_experience {
 	position: absolute;
 	right: -135px;
 	top: -334px;
+	@media all and (min-width: 481px){
+		left: 283px;
+	}
 }
 .skill_container {
 	display: flex;

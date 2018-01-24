@@ -213,9 +213,9 @@ div#preview2 {
 // }
 @media all and (min-width: 481px){
 
-	.prueba_experience {
-		left: 283px;
-	}
+	// .prueba_experience {
+	// 	left: 283px;
+	// }
 
 	// iframe{
 	// 	width: auto;
@@ -287,10 +287,10 @@ div#preview2 {
 		margin-bottom: 20px;
 	}
 
-	.prueba_experience {
-		position: absolute;
-		left: 298px;
-	}
+	// .prueba_experience {
+	// 	position: absolute;
+	// 	left: 298px;
+	// }
 
 	.preview {
 		padding: 39px 0;
@@ -309,31 +309,31 @@ div#preview2 {
 	}
 
 
-	.cover{
-		background-position: center 2%;
-		padding-bottom: 300px;
-	}
+	// .cover{
+	// 	background-position: center 2%;
+	// 	padding-bottom: 300px;
+	// }
 
 
-	.create{
-		justify-content: flex-end;
-		margin-top:100px;
-	}
-	.create h1{
-		font-size: 50px;
-	}
-	.create a {
-		width: 35%;
-		border-radius: 4px;
-		background-color: #E3C18B;
-		padding: 9px;
-		text-align: center;
-		margin-top: 20px;
-		color: #263d42;
-		text-decoration: none;
-		font-weight: bold;
-		font-size: 23px;
-	}
+	// .create{
+	// 	justify-content: flex-end;
+	// 	margin-top:100px;
+	// }
+	// .create h1{
+	// 	font-size: 50px;
+	// }
+	// .create a {
+	// 	width: 35%;
+	// 	border-radius: 4px;
+	// 	background-color: #E3C18B;
+	// 	padding: 9px;
+	// 	text-align: center;
+	// 	margin-top: 20px;
+	// 	color: #263d42;
+	// 	text-decoration: none;
+	// 	font-weight: bold;
+	// 	font-size: 23px;
+	// }
 	iframe{
 		width: auto;
 		height: auto;
@@ -343,37 +343,39 @@ div#preview2 {
 		align-items: flex-start;
 		text-align: center;
 	}
-	.thanks{
-		display: none;
-		position: fixed;
-		top: 0;
-		left: 0;
-		background-color: #599675;
-		color: white;
-		width: 100vw;
-		height: 100vh;
-		z-index: 1;
-		transition: all .3s;
-		text-align: center;
-		padding-top: 100px;
-	}
-	.show{
-		display: block;
-	}
-
-	.show h2{
-		font-size: 57px;
-	}
-	.thanks.show p {
-		font-size: 28px;
-		margin-top: 10px;
-	}
-
-	.logo_thanks{
-		border-radius: 100%;
-		margin-top: 50px;
-		width: 250px;
-		height: auto;
-	}
 }
 }
+	// .thanks{
+	// 	display: none;
+	// 	position: fixed;
+	// 	top: 0;
+	// 	left: 0;
+	// 	background-color: #599675;
+	// 	color: white;
+	// 	width: 100vw;
+	// 	height: 100vh;
+	// 	z-index: 1;
+	// 	transition: all .3s;
+	// 	text-align: center;
+	// 	padding-top: 100px;
+	// }
+	// .show{
+	// 	display: block;
+	// }
+	//
+	// .show h2{
+	// 	font-size: 57px;
+	// }
+// 	.thanks.show p {
+// 		font-size: 28px;
+// 		margin-top: 10px;
+// 	}
+//
+// 	.logo_thanks{
+// 		border-radius: 100%;
+// 		margin-top: 50px;
+// 		width: 250px;
+// 		height: auto;
+// 	}
+// }
+// }
