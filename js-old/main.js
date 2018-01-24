@@ -316,7 +316,7 @@ document.querySelector('#level').innerHTML = options;
 
 })();
 
-var themes = document.querySelectorAll('.botoncito');
+var themes = document.querySelectorAll('.form__colorButton');
 var showPreview = document.querySelector('.preview__showContainer');
 
 
