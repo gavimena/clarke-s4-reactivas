@@ -177,6 +177,7 @@
 
 .overflow {
   overflow-x: hidden;
+  overflow-y: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
