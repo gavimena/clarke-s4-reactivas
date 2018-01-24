@@ -50,9 +50,9 @@
 								<input type="text" name="name" id="name" placeholder="Nombre">
 								<input type="text" name="lastname" id="lastname" placeholder="Apellidos" >
 								<input type="text" name="profession" id="profession" placeholder="Profesión">
-								<input type="button" name="save" class="saveProfile" value="Guardar">
-								<input type="button" name="delete" value="Borrar" class="delete-profile">
-								<input type="button" value="cerrar" onclick="cerrar('content-profile')">
+								<input type="button" name="save" class="saveProfile form__button--saveDeleteClose" value="Guardar">
+								<input type="button" name="delete" value="Borrar" class="delete-profile form__button--saveDeleteClose">
+								<input type="button" value="cerrar" class="form__button--saveDeleteClose" onclick="cerrar('content-profile')">
 							</div>
 						</div><!--end header__menu__section perfil-->
 
@@ -218,7 +218,7 @@
 								<div class="preview__section preview__container--padding">
 									<div class="preview__section__title">
 										<div class="titles preview__container--padding"><h3 class="preview__section--h">Datos de contacto</h3></div>
-										<hr class="line__bottom">
+										<hr class="line__bottom"">
 									</div>
 									<div class="preview__container--padding">
 										<span class="preview__section__subtitle">Teléfono:</span> <span id="data-telephone"></span>
@@ -273,7 +273,7 @@
 
 									<div class="preview__container--padding">
 										<span class="preview__section__subtitle">Intereses:</span>
-										<ul id="data-interest" class="preview__data__interest"></ul>
+										<ul class="preview__data__interest"></ul>
 									</div>
 								</div><!--end section-preview-->
 							</div> <!--end print preview-->

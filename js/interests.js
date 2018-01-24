@@ -12,7 +12,7 @@ function addInterest() {
 	let allInterestList = '';
 
 	for (let i = 0; i < interestList.length; i++) {
-		allInterestList += '<li>' + interestList[i].interes +'</li>';
+		allInterestList += '<li class="data__interest--li">' + interestList[i].interes +'</li>';
 
 	}
 	interestListPreview.innerHTML = allInterestList;
