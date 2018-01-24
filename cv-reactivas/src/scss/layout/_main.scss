@@ -1,0 +1,103 @@
+/*Cover*/
+.main__cover{
+	background: url('../images/cover.jpg');
+	background-size: cover;
+	width: 100vw;
+	height: 50vh;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+}
+.main__cover__create{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	color: white;
+	padding-top: 50px;
+	height: 100%;
+}
+.main__cover__create__title {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 24px;
+}
+.main__cover__create__link {
+	width: 40%;
+	border-radius: 4px;
+	background-color: #E3C18B;
+	padding: 5px;
+	text-align: center;
+	margin-top: 20px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+
+/*contenedor del formulario*/
+.main__resumeContainer{
+	width: 100%;
+	display: flex;
+	margin:0 auto;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/*formulario*/
+.main__resumeContainer__form{
+	padding: 20px 0;
+	width: 100%;
+	margin: 0 auto;
+}
+.main__resumeContainer__form *{
+	padding: 5px;
+	margin: 5px;
+}
+.main__resumeContainer__form__section__title {
+	text-align: center;
+	color:#263D42;
+}
+.main__resumeContainer__form__section{
+	margin-bottom: 20px;
+}
+.info{
+	background-color: #B0C0BC;
+	padding:10px;
+	border-radius: 5px;
+}
+.main__resumeContainer__form__section__buttons{
+	display: flex;
+	justify-content: center;
+}
+.label{
+	font-size: 15px;
+}
+.input{
+	width: 93%;
+	border: none;
+}
+.error{
+	color: red;
+}
+.main__resumeContainer__form__section--experience__addmore__newbutton__work {
+	display: flex;
+	flex-direction: column;
+}
+.main__resumeContainer__form__section--experience__prueba {
+	position: absolute;
+	right: -135px;
+	top: -334px;
+}
+.skill__container {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+}
+.barSkillsSection {
+	background-color: #eeeeee;
+	margin-bottom: 1em;
+}
