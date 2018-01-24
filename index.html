@@ -42,17 +42,17 @@
 							<div class="info">
 								<h2 class="main__resumeContainer__form__section__title">Perfil</h2>
 								<div class="main__resumeContainer__form__section__buttons">
-									<input type="button" class="button-info" value="Editar" onclick="editar('content-profile')">
+									<input class="input" type="button" class="button-info" value="Editar" onclick="editar('content-profile')">
 								</div>
 							</div>
 
 							<div id="content-profile" class="content"> <!--header__menu__section OCULTA-->
-								<input type="text" name="name" id="name" placeholder="Nombre">
-								<input type="text" name="lastname" id="lastname" placeholder="Apellidos" >
-								<input type="text" name="profession" id="profession" placeholder="Profesión">
-								<input type="button" name="save" class="saveProfile" value="Guardar">
-								<input type="button" name="delete" value="Borrar" class="delete-profile">
-								<input type="button" value="cerrar" onclick="cerrar('content-profile')">
+								<input class="input" type="text" name="name" id="name" placeholder="Nombre">
+								<input class="input" type="text" name="lastname" id="lastname" placeholder="Apellidos" >
+								<input class="input" type="text" name="profession" id="profession" placeholder="Profesión">
+								<input class="input" type="button" name="save" class="saveProfile" value="Guardar">
+								<input class="input" type="button" name="delete" value="Borrar" class="delete-profile">
+								<input class="input" type="button" value="cerrar" onclick="cerrar('content-profile')">
 							</div>
 						</div><!--end header__menu__section perfil-->
 
@@ -60,15 +60,15 @@
 							<div class="info">
 								<h2 class="main__resumeContainer__form__section__title">Extracto</h2>
 								<div class="main__resumeContainer__form__section__buttons">
-									<input type="button" class="button-info" value="Editar" onclick="editar('content-summary')">
+									<input class="input" type="button" class="button-info" value="Editar" onclick="editar('content-summary')">
 								</div>
 							</div>
 
 							<div id="content-summary" class="content"><!--header__menu__section OCULTA-->
 								<textarea name="summary" id="summary" rows="8" cols="80" placeholder="Introduce una pequeña descripción"></textarea>
-								<input type="button" name="save" value="Guardar" class="saveSumary">
-								<input type="button" name="delete" value="Borrar" class="delete-summary">
-								<input type="button" value="cerrar" onclick="cerrar('content-summary')">
+								<input class="input" type="button" name="save" value="Guardar" class="saveSumary">
+								<input class="input" type="button" name="delete" value="Borrar" class="delete-summary">
+								<input class="input" type="button" value="cerrar" onclick="cerrar('content-summary')">
 							</div>
 						</div><!--end summary section-->
 
@@ -76,17 +76,17 @@
 							<div class="info">
 								<h2 class="main__resumeContainer__form__section__title">Datos de contacto</h2>
 								<div class="main__resumeContainer__form__section__buttons">
-									<input type="button" class="button-info" value="Editar" onclick="editar('content-contact-info')">
+									<input class="input" type="button" class="button-info" value="Editar" onclick="editar('content-contact-info')">
 								</div>
 							</div>
 							<div id="content-contact-info" class="content"><!--header__menu__section OCULTA-->
-								<input type="tel" name="telephone" id="telephone" placeholder="Teléfono">
+								<input class="input" type="tel" name="telephone" id="telephone" placeholder="Teléfono">
 								<span class="error error_telephone"></span>
-								<input type="email" name="email" id="email" placeholder="Email">
+								<input class="input" type="email" name="email" id="email" placeholder="Email">
 								<span class="error error_email"></span>
-								<input type="button" name="save" value="Guardar" class="saveContact">
-								<input type="button" name="delete" value="Borrar" class="delete-contact">
-								<input type="button" value="cerrar" onclick="cerrar('content-contact-info')">
+								<input class="input" type="button" name="save" value="Guardar" class="saveContact">
+								<input class="input" type="button" name="delete" value="Borrar" class="delete-contact">
+								<input class="input" type="button" value="cerrar" onclick="cerrar('content-contact-info')">
 							</div>
 						</div> <!--end contact-information-->
 
@@ -94,7 +94,7 @@
 							<div class="info">
 								<h2 class="main__resumeContainer__form__section__title">Experiencia laboral</h2>
 								<div class="main__resumeContainer__form__section__buttons">
-									<input type="button" class="button-info" value="Editar" onclick="editar('content-experience')">
+									<input class="input" type="button" class="button-info" value="Editar" onclick="editar('content-experience')">
 								</div>
 							</div>
 
@@ -102,17 +102,17 @@
 								<div class="addMore">
 									<div class="newbutton">
 										<div class="work">
-											<input id="position" type="text" name="name" placeholder="Cargo">
-											<input id="experience" type="text" name="name" placeholder="Empresa">
+											<input class="input" id="position" type="text" name="name" placeholder="Cargo">
+											<input class="input" id="experience" type="text" name="name" placeholder="Empresa">
 											<div class="period-initial">
-												<label>Fecha de inicio</label>
+												<label class="label">Fecha de inicio</label>
 												<div class="initial">
 													<select class="month" name="start-month" id="month-start"></select>
 													<select class="year" name="start-year" id="year"></select>
 												</div>
 											</div>
 											<div class="period-end">
-												<label>Fecha de fin</label>
+												<label class="label">Fecha de fin</label>
 												<div class="end">
 													<select class="month" name="end-month" id="month-end"></select>
 													<select class="year" name="end-year" id="year-end"></select>
@@ -120,8 +120,8 @@
 											</div>
 
 											<div class="act">
-												<label>Actualmente</label>
-												<input id="actuality" type="checkbox" value="" name="actual">
+												<label class="label">Actualmente</label>
+												<input class="input" id="actuality" type="checkbox" value="" name="actual">
 												<div class="buttonrelative">
 													<img class="prueba_experience" src="images/more.png" alt="botonprueba" title="prueba">
 												</div>
@@ -130,9 +130,9 @@
 									</div><!--newbutton-->
 								</div><!--addmore-->
 
-								<input type="button" name="save" value="Guardar" class="saveExperience">
-								<input type="button" name="delete" value="Borrar" class="delete-experience">
-								<input type="button" value="cerrar" onclick="cerrar('content-experience')">
+								<input class="input" type="button" name="save" value="Guardar" class="saveExperience">
+								<input class="input" type="button" name="delete" value="Borrar" class="delete-experience">
+								<input class="input" type="button" value="cerrar" onclick="cerrar('content-experience')">
 							</div> <!-- end content-experience-->
 						</div><!--end experience section-->
 
@@ -140,15 +140,15 @@
 							<div class="info">
 								<h2 class="main__resumeContainer__form__section__title">Más información</h2>
 								<div class="main__resumeContainer__form__section__buttons">
-									<input type="button" class="button-info" value="Editar" onclick="editar('content-additional')">
+									<input class="input" type="button" class="button-info" value="Editar" onclick="editar('content-additional')">
 								</div>
 							</div>
 
 							<div id="content-additional" class="content">
 								<div class="addMore">
 									<div class="newbutton">
-										<input class="education" type="text" name="education" placeholder="Estudios">
-										<input class="education_university" type="text" name="education_university" placeholder="Institucion">
+										<input class="input" class="education" type="text" name="education" placeholder="Estudios">
+										<input class="input" class="education_university" type="text" name="education_university" placeholder="Institucion">
 										<img class="prueba" src="images/more.png" alt="botonprueba" title="prueba">
 									</div>
 								</div>
@@ -156,30 +156,30 @@
 
 								<div class="addMore">
 									<div class="newbutton">
-										<input class="languages" type="text" name="languages" placeholder="Idiomas">
-										<label for="level">Nivel</label>
+										<input class="input" class="languages" type="text" name="languages" placeholder="Idiomas">
+										<label class="label"for="level">Nivel</label>
 										<select id="level" class=" level" name="level"></select>
 										<img class="prueba_language" src="images/more.png" alt="botonprueba" title="prueba">
 									</div>
 								</div>
 
 								<div class="input-skill">
-									<input type="text" id="skills1" class="skills" name="skills1" placeholder="Habilidad">
-									<input class="level_skills" type="text" name="level_skills1" value="" placeholder="Nivel del 1 al 100">
-									<input type="text" id="skills2" class="skills" name="skills2" placeholder="Habilidad">
-									<input class="level_skills" type="text" name="level_skills2" value="" placeholder="Nivel del 1 al 100">
-									<input type="text" id="skills3" class="skills" name="skills3" placeholder="Habilidad">
-									<input class="level_skills" type="text" name="level_skills3" value="" placeholder="Nivel del 1 al 100">
+									<input class="input" type="text" id="skills1" class="skills" name="skills1" placeholder="Habilidad">
+									<input class="input" class="level_skills" type="text" name="level_skills1" value="" placeholder="Nivel del 1 al 100">
+									<input class="input" type="text" id="skills2" class="skills" name="skills2" placeholder="Habilidad">
+									<input class="input" class="level_skills" type="text" name="level_skills2" value="" placeholder="Nivel del 1 al 100">
+									<input class="input" type="text" id="skills3" class="skills" name="skills3" placeholder="Habilidad">
+									<input class="input" class="level_skills" type="text" name="level_skills3" value="" placeholder="Nivel del 1 al 100">
 								</div>
 								<div class="addMore">
 									<div class="newbutton">
-										<input id="interest" type="text" name="interest" placeholder="Intereses">
+										<input class="input" id="interest" type="text" name="interest" placeholder="Intereses">
 										<img class="prueba_interest" src="images/more.png" alt="botonprueba" title="prueba">
 									</div>
 								</div>
-								<input type="button" name="save" value="Guardar" class="saveMore">
-								<input type="button" name="delete" value="Borrar" class="delete-additional">
-								<input type="button" value="cerrar" onclick="cerrar('content-additional')">
+								<input class="input" type="button" name="save" value="Guardar" class="saveMore">
+								<input class="input" type="button" name="delete" value="Borrar" class="delete-additional">
+								<input class="input" type="button" value="cerrar" onclick="cerrar('content-additional')">
 							</div>
 						</div><!--end additional section-->
 
@@ -188,10 +188,10 @@
 							<div class="info">
 								<h2 class="main__resumeContainer__form__section__title">Personaliza tu CV</h2>
 								<div class="color-buttons">
-									<input class="botoncito button_green" type="button" data-theme-class="theme1" value="">
-									<input class="botoncito button_purple" type="button" data-theme-class="theme2" value="">
-									<input class="botoncito button_yellow" type="button" data-theme-class="theme3" value="">
-									<input class="botoncito button_blue" type="button" data-theme-class="theme4" value="">
+									<input class="input botoncito button_green" type="button" data-theme-class="theme1" value="">
+									<input class="input botoncito button_purple" type="button" data-theme-class="theme2" value="">
+									<input class="input botoncito button_yellow" type="button" data-theme-class="theme3" value="">
+									<input class="input botoncito button_blue" type="button" data-theme-class="theme4" value="">
 								</div>
 							</div>
 						</div>

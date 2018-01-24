@@ -340,8 +340,13 @@
   justify-content: center;
 }
 
-label {
+.label {
   font-size: 15px;
+}
+
+.input {
+  width: 93%;
+  border: none;
 }
 
 input {
