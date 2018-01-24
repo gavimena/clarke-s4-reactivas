@@ -66,9 +66,9 @@
 
 							<div id="content-summary" class="form__sectionContent"><!--header__menu__section OCULTA-->
 								<textarea name="summary" id="summary" class="form__textarea--summary" rows="8" cols="80" placeholder="Introduce una pequeña descripción"></textarea>
-								<input type="button" name="save" value="Guardar" class="saveSumary">
-								<input type="button" name="delete" value="Borrar" class="delete-summary">
-								<input type="button" value="cerrar" onclick="cerrar('content-summary')">
+								<input type="button" name="save" value="Guardar" class="saveSumary form__button--saveDeleteClose">
+								<input type="button" name="delete" value="Borrar" class="delete-summary form__button--saveDeleteClose">
+								<input type="button" value="cerrar" class="form__button--saveDeleteClose" onclick="cerrar('content-summary')">
 							</div>
 						</div><!--end summary section-->
 
@@ -84,9 +84,9 @@
 								<span class="error error_telephone"></span>
 								<input type="email" name="email" id="email" placeholder="Email">
 								<span class="error error_email"></span>
-								<input type="button" name="save" value="Guardar" class="saveContact">
-								<input type="button" name="delete" value="Borrar" class="delete-contact">
-								<input type="button" value="cerrar" onclick="cerrar('content-contact-info')">
+								<input type="button" name="save" value="Guardar" class="saveContact form__button--saveDeleteClose">
+								<input type="button" name="delete" value="Borrar" class="delete-contact form__button--saveDeleteClose">
+								<input type="button" value="cerrar" class="form__button--saveDeleteClose" onclick="cerrar('content-contact-info')">
 							</div>
 						</div> <!--end contact-information-->
 
@@ -104,24 +104,24 @@
 										<div class="work">
 											<input id="position" type="text" name="name" placeholder="Cargo">
 											<input id="experience" type="text" name="name" placeholder="Empresa">
-											<div class="period-initial">
+											<div class="form__experience--startBlock">
 												<label>Fecha de inicio</label>
-												<div class="initial">
+												<div class="form__experience--startDate">
 													<select class="month select" name="start-month" id="month-start"></select>
 													<select class="year select" name="start-year" id="year"></select>
 												</div>
 											</div>
-											<div class="period-end">
+											<div class="form__experience--endBlock">
 												<label>Fecha de fin</label>
-												<div class="end">
+												<div class="form__experience--endDate">
 													<select class="month select" name="end-month" id="month-end"></select>
 													<select class="year select" name="end-year" id="year-end"></select>
 												</div>
 											</div>
 
-											<div class="act">
+											<div class="form__experience--currentContainer">
 												<label>Actualmente</label>
-												<input id="actuality" type="checkbox" value="" name="actual">
+												<input class="form__experience--currentCheckbox" id="actuality" type="checkbox" value="" name="actual">
 												<div class="buttonrelative">
 													<img class="prueba_experience" src="images/more.png" alt="botonprueba" title="prueba">
 												</div>
@@ -130,9 +130,9 @@
 									</div><!--form__newItem-->
 								</div><!--addmore-->
 
-								<input type="button" name="save" value="Guardar" class="saveExperience">
-								<input type="button" name="delete" value="Borrar" class="delete-experience">
-								<input type="button" value="cerrar" onclick="cerrar('content-experience')">
+								<input type="button" name="save" value="Guardar" class="saveExperience form__button--saveDeleteClose">
+								<input type="button" name="delete" value="Borrar" class="delete-experience form__button--saveDeleteClose">
+								<input type="button" value="cerrar" class="form__button--saveDeleteClose" onclick="cerrar('content-experience')">
 							</div> <!-- end content-experience-->
 						</div><!--end experience section-->
 
@@ -177,9 +177,9 @@
 										<img class="prueba_interest" src="images/more.png" alt="botonprueba" title="prueba">
 									</div>
 								</div>
-								<input type="button" name="save" value="Guardar" class="saveMore">
-								<input type="button" name="delete" value="Borrar" class="delete-additional">
-								<input type="button" value="cerrar" onclick="cerrar('content-additional')">
+								<input type="button" name="save" value="Guardar" class="saveMore form__button--saveDeleteClose">
+								<input type="button" name="delete" value="Borrar" class="delete-additional form__button--saveDeleteClose">
+								<input type="button" value="cerrar" class="form__button--saveDeleteClose" onclick="cerrar('content-additional')">
 							</div>
 						</div><!--end additional section-->
 
@@ -198,80 +198,80 @@
 					</form>
 
 					<!-- DIV OCULTO VISTA PREVIA-->
-					<div class="preview printPreview" id="preview">
-						<div class="showpreview">
-							<img class="preview__button--hide" src="images/cancel.png" alt="boton cerrar" onclick="cerrar('preview')">
+					<div class="preview__generalContainer printPreview" id="preview">
+						<div class="preview__showContainer preview__container--padding">
+							<img class="preview__button--hide" src="images/cancel.png" alt="boton cerrar" onclick="cerrar('.preview__generalContainer')">
 
-							<div class="printPreview" id="preview2">
-								<div class="resume-header">
+							<div class="printPreview preview__container--print preview__container--padding" id="preview2">
+								<div class="resume-header preview__container--padding">
 									<h2 class="resume__title" id="data-profile"></h2>
 								</div>
 
-								<div class="resume__header__profession">
+								<div class="resume__header__profession preview__container--padding">
 									<span id="data-profession"></span>
 								</div>
 								<hr class="line__top">
-								<div class="resume__header__summary">
+								<div class="resume__header__summary preview__container--padding">
 									<span id="data-summary"></span>
 								</div>
 
-								<div class="preview__section">
+								<div class="preview__section preview__container--padding">
 									<div class="preview__section__title">
-										<div class="titles"><h3>Datos de contacto</h3></div>
+										<div class="titles preview__container--padding"><h3 class="preview__section--h">Datos de contacto</h3></div>
 										<hr class="line__bottom">
 									</div>
-									<div>
+									<div class="preview__container--padding">
 										<span class="preview__section__subtitle">Teléfono:</span> <span id="data-telephone"></span>
 									</div>
-									<div>
+									<div class="preview__container--padding">
 										<span class="preview__section__subtitle">Email:</span> <span id="data-email"></span>
 									</div>
 								</div><!--end section-preview-->
 
-								<div class="preview__section">
-									<div class="preview__section__title">
-										<div class="titles"><h3>Experiencia laboral</h3></div>
+								<div class="preview__section preview__container--padding">
+									<div class="preview__section__title preview__container--padding">
+										<div class="titles preview__container--padding"><h3 class="preview__section--h">Experiencia laboral</h3></div>
 										<hr class="line__bottom">
 									</div>
-									<div>
-										<span id="data-position" class="span-experience"></span>
+									<div class="preview__container--padding">
+										<ul id="data-position" class="preview__experience--position"></ul>
 									</div>
 								</div><!--end section-preview-->
 
-								<div class="preview__section">
-									<div class="preview__section__title">
-										<div class="titles"><h3>Más información</h3></div>
+								<div class="preview__section preview__container--padding">
+									<div class="preview__section__title preview__container--padding">
+										<div class="titles preview__container--padding"><h3 class="preview__section--h">Más información</h3></div>
 										<hr class="line__bottom">
 									</div>
-									<div>
+									<div class="preview__container--padding">
 										<span class="preview__section__subtitle">Estudios:</span> <br>
 										<ul id="data-studies" class="preview__data__studies"></ul>
 									</div>
-									<div>
+									<div class="preview__container--padding">
 										<span class="preview__section__subtitle">Idiomas:</span>
 										<ul class="preview__data__languages"></ul>
 									</div>
 
-									<div class="skill_container">
+									<div class="skill_container preview__container--padding">
 										<span class="preview__section__subtitle">Habilidades:</span>
-										<div class="barSkillsSection">
-											<div class="preview__levelSkill">
+										<div class="barSkillsSection preview__container--padding">
+											<div class="preview__levelSkill preview__container--padding">
 												<p id="skillName1" class="preview__data__skillName"></p>
 											</div>
 										</div>
-										<div class="barSkillsSection">
-											<div class="preview__levelSkill">
+										<div class="barSkillsSection preview__container--padding">
+											<div class="preview__levelSkill preview__container--padding">
 												<p id="skillName2" class="preview__data__skillName"></p>
 											</div>
 										</div>
-										<div class="barSkillsSection">
-											<div class="preview__levelSkill">
+										<div class="barSkillsSection preview__container--padding">
+											<div class="preview__levelSkill preview__container--padding">
 												<p id="skillName3" class="preview__data__skillName"></p>
 											</div>
 										</div>
 									</div><!--end skill section-->
 
-									<div>
+									<div class="preview__container--padding">
 										<span class="preview__section__subtitle">Intereses:</span>
 										<ul id="data-interest" class="preview__data__interest"></ul>
 									</div>

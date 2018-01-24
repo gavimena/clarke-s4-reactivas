@@ -69,3 +69,28 @@
 .form__newItem:hover {
 	background: #ccc;
 }
+
+.form__experience--startBlock, .form__experience--endBlock {
+	display: flex;
+	flex-direction: column;
+}
+
+.form__experience--startDate, .form__experience--endDate {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	margin: 0;
+}
+
+.form__experience--currentContainer {
+	display: flex;
+	flex-direction: column;
+
+	@media all and (min-width: 769px){
+		margin-bottom: 20px;
+	}
+}
+
+.form__experience--currentCheckbox {
+	width: 30px;
+}

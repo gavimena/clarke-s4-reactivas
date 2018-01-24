@@ -12,3 +12,18 @@
 	display: flex;
 	align-self: flex-end;
 }
+
+.buttonrelative {
+	position: relative;
+}
+
+.form__button--saveDeleteClose {
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	background-color: #b0c0bc;
+	color: #273e42;
+	border: none;
+	align-items: flex-start;
+	width: auto;
+}

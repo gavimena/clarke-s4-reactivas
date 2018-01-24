@@ -14,6 +14,28 @@
   align-self: flex-end;
 }
 
+.buttonrelative {
+  position: relative;
+}
+
+.form__button--saveDeleteClose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #b0c0bc;
+  color: #273e42;
+  border: none;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: auto;
+}
+
 .main__form {
   margin: 20px;
   padding: 20px;
@@ -96,12 +118,53 @@
   background: #ccc;
 }
 
+.form__experience--startBlock,.form__experience--endBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.form__experience--startDate,.form__experience--endDate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+.form__experience--currentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.form__experience--currentCheckbox {
+  width: 30px;
+}
+
 .logo--header {
   display: block;
   width: 80px;
   height: 80px;
   border-radius: 100%;
   padding: 5px;
+}
+
+.form__experience--plusImg {
+  position: absolute;
+  left: 200px;
 }
 
 .body {
@@ -428,6 +491,46 @@ input {
   background-color: rgba(226, 226, 226, 0.72);
 }
 
+.preview__generalContainer {
+  display: none;
+}
+
+.preview__container--print {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.preview__showContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #b0c0bc;
+  padding-top: 20px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 20px;
+}
+
 .preview__section {
   width: 100%;
   display: -webkit-box;
@@ -461,6 +564,10 @@ input {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+}
+
+.preview__section--h {
+  margin: 0;
 }
 
 .titles {
@@ -518,6 +625,7 @@ input {
   color: #263d42;
   line-height: 20px;
   padding-left: 10px;
+  margin: 0;
 }
 
 .preview__levelSkill {
@@ -532,6 +640,14 @@ input {
   margin: 0 5px;
 }
 
+.preview__experience--position {
+  list-style: none;
+}
+
+.preview__container--padding {
+  padding: 5px;
+}
+
 .line__top {
   border: 1px solid #b0c0bc;
   width: 80%;
@@ -540,69 +656,6 @@ input {
 .line__bottom {
   border: 1px solid #b0c0bc;
   width: 100%;
-}
-
-.form__sectionContent > input[type=button] {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border-radius: 5px;
-  background-color: #b0c0bc;
-  color: #273e42;
-  border: none;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  width: auto;
-}
-
-.period-initial,.period-end {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.initial,.end {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
-}
-
-.act {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.buttonrelative {
-  position: relative;
-}
-
-.prueba_experience {
-  position: absolute;
-  left: 200px;
-}
-
-input#actuality {
-  width: 30px;
 }/*Estilos botones de color*/.color-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -670,49 +723,7 @@ input#actuality {
 
 .theme4 .top-line {
   border: 1px solid #B0C0BC;
-}/*preview*/#preview div,#preview span {
-  padding: 5px;
-}
-
-.preview {
-  display: none;
-}
-
-.showpreview {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 80%;
-  margin: 0 auto;
-  border: 1px solid #b0c0bc;
-  padding-top: 20px;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  margin-bottom: 20px;
-}
-
-div#preview2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0 auto;
-  padding-top: 20px;
-  width: 100%;
-}/*Acaba la parte de Laura------------------------------------------------*//*Acaba la parte de Gabi----------------------------------------------------*/.show {
+}/*preview*//*Acaba la parte de Laura------------------------------------------------*//*Acaba la parte de Gabi----------------------------------------------------*/.show {
   display: block;
 }
 
@@ -731,7 +742,7 @@ div#preview2 {
   width: 200px;
   margin-top: 28px;
 }/*Acaba la parte de Mamen-------------------------------------------------*/@media all and (min-width: 481px) {
-  .prueba_experience {
+  .form__experience--plusImg {
     left: 283px;
   }
 
@@ -783,6 +794,35 @@ div#preview2 {
     width: 41%;
   }
 
+  .form__experience--currentContainer {
+    margin-bottom: 20px;
+  }
+
+  .form__experience--plusImg {
+    position: absolute;
+    left: 298px;
+  }
+
+  .preview__generalContainer {
+    padding: 39px 0;
+    width: 58%;
+  }
+
+  .preview__showContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
   .logen {
     display: block;
     width: 100px;
@@ -814,41 +854,8 @@ div#preview2 {
     border: none;
   }
 
-  input#actuality {
-    width: 30px;
-  }
-
   .span-titles {
     font-size: 22px;
-  }
-
-  .act {
-    margin-bottom: 20px;
-  }
-
-  .prueba_experience {
-    position: absolute;
-    left: 298px;
-  }
-
-  .preview {
-    padding: 39px 0;
-    width: 58%;
-  }
-
-  .showpreview {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 0 auto;
-    padding-top: 20px;
   }
 
   .horizontal-line {

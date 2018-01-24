@@ -121,7 +121,7 @@ var endMonth = document.querySelector('#month-end');
 var endYear = document.querySelector('#year-end');
 var currentCheck = document.querySelector('#actuality');
 var jobList = [];
-var jobListPreview = document.querySelector(".span-experience");
+var jobListPreview = document.querySelector(".preview__experience--position");
 
 
 function addJob() {
@@ -152,8 +152,8 @@ function addJob() {
 	jobListPreview.innerHTML = allJobList;
 	document.querySelector("#position").value = '';
 	document.querySelector('#experience').value = '';
-	document.querySelector('.initial').value = '';
-	document.querySelector('.end').value = '';
+	document.querySelector('.form__experience--startDate').value = '';
+	document.querySelector('.form__experience--endDate').value = '';
 	vistaPrevia("preview");
 }
 
@@ -317,7 +317,7 @@ document.querySelector('#level').innerHTML = options;
 })();
 
 var themes = document.querySelectorAll('.botoncito');
-var showPreview = document.querySelector('.showpreview');
+var showPreview = document.querySelector('.preview__showContainer');
 
 
 function applyTheme(event){
@@ -334,7 +334,7 @@ for (var i = 0; i < themes.length; i++) {
 // /*imprimir*/
 function printCurriculum(){
 
-	var printer = document.getElementById('preview2');
+	var printer = document.querySelector('.preview__container--print');
 	printer.style.display="block";
 
 
