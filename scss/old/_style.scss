@@ -31,7 +31,7 @@ textarea#summary {
 	align-items: flex-start;
 	width: auto;
 }
-input.button-info {
+.input__buttonInfo {
 	border: none;
 	border-radius: 5px;
 	background-color: white;
@@ -76,11 +76,11 @@ select {
 .buttonrelative {
 	position: relative;
 }
-.prueba_experience {
+.main__resumeContainer__form__section--experience__prueba {
 	position: absolute;
 	left: 200px;
 }
-input#actuality {
+.input#actuality {
 	width: 30px;
 }
 
@@ -213,7 +213,7 @@ div#preview2 {
 }
 @media all and (min-width: 481px){
 
-	.prueba_experience {
+	.main__resumeContainer__form__section--experience__prueba {
 		left: 283px;
 	}
 
@@ -262,20 +262,20 @@ div#preview2 {
 		display: flex;
 		flex-direction: row;
 	}
-	.resume-form {
+	.main__resumeContainer__form {
 		padding: 20px 0;
 		width: 45%;
 		margin-left: 10px;
 		min-width: 500px;
 	}
-	input {
+	.input {
 		width: 95%;
 		border: none;
 	}
-	input.button-info {
+	.input__buttonInfo {
 		width: 41%;
 	}
-	input#actuality {
+	.input#actuality {
 		width: 30px;
 	}
 
@@ -287,7 +287,7 @@ div#preview2 {
 		margin-bottom: 20px;
 	}
 
-	.prueba_experience {
+	.main__resumeContainer__form__section--experience__prueba {
 		position: absolute;
 		left: 298px;
 	}
@@ -309,20 +309,20 @@ div#preview2 {
 	}
 
 
-	.cover{
+	.main__cover{
 		background-position: center 2%;
 		padding-bottom: 300px;
 	}
 
 
-	.create{
+	.main__cover__create{
 		justify-content: flex-end;
 		margin-top:100px;
 	}
-	.create h1{
+	.main__cover__create__title{
 		font-size: 50px;
 	}
-	.create a {
+	.main__cover__create__link {
 		width: 35%;
 		border-radius: 4px;
 		background-color: #E3C18B;
