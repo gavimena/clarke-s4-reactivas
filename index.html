@@ -38,11 +38,11 @@
 				<div class="split-div">
 					<form class="main__resumeContainer__form" action="/signup" method="post">
 
-						<div class="main__resumeContainer__form__section profile section"><!--header__menu__section perfil-->
+						<div class="main__resumeContainer__form__section profile"><!--header__menu__section perfil-->
 							<div class="info">
 								<h2 class="main__resumeContainer__form__section__title">Perfil</h2>
 								<div class="main__resumeContainer__form__section__buttons">
-									<input class="input" type="button" class="button-info" value="Editar" onclick="editar('content-profile')">
+									<input class="input input__buttonInfo" type="button" value="Editar" onclick="editar('content-profile')">
 								</div>
 							</div>
 
@@ -60,7 +60,7 @@
 							<div class="info">
 								<h2 class="main__resumeContainer__form__section__title">Extracto</h2>
 								<div class="main__resumeContainer__form__section__buttons">
-									<input class="input" type="button" class="button-info" value="Editar" onclick="editar('content-summary')">
+									<input class="input input__buttonInfo" type="button" value="Editar" onclick="editar('content-summary')">
 								</div>
 							</div>
 
@@ -76,7 +76,7 @@
 							<div class="info">
 								<h2 class="main__resumeContainer__form__section__title">Datos de contacto</h2>
 								<div class="main__resumeContainer__form__section__buttons">
-									<input class="input" type="button" class="button-info" value="Editar" onclick="editar('content-contact-info')">
+									<input class="input input__buttonInfo" type="button" value="Editar" onclick="editar('content-contact-info')">
 								</div>
 							</div>
 							<div id="content-contact-info" class="content"><!--header__menu__section OCULTA-->
@@ -90,18 +90,18 @@
 							</div>
 						</div> <!--end contact-information-->
 
-						<div class="main__resumeContainer__form__section experience"><!--header__menu__section experiencia-->
+						<div class="main__resumeContainer__form__section main__resumeContainer__form__section--experience experience"><!--header__menu__section experiencia-->
 							<div class="info">
 								<h2 class="main__resumeContainer__form__section__title">Experiencia laboral</h2>
 								<div class="main__resumeContainer__form__section__buttons">
-									<input class="input" type="button" class="button-info" value="Editar" onclick="editar('content-experience')">
+									<input class="input input__buttonInfo" type="button" value="Editar" onclick="editar('content-experience')">
 								</div>
 							</div>
 
 							<div id="content-experience" class="content"><!--header__menu__section OCULTA-->
 								<div class="addMore">
 									<div class="newbutton">
-										<div class="work">
+										<div class="main__resumeContainer__form__section--experience__addmore__newbutton__work">
 											<input class="input" id="position" type="text" name="name" placeholder="Cargo">
 											<input class="input" id="experience" type="text" name="name" placeholder="Empresa">
 											<div class="period-initial">
@@ -123,7 +123,7 @@
 												<label class="label">Actualmente</label>
 												<input class="input" id="actuality" type="checkbox" value="" name="actual">
 												<div class="buttonrelative">
-													<img class="prueba_experience" src="images/more.png" alt="botonprueba" title="prueba">
+													<img class="main__resumeContainer__form__section--experience__prueba" src="images/more.png" alt="botonprueba" title="prueba">
 												</div>
 											</div>
 										</div><!--work-->
@@ -140,7 +140,7 @@
 							<div class="info">
 								<h2 class="main__resumeContainer__form__section__title">Más información</h2>
 								<div class="main__resumeContainer__form__section__buttons">
-									<input class="input" type="button" class="button-info" value="Editar" onclick="editar('content-additional')">
+									<input class="input input__buttonInfo" type="button" value="Editar" onclick="editar('content-additional')">
 								</div>
 							</div>
 
@@ -184,7 +184,7 @@
 						</div><!--end additional section-->
 
 						<!-- BOTONES DE COLORES -->
-						<div class="personalize main__resumeContainer__form__section">
+						<div class="personalize main__resumeContainer__form__section main__resumeContainer__form__section__personalize">
 							<div class="info">
 								<h2 class="main__resumeContainer__form__section__title">Personaliza tu CV</h2>
 								<div class="color-buttons">
@@ -252,7 +252,7 @@
 										<ul class="preview__data__languages"></ul>
 									</div>
 
-									<div class="skill_container">
+									<div class="skill__container">
 										<span class="preview__section__subtitle">Habilidades:</span>
 										<div class="barSkillsSection">
 											<div class="levelSkill">

@@ -349,16 +349,11 @@
   border: none;
 }
 
-input {
-  width: 93%;
-  border: none;
-}
-
 .error {
   color: red;
 }
 
-.work {
+.main__resumeContainer__form__section--experience__addmore__newbutton__work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,13 +363,13 @@ input {
   flex-direction: column;
 }
 
-.prueba_experience {
+.main__resumeContainer__form__section--experience__prueba {
   position: absolute;
   right: -135px;
   top: -334px;
 }
 
-.skill_container {
+.skill__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,7 +524,7 @@ textarea#summary {
   width: auto;
 }
 
-input.button-info {
+.input__buttonInfo {
   border: none;
   border-radius: 5px;
   background-color: white;
@@ -600,12 +595,12 @@ select {
   position: relative;
 }
 
-.prueba_experience {
+.main__resumeContainer__form__section--experience__prueba {
   position: absolute;
   left: 200px;
 }
 
-input#actuality {
+.input#actuality {
   width: 30px;
 }/*Estilos botones de color*/.color-buttons {
   display: -webkit-box;
@@ -735,7 +730,7 @@ div#preview2 {
   width: 200px;
   margin-top: 28px;
 }/*Acaba la parte de Mamen-------------------------------------------------*/@media all and (min-width: 481px) {
-  .prueba_experience {
+  .main__resumeContainer__form__section--experience__prueba {
     left: 283px;
   }
 
@@ -809,16 +804,16 @@ div#preview2 {
     min-width: 500px;
   }
 
-  input {
+  .input {
     width: 95%;
     border: none;
   }
 
-  input.button-info {
+  .input__buttonInfo {
     width: 41%;
   }
 
-  input#actuality {
+  .input#actuality {
     width: 30px;
   }
 
@@ -830,7 +825,7 @@ div#preview2 {
     margin-bottom: 20px;
   }
 
-  .prueba_experience {
+  .main__resumeContainer__form__section--experience__prueba {
     position: absolute;
     left: 298px;
   }

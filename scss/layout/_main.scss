@@ -80,24 +80,19 @@
 	width: 93%;
 	border: none;
 }
-
-input{
-	width: 93%;
-	border: none;
-}
 .error{
 	color: red;
 }
-.work {
+.main__resumeContainer__form__section--experience__addmore__newbutton__work {
 	display: flex;
 	flex-direction: column;
 }
-.prueba_experience {
+.main__resumeContainer__form__section--experience__prueba {
 	position: absolute;
 	right: -135px;
 	top: -334px;
 }
-.skill_container {
+.skill__container {
 	display: flex;
 	flex-direction: column;
 	width: 90%;
