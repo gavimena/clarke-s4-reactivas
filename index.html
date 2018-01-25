@@ -27,85 +27,85 @@
 		</header>
 
 		<main>
-			<div class="cover">
-				<div class="create">
-					<h1>Crea tu propio CV</h1>
-					<a href="#empezar" class="scroll" data-speed="1000">Empezar</a>
+			<div class="main__cover">
+				<div class="main__cover__create">
+					<h1 class="main__cover__create__title">Crea tu propio CV</h1>
+					<a class="main__cover__create__link" href="#empezar" class="scroll" data-speed="1000">Empezar</a>
 				</div>
 			</div>
 
-			<div class="resume-container" id="empezar"><!--container formulario-->
+			<div class="main__resumeContainer" id="empezar"><!--container formulario-->
 				<div class="split-div">
-					<form class="resume-form" action="/signup" method="post">
+					<form class="main__resumeContainer__form" action="/signup" method="post">
 
-						<div class="profile section"><!--header__menu__section perfil-->
+						<div class="main__resumeContainer__form__section profile"><!--header__menu__section perfil-->
 							<div class="info">
-								<h2 class="section-title">Perfil</h2>
-								<div class="section-buttons">
-									<input type="button" class="form__button--edit" value="Editar" onclick="editar('content-profile')">
+								<h2 class="main__resumeContainer__form__section__title">Perfil</h2>
+								<div class="main__resumeContainer__form__section__buttons">
+									<input class="input form__button--edit" type="button" value="Editar" onclick="editar('content-profile')">
 								</div>
 							</div>
 
-							<div id="content-profile" class="form__sectionContent"> <!--header__menu__section OCULTA-->
-								<input type="text" name="name" id="name" placeholder="Nombre">
-								<input type="text" name="lastname" id="lastname" placeholder="Apellidos" >
-								<input type="text" name="profession" id="profession" placeholder="Profesión">
-								<input type="button" name="save" class="saveProfile form__button--saveDeleteClose" value="Guardar">
-								<input type="button" name="delete" value="Borrar" class="delete-profile form__button--saveDeleteClose">
-								<input type="button" value="cerrar" class="form__button--saveDeleteClose" onclick="cerrar('content-profile')">
+							<div id="content-profile" class="content"> <!--header__menu__section OCULTA-->
+								<input class="input" type="text" name="name" id="name" placeholder="Nombre">
+								<input class="input" type="text" name="lastname" id="lastname" placeholder="Apellidos" >
+								<input class="input" type="text" name="profession" id="profession" placeholder="Profesión">
+								<input class="input" type="button" name="save" class="saveProfile" value="Guardar">
+								<input class="input" type="button" name="delete" value="Borrar" class="delete-profile">
+								<input class="input" type="button" value="cerrar" onclick="cerrar('content-profile')">
 							</div>
 						</div><!--end header__menu__section perfil-->
 
-						<div class="summary section"> <!--summary perfil-->
+						<div class="main__resumeContainer__form__section summary"> <!--summary perfil-->
 							<div class="info">
-								<h2 class="section-title">Extracto</h2>
-								<div class="section-buttons">
-									<input type="button" class="form__button--edit" value="Editar" onclick="editar('content-summary')">
+								<h2 class="main__resumeContainer__form__section__title">Extracto</h2>
+								<div class="main__resumeContainer__form__section__buttons">
+									<input class="input form__button--edit" type="button" value="Editar" onclick="editar('content-summary')">
 								</div>
 							</div>
 
-							<div id="content-summary" class="form__sectionContent"><!--header__menu__section OCULTA-->
-								<textarea name="summary" id="summary" class="form__textarea--summary" rows="8" cols="80" placeholder="Introduce una pequeña descripción"></textarea>
-								<input type="button" name="save" value="Guardar" class="saveSumary form__button--saveDeleteClose">
-								<input type="button" name="delete" value="Borrar" class="delete-summary form__button--saveDeleteClose">
-								<input type="button" value="cerrar" class="form__button--saveDeleteClose" onclick="cerrar('content-summary')">
+							<div id="content-summary" class="content"><!--header__menu__section OCULTA-->
+								<textarea name="summary" id="summary" rows="8" cols="80" placeholder="Introduce una pequeña descripción"></textarea>
+								<input class="input" type="button" name="save" value="Guardar" class="saveSumary">
+								<input class="input" type="button" name="delete" value="Borrar" class="delete-summary">
+								<input class="input" type="button" value="cerrar" onclick="cerrar('content-summary')">
 							</div>
 						</div><!--end summary section-->
 
-						<div class="contact-information section"><!--header__menu__section contacto-->
+						<div class="main__resumeContainer__form__section contact-information"><!--header__menu__section contacto-->
 							<div class="info">
-								<h2 class="section-title">Datos de contacto</h2>
-								<div class="section-buttons">
-									<input type="button" class="form__button--edit" value="Editar" onclick="editar('content-contact-info')">
+								<h2 class="main__resumeContainer__form__section__title">Datos de contacto</h2>
+								<div class="main__resumeContainer__form__section__buttons">
+									<input class="input form__button--edit" type="button" value="Editar" onclick="editar('content-contact-info')">
 								</div>
 							</div>
-							<div id="content-contact-info" class="form__sectionContent"><!--header__menu__section OCULTA-->
-								<input type="tel" name="telephone" id="telephone" placeholder="Teléfono">
+							<div id="content-contact-info" class="content"><!--header__menu__section OCULTA-->
+								<input class="input" type="tel" name="telephone" id="telephone" placeholder="Teléfono">
+							
 								<span class="error error_telephone"></span>
-								<input type="email" name="email" id="email" placeholder="Email">
+								<input class="input" type="email" name="email" id="email" placeholder="Email">
 								<span class="error error_email"></span>
-								<input type="button" name="save" value="Guardar" class="saveContact form__button--saveDeleteClose">
-								<input type="button" name="delete" value="Borrar" class="delete-contact form__button--saveDeleteClose">
-								<input type="button" value="cerrar" class="form__button--saveDeleteClose" onclick="cerrar('content-contact-info')">
+								<input type="button" name="save" value="Guardar" class="input saveContact form__button--saveDeleteClose">
+								<input type="button" name="delete" value="Borrar" class="input delete-contact form__button--saveDeleteClose">
+								<input type="button" value="cerrar" class="input form__button--saveDeleteClose" onclick="cerrar('content-contact-info')">
 							</div>
 						</div> <!--end contact-information-->
 
-						<div class="experience section"><!--header__menu__section experiencia-->
+						<div class="main__resumeContainer__form__section main__resumeContainer__form__section--experience experience"><!--header__menu__section experiencia-->
 							<div class="info">
-								<h2 class="section-title">Experiencia laboral</h2>
-								<div class="section-buttons">
-									<input type="button" class="form__button--edit" value="Editar" onclick="editar('content-experience')">
+								<h2 class="main__resumeContainer__form__section__title">Experiencia laboral</h2>
+								<div class="main__resumeContainer__form__section__buttons">
+									<input class="input form__button--edit" type="button" value="Editar" onclick="editar('content-experience')">
 								</div>
 							</div>
-
 							<div id="content-experience" class="form__sectionContent"><!--header__menu__section OCULTA-->
 								<div class="addMore">
 									<div class="form__newItem">
-										<div class="work">
-											<input id="position" type="text" name="name" placeholder="Cargo">
-											<input id="experience" type="text" name="name" placeholder="Empresa">
-											<div class="form__experience--startBlock">
-												<label>Fecha de inicio</label>
+										<div class="main__resumeContainer__form__section--experience__addmore__newbutton__work">
+											<input class="input" id="position" type="text" name="name" placeholder="Cargo">
+											<input class="input" id="experience" type="text" name="name" placeholder="Empresa">
+											<div class="period-initial">
+												<label class="label">Fecha de inicio</label>
 												<div class="form__experience--startDate">
 													<select class="month select" name="start-month" id="month-start"></select>
 													<select class="year select" name="start-year" id="year"></select>
@@ -117,38 +117,35 @@
 													<select class="month select" name="end-month" id="month-end"></select>
 													<select class="year select" name="end-year" id="year-end"></select>
 												</div>
-											</div>
 
 											<div class="form__experience--currentContainer">
 												<label>Actualmente</label>
 												<input class="form__experience--currentCheckbox" id="actuality" type="checkbox" value="" name="actual">
 												<div class="buttonrelative">
-													<img class="prueba_experience" src="images/more.png" alt="botonprueba" title="prueba">
+													<img class="main__resumeContainer__form__section--experience__prueba" src="images/more.png" alt="botonprueba" title="prueba">
 												</div>
 											</div>
 										</div><!--work-->
 									</div><!--form__newItem-->
 								</div><!--addmore-->
-
-								<input type="button" name="save" value="Guardar" class="saveExperience form__button--saveDeleteClose">
-								<input type="button" name="delete" value="Borrar" class="delete-experience form__button--saveDeleteClose">
-								<input type="button" value="cerrar" class="form__button--saveDeleteClose" onclick="cerrar('content-experience')">
+								<input type="button" name="save" value="Guardar" class="input saveExperience form__button--saveDeleteClose">
+								<input type="button" name="delete" value="Borrar" class="input delete-experience form__button--saveDeleteClose">
+								<input type="button" value="cerrar" class="input form__button--saveDeleteClose" onclick="cerrar('content-experience')">
 							</div> <!-- end content-experience-->
 						</div><!--end experience section-->
-
-						<div class="additional section"><!--header__menu__section additional-->
+						<div class="main__resumeContainer__form__section additional"><!--header__menu__section additional-->
 							<div class="info">
-								<h2 class="section-title">Más información</h2>
-								<div class="section-buttons">
-									<input type="button" class="form__button--edit" value="Editar" onclick="editar('content-additional')">
+								<h2 class="main__resumeContainer__form__section__title">Más información</h2>
+								<div class="main__resumeContainer__form__section__buttons">
+									<input class="input form__button--edit" type="button" value="Editar" onclick="editar('content-additional')">
 								</div>
 							</div>
 
 							<div id="content-additional" class="form__sectionContent">
 								<div class="addMore">
 									<div class="form__newItem">
-										<input class="education" type="text" name="education" placeholder="Estudios">
-										<input class="education_university" type="text" name="education_university" placeholder="Institucion">
+										<input class=" input education" type="text" name="education" placeholder="Estudios">
+										<input class="input education_university" type="text" name="education_university" placeholder="Institucion">
 										<img class="prueba" src="images/more.png" alt="botonprueba" title="prueba">
 									</div>
 								</div>
@@ -156,20 +153,19 @@
 
 								<div class="addMore">
 									<div class="form__newItem">
-										<input class="languages" type="text" name="languages" placeholder="Idiomas">
-										<label for="level">Nivel</label>
+										<input class=" input languages" type="text" name="languages" placeholder="Idiomas">
+										<label class="label" for="level">Nivel</label>
 										<select id="level" class="select level" name="level"></select>
 										<img class="prueba_language" src="images/more.png" alt="botonprueba" title="prueba">
 									</div>
 								</div>
-
 								<div class="input-skill">
-									<input type="text" id="skills1" class="skills" name="skills1" placeholder="Habilidad">
-									<input class="level_skills" type="text" name="level_skills1" value="" placeholder="Nivel del 1 al 100">
-									<input type="text" id="skills2" class="skills" name="skills2" placeholder="Habilidad">
-									<input class="level_skills" type="text" name="level_skills2" value="" placeholder="Nivel del 1 al 100">
-									<input type="text" id="skills3" class="skills" name="skills3" placeholder="Habilidad">
-									<input class="level_skills" type="text" name="level_skills3" value="" placeholder="Nivel del 1 al 100">
+									<input class="input" type="text" id="skills1" class="skills" name="skills1" placeholder="Habilidad">
+									<input class="input" class="level_skills" type="text" name="level_skills1" value="" placeholder="Nivel del 1 al 100">
+									<input class="input" type="text" id="skills2" class="skills" name="skills2" placeholder="Habilidad">
+									<input class="input" class="level_skills" type="text" name="level_skills2" value="" placeholder="Nivel del 1 al 100">
+									<input class="input" type="text" id="skills3" class="skills" name="skills3" placeholder="Habilidad">
+									<input class="input" class="level_skills" type="text" name="level_skills3" value="" placeholder="Nivel del 1 al 100">
 								</div>
 								<div class="addMore">
 									<div class="form__newItem">
@@ -177,21 +173,21 @@
 										<img class="prueba_interest" src="images/more.png" alt="botonprueba" title="prueba">
 									</div>
 								</div>
-								<input type="button" name="save" value="Guardar" class="saveMore form__button--saveDeleteClose">
-								<input type="button" name="delete" value="Borrar" class="delete-additional form__button--saveDeleteClose">
-								<input type="button" value="cerrar" class="form__button--saveDeleteClose" onclick="cerrar('content-additional')">
+								<input type="button" name="save" value="Guardar" class=" input saveMore form__button--saveDeleteClose">
+								<input type="button" name="delete" value="Borrar" class="input delete-additional form__button--saveDeleteClose">
+								<input type="button" value="cerrar" class="input form__button--saveDeleteClose" onclick="cerrar('content-additional')">
 							</div>
 						</div><!--end additional section-->
 
 						<!-- BOTONES DE COLORES -->
-						<div class="personalize section">
+						<div class="personalize main__resumeContainer__form__section main__resumeContainer__form__section__personalize">
 							<div class="info">
-								<h2 class="section-title">Personaliza tu CV</h2>
+								<h2 class="main__resumeContainer__form__section__title">Personaliza tu CV</h2>
 								<div class="form__container--colorButtons">
-									<input class="form__colorButton button_green" type="button" data-theme-class="theme1" value="">
-									<input class="form__colorButton button_purple" type="button" data-theme-class="theme2" value="">
-									<input class="form__colorButton button_yellow" type="button" data-theme-class="theme3" value="">
-									<input class="form__colorButton button_blue" type="button" data-theme-class="theme4" value="">
+									<input class="input form__colorButton button_green" type="button" data-theme-class="theme1" value="">
+									<input class="input form__colorButton button_purple" type="button" data-theme-class="theme2" value="">
+									<input class="input form__colorButton button_yellow" type="button" data-theme-class="theme3" value="">
+									<input class="input form__colorButton button_blue" type="button" data-theme-class="theme4" value="">
 								</div>
 							</div>
 						</div>
@@ -251,7 +247,6 @@
 										<span class="preview__section__subtitle">Idiomas:</span>
 										<ul class="preview__data__languages"></ul>
 									</div>
-
 									<div class="skill_container preview__container--padding">
 										<span class="preview__section__subtitle">Habilidades:</span>
 										<div class="barSkillsSection preview__container--padding">

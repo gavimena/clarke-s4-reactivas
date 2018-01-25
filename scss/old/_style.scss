@@ -4,7 +4,6 @@
 // 	line-height: 20px;
 // 	padding-left: 10px;
 // }
-
 // .levelSkill {
 // 	width: 0;
 // 	background-color: #b0c0bc;
@@ -88,6 +87,91 @@
 // }
 
 
+
+.skillName {
+	text-align: left;
+	color: #263d42;
+	line-height: 20px;
+	padding-left: 10px;
+}
+
+.levelSkill {
+	width: 0;
+	background-color: #b0c0bc;
+}
+
+.hidden{
+	display: none;
+}
+
+textarea#summary {
+	width: 90%;
+	border: none;
+}
+
+.content>input[type=button]{
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	background-color: #b0c0bc;
+	color: #273e42;
+	border: none;
+	align-items: flex-start;
+	width: auto;
+}
+.input__buttonInfo {
+	border: none;
+	border-radius: 5px;
+	background-color: white;
+}
+.content {
+	display: none;
+	background-color: rgba(226, 226, 226, 0.72);
+}
+
+
+select {
+	display: flex;
+	flex-direction: column;
+}
+.newbutton {
+	display: flex;
+	align-self: flex-end;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.newbutton:hover {
+	background: #ccc;
+}
+.period-initial, .period-end {
+	display: flex;
+	flex-direction: column;
+}
+
+.initial, .end {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	margin: 0;
+}
+
+.act {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.buttonrelative {
+	position: relative;
+}
+.main__resumeContainer__form__section--experience__prueba {
+	position: absolute;
+	left: 200px;
+}
+.input#actuality {
+	width: 30px;
+}
+
 /*Estilos botones de color*/
 // .color-buttons {
 // 	display: flex;
@@ -170,9 +254,11 @@
 }
 @media all and (min-width: 481px){
 
-	// .prueba_experience {
-	// 	left: 283px;
-	// }
+
+	.main__resumeContainer__form__section--experience__prueba {
+		left: 283px;
+	}
+
 
 	iframe{
 		width: auto;
@@ -220,69 +306,59 @@
 		display: flex;
 		flex-direction: row;
 	}
-	.resume-form {
+	.main__resumeContainer__form {
 		padding: 20px 0;
 		width: 45%;
 		margin-left: 10px;
 		min-width: 500px;
 	}
-	input {
+	.input {
 		width: 95%;
 		border: none;
 	}
 
-	// input.button-info {
-	// 	width: 41%;
-	// }
+	.input__buttonInfo {
+		width: 41%;
+	}
+	.input#actuality {
+		width: 30px;
+	}
 
-	// input#actuality {
-	// 	width: 30px;
-	// }
 
 	.span-titles {
 		font-size: 22px;
 	}
 
-	// .act{
-	// 	margin-bottom: 20px;
-	// }
 
-	// .prueba_experience {
-	// 	position: absolute;
-	// 	left: 298px;
-	// }
 
-	// .preview {
-	// 	padding: 39px 0;
-	// 	width: 58%;
-	// }
 
-	// .showpreview {
-	// 	display: flex;
-	// 	flex-direction: column;
-	// 	align-items: center;
-	// 	margin: 0 auto;
-	// 	padding-top: 20px;
-	// }
+	.main__resumeContainer__form__section--experience__prueba {
+		position: absolute;
+		left: 298px;
+	}
+
 
 	.horizontal-line{
 		width: 100%;
 		color:red;
 	}
 
-	.cover{
+
+
+	.main__cover{
 		background-position: center 2%;
 		padding-bottom: 300px;
 	}
 
-	.create{
+	.main__cover__create{
+
 		justify-content: flex-end;
 		margin-top:100px;
 	}
-	.create h1{
+	.main__cover__create__title{
 		font-size: 50px;
 	}
-	.create a {
+	.main__cover__create__link {
 		width: 35%;
 		border-radius: 4px;
 		background-color: #E3C18B;

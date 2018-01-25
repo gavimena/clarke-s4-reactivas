@@ -1,5 +1,5 @@
 /*Cover*/
-.cover{
+.main__cover{
 	background: url('../images/cover.jpg');
 	background-size: cover;
 	width: 100vw;
@@ -10,7 +10,7 @@
 	display: flex;
 	justify-content: center;
 }
-.create{
+.main__cover__create{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -20,10 +20,11 @@
 	padding-top: 50px;
 	height: 100%;
 }
-.create h1{
+.main__cover__create__title {
 	font-family: 'Share Tech Mono', monospace;
+	font-size: 24px;
 }
-.create a{
+.main__cover__create__link {
 	width: 40%;
 	border-radius: 4px;
 	background-color: #E3C18B;
@@ -34,13 +35,11 @@
 	text-decoration: none;
 	font-weight: bold;
 }
-.create h1{
-	font-size: 24px;
-}
+
 
 
 /*contenedor del formulario*/
-.resume-container{
+.main__resumeContainer{
 	width: 100%;
 	display: flex;
 	margin:0 auto;
@@ -49,20 +48,20 @@
 }
 
 /*formulario*/
-.resume-form{
+.main__resumeContainer__form{
 	padding: 20px 0;
 	width: 100%;
 	margin: 0 auto;
 }
-.resume-form *{
+.main__resumeContainer__form *{
 	padding: 5px;
 	margin: 5px;
 }
-.section-title {
+.main__resumeContainer__form__section__title {
 	text-align: center;
 	color:#263D42;
 }
-.section{
+.main__resumeContainer__form__section{
 	margin-bottom: 20px;
 }
 .info{
@@ -70,31 +69,30 @@
 	padding:10px;
 	border-radius: 5px;
 }
-.section-buttons{
+.main__resumeContainer__form__section__buttons{
 	display: flex;
 	justify-content: center;
 }
-label{
+.label{
 	font-size: 15px;
 }
-
-input{
+.input{
 	width: 93%;
 	border: none;
 }
 .error{
 	color: red;
 }
-.work {
+.main__resumeContainer__form__section--experience__addmore__newbutton__work {
 	display: flex;
 	flex-direction: column;
 }
-.prueba_experience {
+.main__resumeContainer__form__section--experience__prueba {
 	position: absolute;
 	right: -135px;
 	top: -334px;
 }
-.skill_container {
+.skill__container {
 	display: flex;
 	flex-direction: column;
 	width: 90%;

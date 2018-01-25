@@ -361,7 +361,7 @@
 
 .footer__pencil {
   margin-top: 20px;
-}/*Cover*/.cover {
+}/*Cover*/.main__cover {
   background: url("../images/cover.jpg");
   background-size: cover;
   width: 100vw;
@@ -377,7 +377,7 @@
   justify-content: center;
 }
 
-.create {
+.main__cover__create {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,11 +397,12 @@
   height: 100%;
 }
 
-.create h1 {
+.main__cover__create__title {
   font-family: 'Share Tech Mono', monospace;
+  font-size: 24px;
 }
 
-.create a {
+.main__cover__create__link {
   width: 40%;
   border-radius: 4px;
   background-color: #E3C18B;
@@ -411,11 +412,7 @@
   color: white;
   text-decoration: none;
   font-weight: bold;
-}
-
-.create h1 {
-  font-size: 24px;
-}/*contenedor del formulario*/.resume-container {
+}/*contenedor del formulario*/.main__resumeContainer {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,23 +425,23 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-}/*formulario*/.resume-form {
+}/*formulario*/.main__resumeContainer__form {
   padding: 20px 0;
   width: 100%;
   margin: 0 auto;
 }
 
-.resume-form * {
+.main__resumeContainer__form * {
   padding: 5px;
   margin: 5px;
 }
 
-.section-title {
+.main__resumeContainer__form__section__title {
   text-align: center;
   color: #263D42;
 }
 
-.section {
+.main__resumeContainer__form__section {
   margin-bottom: 20px;
 }
 
@@ -454,7 +451,7 @@
   border-radius: 5px;
 }
 
-.section-buttons {
+.main__resumeContainer__form__section__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,11 +460,11 @@
   justify-content: center;
 }
 
-label {
+.label {
   font-size: 15px;
 }
 
-input {
+.input {
   width: 93%;
   border: none;
 }
@@ -476,7 +473,7 @@ input {
   color: red;
 }
 
-.work {
+.main__resumeContainer__form__section--experience__addmore__newbutton__work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,13 +483,8 @@ input {
   flex-direction: column;
 }
 
-.prueba_experience {
-  position: absolute;
-  right: -135px;
-  top: -334px;
-}
 
-.skill_container {
+.skill__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,12 +618,11 @@ input {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
-
 .preview__data__languages,.preview__data__studies {
   margin-left: 5px;
   margin-top: 10px;
   list-style: none;
-}
+}  
 
 .preview__data__interest {
   display: -webkit-box;
@@ -682,13 +673,15 @@ input {
   width: 80%;
 }
 
+
 .line__bottom {
   border: 1px solid #b0c0bc;
   width: 100%;
-}/*Estilos dinámicos de color para preview*//* Theme 1 */.line__bottom {
   margin: 0;
 }
 
+
+/*Estilos dinámicos de color para preview*//* Theme 1 */
 .theme1 .titles,.theme1 .preview__data__skillName,.theme1 .data__interest--li {
   background-color: #04724D;
   color: white;
@@ -749,7 +742,11 @@ input {
   border-radius: 100%;
   width: 200px;
   margin-top: 28px;
-}/*Acaba la parte de Mamen-------------------------------------------------*/@media all and (min-width: 481px) {
+}/*Acaba la parte de Mamen-------------------------------------------------*/
+
+
+@media all and (min-width: 481px) {
+
   .form__experience--plusImg {
     left: 283px;
   }
@@ -850,18 +847,18 @@ input {
     flex-direction: row;
   }
 
-  .resume-form {
+  .main__resumeContainer__form {
     padding: 20px 0;
     width: 45%;
     margin-left: 10px;
     min-width: 500px;
   }
 
-  input {
+  .input {
     width: 95%;
     border: none;
   }
-
+  
   .span-titles {
     font-size: 22px;
   }
@@ -871,23 +868,23 @@ input {
     color: red;
   }
 
-  .cover {
+  .main__cover {
     background-position: center 2%;
     padding-bottom: 300px;
   }
 
-  .create {
+  .main__cover__create {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
     margin-top: 100px;
   }
 
-  .create h1 {
+  .main__cover__create__title {
     font-size: 50px;
   }
 
-  .create a {
+  .main__cover__create__link {
     width: 35%;
     border-radius: 4px;
     background-color: #E3C18B;

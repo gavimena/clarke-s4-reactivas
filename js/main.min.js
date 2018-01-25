@@ -159,7 +159,7 @@ function addJob() {
 
 
 
-var botonPruebaEx = document.querySelector('.prueba_experience');
+var botonPruebaEx = document.querySelector('.main__resumeContainer__form__section--experience__prueba');
 botonPruebaEx.addEventListener('click', addJob);
 
 function deleteJob() {
