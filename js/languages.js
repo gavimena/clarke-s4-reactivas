@@ -1,28 +1,30 @@
 'use strict';
 
-var languageName = document.querySelector(".languages");
-var languageLevel = document.querySelector(".level");
-var languageListPreview = document.querySelector(".preview__data__languages");
-var languageList = [];
+const languageName = document.querySelector(".languages");
+const languageLevel = document.querySelector(".level");
+const languageListPreview = document.querySelector(".preview__data__languages");
+let languageList = [];
+
 
 function addLanguage() {
-	var language = {
+	const language = {
 		name: languageName.value,
-		lvl: languageLevel.value
+		lvl:languageLevel.value
 	};
 	languageList.push(language);
-	var allLanguageList = '';
+	let allLanguageList = '';
 
-	for (var i = 0; i < languageList.length; i++) {
-		allLanguageList += '<li>' + languageList[i].name + '</li>';
-		allLanguageList += '<li>' + languageList[i].lvl + '</li><hr class="line">';
+	for (let i = 0; i < languageList.length; i++) {
+		allLanguageList += '<li>' + languageList[i].name +'</li>';
+		allLanguageList += '<li>' + languageList[i].lvl +'</li><hr class="line">';
+
 	}
 	languageListPreview.innerHTML = allLanguageList;
 	document.querySelector(".languages").value = '';
 	document.querySelector('.level').value = '';
 	vistaPrevia("preview");
 }
-var botonIdioma = document.querySelector('.prueba_language');
+const botonIdioma = document.querySelector('.prueba_language');
 botonIdioma.addEventListener('click', addLanguage);
 
 function deleteLanguage() {

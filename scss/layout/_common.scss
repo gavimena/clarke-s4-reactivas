@@ -8,6 +8,7 @@
 
 .overflow {
 	overflow-x: hidden;
+	overflow-y: hidden;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -15,4 +16,9 @@
 
 .list {
 	list-style-type: none;
+}
+
+.select {
+	display: flex;
+	flex-direction: column;
 }
