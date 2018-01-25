@@ -1,5 +1,4 @@
 @import "core/variables";
-@import 'core/settings';
 @import "core/functions";
 @import "core/mixins";
 
@@ -7,8 +6,9 @@
 @import "components/forms";
 @import "components/images";
 @import "components/typography";
+@import "components/images";
 
-@import "layout/general";
+@import "layout/common";
 @import "layout/header";
 @import "layout/footer";
 @import "layout/grid";
