@@ -7,6 +7,16 @@
 	background-color: #022F40;
 	color:white;
 	padding: 9px;
+	@media all and (min-width: 481px){
+		flex-direction: row;
+		align-items: flex-start;
+		text-align: center;
+	}
+	@media all and (min-width: 769px){
+		flex-direction: row;
+		align-items: flex-start;
+		text-align: center;
+	}
 }
 
 .footer__items{
@@ -28,10 +38,6 @@
 	color: $primary-color;
 }
 
-.footer__logo {
-	width: 128px;
-	height: 128px;
-}
 
 .footer__map {
 	padding: 15px;
@@ -40,6 +46,14 @@
 .footer__iframe {
 	width: 250px;
 	height: 150px;
+	@media all and (min-width: 481px){
+		width: auto;
+		height: auto;
+	}
+	@media all and (min-width: 769px){
+		width: auto;
+		height: auto;
+	}
 }
 
 .footer__questions {

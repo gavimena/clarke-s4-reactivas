@@ -46,13 +46,13 @@
 								</div>
 							</div>
 
-							<div id="content-profile" class="content"> <!--header__menu__section OCULTA-->
+							<div id="content-profile" class="form__sectionContent"> <!--header__menu__section OCULTA-->
 								<input class="input" type="text" name="name" id="name" placeholder="Nombre">
 								<input class="input" type="text" name="lastname" id="lastname" placeholder="Apellidos" >
 								<input class="input" type="text" name="profession" id="profession" placeholder="Profesión">
-								<input class="input" type="button" name="save" class="saveProfile" value="Guardar">
-								<input class="input" type="button" name="delete" value="Borrar" class="delete-profile">
-								<input class="input" type="button" value="cerrar" onclick="cerrar('content-profile')">
+								<input type="button" name="save" value="Guardar" class="input form__button--saveDeleteClose">
+								<input type="button" name="delete" value="Borrar" class="input  form__button--saveDeleteClose">
+								<input type="button" value="cerrar" class="input form__button--saveDeleteClose" onclick="cerrar('content-profile')">
 							</div>
 						</div><!--end header__menu__section perfil-->
 
@@ -64,11 +64,12 @@
 								</div>
 							</div>
 
-							<div id="content-summary" class="content"><!--header__menu__section OCULTA-->
-								<textarea name="summary" id="summary" rows="8" cols="80" placeholder="Introduce una pequeña descripción"></textarea>
-								<input class="input" type="button" name="save" value="Guardar" class="saveSumary">
-								<input class="input" type="button" name="delete" value="Borrar" class="delete-summary">
-								<input class="input" type="button" value="cerrar" onclick="cerrar('content-summary')">
+							<div id="content-summary" class="form__sectionContent">
+								<!--header__menu__section OCULTA-->
+								<textarea class="form__textarea--summary" name="summary" id="summary" rows="8" cols="80" placeholder="Introduce una pequeña descripción"></textarea>
+								<input type="button" name="save" value="Guardar" class="input form__button--saveDeleteClose">
+								<input type="button" name="delete" value="Borrar" class="input form__button--saveDeleteClose">
+								<input type="button" value="cerrar" class="input form__button--saveDeleteClose" onclick="cerrar('content-summary')">
 							</div>
 						</div><!--end summary section-->
 
@@ -79,19 +80,20 @@
 									<input class="input form__button--edit" type="button" value="Editar" onclick="editar('content-contact-info')">
 								</div>
 							</div>
-							<div id="content-contact-info" class="content"><!--header__menu__section OCULTA-->
+							<div id="content-contact-info" class="form__sectionContent"><!--header__menu__section OCULTA-->
 								<input class="input" type="tel" name="telephone" id="telephone" placeholder="Teléfono">
-							
+
 								<span class="error error_telephone"></span>
 								<input class="input" type="email" name="email" id="email" placeholder="Email">
 								<span class="error error_email"></span>
-								<input type="button" name="save" value="Guardar" class="input saveContact form__button--saveDeleteClose">
-								<input type="button" name="delete" value="Borrar" class="input delete-contact form__button--saveDeleteClose">
+								<input type="button" name="save" value="Guardar" class="input form__button--saveDeleteClose">
+								<input type="button" name="delete" value="Borrar" class="input form__button--saveDeleteClose">
 								<input type="button" value="cerrar" class="input form__button--saveDeleteClose" onclick="cerrar('content-contact-info')">
 							</div>
 						</div> <!--end contact-information-->
 
-						<div class="main__resumeContainer__form__section main__resumeContainer__form__section--experience experience"><!--header__menu__section experiencia-->
+						<div class="main__resumeContainer__form__section main__resumeContainer__form__section--experience">
+							<!--header__menu__section experiencia-->
 							<div class="info">
 								<h2 class="main__resumeContainer__form__section__title">Experiencia laboral</h2>
 								<div class="main__resumeContainer__form__section__buttons">
@@ -118,187 +120,190 @@
 													<select class="year select" name="end-year" id="year-end"></select>
 												</div>
 
-											<div class="form__experience--currentContainer">
-												<label>Actualmente</label>
-												<input class="form__experience--currentCheckbox" id="actuality" type="checkbox" value="" name="actual">
-												<div class="buttonrelative">
-													<img class="main__resumeContainer__form__section--experience__prueba" src="images/more.png" alt="botonprueba" title="prueba">
+												<div class="form__experience--currentContainer">
+													<label>Actualmente</label>
+													<input class="form__experience--currentCheckbox" id="actuality" type="checkbox" value="" name="actual">
+													<div class="buttonrelative">
+														<img class="main__resumeContainer__form__section--experience__prueba" src="images/more.png" alt="botonprueba" title="prueba">
+													</div>
+												</div>
+											</div><!--work-->
+										</div><!--form__newItem-->
+									</div><!--addmore-->
+									<input type="button" name="save" value="Guardar" class="input saveExperience form__button--saveDeleteClose">
+									<input type="button" name="delete" value="Borrar" class="input delete-experience form__button--saveDeleteClose">
+									<input type="button" value="cerrar" class="input form__button--saveDeleteClose" onclick="cerrar('content-experience')">
+								</div> <!-- end content-experience-->
+							</div><!--end experience section-->
+						</div>
+							<div class="main__resumeContainer__form__section additional"><!--header__menu__section additional-->
+								<div class="info">
+									<h2 class="main__resumeContainer__form__section__title">Más información</h2>
+									<div class="main__resumeContainer__form__section__buttons">
+										<input class="input form__button--edit" type="button" value="Editar" onclick="editar('content-additional')">
+									</div>
+								</div>
+
+								<div id="content-additional" class="form__sectionContent">
+									<div class="addMore">
+										<div class="form__newItem">
+											<input class=" input education" type="text" name="education" placeholder="Estudios">
+											<input class="input education_university" type="text" name="education_university" placeholder="Institucion">
+											<img class="prueba" src="images/more.png" alt="botonprueba" title="prueba">
+										</div>
+									</div>
+									<!-- <span class="error error_estudio"></span> -->
+
+									<div class="addMore">
+										<div class="form__newItem">
+											<input class=" input languages" type="text" name="languages" placeholder="Idiomas">
+											<label class="label" for="level">Nivel</label>
+											<select id="level" class="select level" name="level"></select>
+											<img class="prueba_language" src="images/more.png" alt="botonprueba" title="prueba">
+										</div>
+									</div>
+									<div class="input-skill">
+										<input class="input" type="text" id="skills1" class="skills" name="skills1" placeholder="Habilidad">
+										<input class="input" class="level_skills" type="text" name="level_skills1" value="" placeholder="Nivel del 1 al 100">
+										<input class="input" type="text" id="skills2" class="skills" name="skills2" placeholder="Habilidad">
+										<input class="input" class="level_skills" type="text" name="level_skills2" value="" placeholder="Nivel del 1 al 100">
+										<input class="input" type="text" id="skills3" class="skills" name="skills3" placeholder="Habilidad">
+										<input class="input" class="level_skills" type="text" name="level_skills3" value="" placeholder="Nivel del 1 al 100">
+									</div>
+									<div class="addMore">
+										<div class="form__newItem">
+											<input id="interest" type="text" name="interest" placeholder="Intereses">
+											<img class="prueba_interest" src="images/more.png" alt="botonprueba" title="prueba">
+										</div>
+									</div>
+									<input type="button" name="save" value="Guardar" class=" input saveMore form__button--saveDeleteClose">
+									<input type="button" name="delete" value="Borrar" class="input delete-additional form__button--saveDeleteClose">
+									<input type="button" value="cerrar" class="input form__button--saveDeleteClose" onclick="cerrar('content-additional')">
+								</div>
+							</div><!--end additional section-->
+
+							<!-- BOTONES DE COLORES -->
+							<div class="personalize main__resumeContainer__form__section main__resumeContainer__form__section__personalize">
+								<div class="info">
+									<h2 class="main__resumeContainer__form__section__title">Personaliza tu CV</h2>
+									<div class="form__container--colorButtons">
+										<input class="form__colorButton button_green" type="button" data-theme-class="theme1" value="">
+										<input class="form__colorButton button_purple" type="button" data-theme-class="theme2" value="">
+										<input class="form__colorButton button_yellow" type="button" data-theme-class="theme3" value="">
+										<input class="form__colorButton button_blue" type="button" data-theme-class="theme4" value="">
+									</div>
+								</div>
+							</div>
+						</form>
+
+						<!-- DIV OCULTO VISTA PREVIA-->
+						<div class="preview__generalContainer printPreview" id="preview">
+							<div class="preview__showContainer preview__container--padding">
+								<img class="preview__button--hide" src="images/cancel.png" alt="boton cerrar" onclick="cerrar('preview')">
+
+								<div class="printPreview preview__container--print preview__container--padding" id="preview2">
+									<div class="resume-header preview__container--padding">
+										<h2 class="resume__title" id="data-profile"></h2>
+									</div>
+
+									<div class="resume__header__profession preview__container--padding">
+										<span id="data-profession"></span>
+									</div>
+									<hr class="line__top">
+									<div class="resume__header__summary preview__container--padding">
+										<span id="data-summary"></span>
+									</div>
+
+									<div class="preview__section preview__container--padding">
+										<div class="preview__section__title">
+											<div class="titles preview__container--padding">
+												<h3 class="preview__section--h">Datos de contacto</h3>
+											</div>
+											<hr class="line__bottom">
+										</div>
+										<div class="preview__container--padding">
+											<span class="preview__section__subtitle">Teléfono:</span> <span id="data-telephone"></span>
+										</div>
+										<div class="preview__container--padding">
+											<span class="preview__section__subtitle">Email:</span> <span id="data-email"></span>
+										</div>
+									</div><!--end section-preview-->
+
+									<div class="preview__section preview__container--padding">
+										<div class="preview__section__title preview__container--padding">
+											<div class="titles preview__container--padding"><h3 class="preview__section--h">Experiencia laboral</h3></div>
+											<hr class="line__bottom">
+										</div>
+										<div class="preview__container--padding">
+											<ul id="data-position" class="preview__experience--position"></ul>
+										</div>
+									</div><!--end section-preview-->
+
+									<div class="preview__section preview__container--padding">
+										<div class="preview__section__title preview__container--padding">
+											<div class="titles preview__container--padding"><h3 class="preview__section--h">Más información</h3></div>
+											<hr class="line__bottom">
+										</div>
+										<div class="preview__container--padding">
+											<span class="preview__section__subtitle">Estudios:</span> <br>
+											<ul id="data-studies" class="preview__data__studies"></ul>
+										</div>
+										<div class="preview__container--padding">
+											<span class="preview__section__subtitle">Idiomas:</span>
+											<ul class="preview__data__languages"></ul>
+										</div>
+										<div class="skill_container preview__container--padding">
+											<span class="preview__section__subtitle">Habilidades:</span>
+											<div class="barSkillsSection preview__container--padding">
+												<div class="preview__levelSkill preview__container--padding">
+													<p id="skillName1" class="preview__data__skillName"></p>
 												</div>
 											</div>
-										</div><!--work-->
-									</div><!--form__newItem-->
-								</div><!--addmore-->
-								<input type="button" name="save" value="Guardar" class="input saveExperience form__button--saveDeleteClose">
-								<input type="button" name="delete" value="Borrar" class="input delete-experience form__button--saveDeleteClose">
-								<input type="button" value="cerrar" class="input form__button--saveDeleteClose" onclick="cerrar('content-experience')">
-							</div> <!-- end content-experience-->
-						</div><!--end experience section-->
-						<div class="main__resumeContainer__form__section additional"><!--header__menu__section additional-->
-							<div class="info">
-								<h2 class="main__resumeContainer__form__section__title">Más información</h2>
-								<div class="main__resumeContainer__form__section__buttons">
-									<input class="input form__button--edit" type="button" value="Editar" onclick="editar('content-additional')">
-								</div>
-							</div>
-
-							<div id="content-additional" class="form__sectionContent">
-								<div class="addMore">
-									<div class="form__newItem">
-										<input class=" input education" type="text" name="education" placeholder="Estudios">
-										<input class="input education_university" type="text" name="education_university" placeholder="Institucion">
-										<img class="prueba" src="images/more.png" alt="botonprueba" title="prueba">
-									</div>
-								</div>
-								<!-- <span class="error error_estudio"></span> -->
-
-								<div class="addMore">
-									<div class="form__newItem">
-										<input class=" input languages" type="text" name="languages" placeholder="Idiomas">
-										<label class="label" for="level">Nivel</label>
-										<select id="level" class="select level" name="level"></select>
-										<img class="prueba_language" src="images/more.png" alt="botonprueba" title="prueba">
-									</div>
-								</div>
-								<div class="input-skill">
-									<input class="input" type="text" id="skills1" class="skills" name="skills1" placeholder="Habilidad">
-									<input class="input" class="level_skills" type="text" name="level_skills1" value="" placeholder="Nivel del 1 al 100">
-									<input class="input" type="text" id="skills2" class="skills" name="skills2" placeholder="Habilidad">
-									<input class="input" class="level_skills" type="text" name="level_skills2" value="" placeholder="Nivel del 1 al 100">
-									<input class="input" type="text" id="skills3" class="skills" name="skills3" placeholder="Habilidad">
-									<input class="input" class="level_skills" type="text" name="level_skills3" value="" placeholder="Nivel del 1 al 100">
-								</div>
-								<div class="addMore">
-									<div class="form__newItem">
-										<input id="interest" type="text" name="interest" placeholder="Intereses">
-										<img class="prueba_interest" src="images/more.png" alt="botonprueba" title="prueba">
-									</div>
-								</div>
-								<input type="button" name="save" value="Guardar" class=" input saveMore form__button--saveDeleteClose">
-								<input type="button" name="delete" value="Borrar" class="input delete-additional form__button--saveDeleteClose">
-								<input type="button" value="cerrar" class="input form__button--saveDeleteClose" onclick="cerrar('content-additional')">
-							</div>
-						</div><!--end additional section-->
-
-						<!-- BOTONES DE COLORES -->
-						<div class="personalize main__resumeContainer__form__section main__resumeContainer__form__section__personalize">
-							<div class="info">
-								<h2 class="main__resumeContainer__form__section__title">Personaliza tu CV</h2>
-								<div class="form__container--colorButtons">
-									<input class="input form__colorButton button_green" type="button" data-theme-class="theme1" value="">
-									<input class="input form__colorButton button_purple" type="button" data-theme-class="theme2" value="">
-									<input class="input form__colorButton button_yellow" type="button" data-theme-class="theme3" value="">
-									<input class="input form__colorButton button_blue" type="button" data-theme-class="theme4" value="">
-								</div>
-							</div>
-						</div>
-					</form>
-
-					<!-- DIV OCULTO VISTA PREVIA-->
-					<div class="preview__generalContainer printPreview" id="preview">
-						<div class="preview__showContainer preview__container--padding">
-							<img class="preview__button--hide" src="images/cancel.png" alt="boton cerrar" onclick="cerrar('preview')">
-
-							<div class="printPreview preview__container--print preview__container--padding" id="preview2">
-								<div class="resume-header preview__container--padding">
-									<h2 class="resume__title" id="data-profile"></h2>
-								</div>
-
-								<div class="resume__header__profession preview__container--padding">
-									<span id="data-profession"></span>
-								</div>
-								<hr class="line__top">
-								<div class="resume__header__summary preview__container--padding">
-									<span id="data-summary"></span>
-								</div>
-
-								<div class="preview__section preview__container--padding">
-									<div class="preview__section__title">
-										<div class="titles preview__container--padding"><h3 class="preview__section--h">Datos de contacto</h3></div>
-										<hr class="line__bottom"">
-									</div>
-									<div class="preview__container--padding">
-										<span class="preview__section__subtitle">Teléfono:</span> <span id="data-telephone"></span>
-									</div>
-									<div class="preview__container--padding">
-										<span class="preview__section__subtitle">Email:</span> <span id="data-email"></span>
-									</div>
-								</div><!--end section-preview-->
-
-								<div class="preview__section preview__container--padding">
-									<div class="preview__section__title preview__container--padding">
-										<div class="titles preview__container--padding"><h3 class="preview__section--h">Experiencia laboral</h3></div>
-										<hr class="line__bottom">
-									</div>
-									<div class="preview__container--padding">
-										<ul id="data-position" class="preview__experience--position"></ul>
-									</div>
-								</div><!--end section-preview-->
-
-								<div class="preview__section preview__container--padding">
-									<div class="preview__section__title preview__container--padding">
-										<div class="titles preview__container--padding"><h3 class="preview__section--h">Más información</h3></div>
-										<hr class="line__bottom">
-									</div>
-									<div class="preview__container--padding">
-										<span class="preview__section__subtitle">Estudios:</span> <br>
-										<ul id="data-studies" class="preview__data__studies"></ul>
-									</div>
-									<div class="preview__container--padding">
-										<span class="preview__section__subtitle">Idiomas:</span>
-										<ul class="preview__data__languages"></ul>
-									</div>
-									<div class="skill_container preview__container--padding">
-										<span class="preview__section__subtitle">Habilidades:</span>
-										<div class="barSkillsSection preview__container--padding">
-											<div class="preview__levelSkill preview__container--padding">
-												<p id="skillName1" class="preview__data__skillName"></p>
+											<div class="barSkillsSection preview__container--padding">
+												<div class="preview__levelSkill preview__container--padding">
+													<p id="skillName2" class="preview__data__skillName"></p>
+												</div>
 											</div>
-										</div>
-										<div class="barSkillsSection preview__container--padding">
-											<div class="preview__levelSkill preview__container--padding">
-												<p id="skillName2" class="preview__data__skillName"></p>
+											<div class="barSkillsSection preview__container--padding">
+												<div class="preview__levelSkill preview__container--padding">
+													<p id="skillName3" class="preview__data__skillName"></p>
+												</div>
 											</div>
+										</div><!--end skill section-->
+
+										<div class="preview__container--padding">
+											<span class="preview__section__subtitle">Intereses:</span>
+											<ul class="preview__data__interest"></ul>
 										</div>
-										<div class="barSkillsSection preview__container--padding">
-											<div class="preview__levelSkill preview__container--padding">
-												<p id="skillName3" class="preview__data__skillName"></p>
-											</div>
-										</div>
-									</div><!--end skill section-->
+									</div><!--end section-preview-->
+								</div> <!--end print preview-->
+							</div> <!--end showpreview-->
+						</div>  <!--end preview-->
+					<!--split-div-->
+				</div><!--fin container formulario-->
+			</main>
 
-									<div class="preview__container--padding">
-										<span class="preview__section__subtitle">Intereses:</span>
-										<ul class="preview__data__interest"></ul>
-									</div>
-								</div><!--end section-preview-->
-							</div> <!--end print preview-->
-						</div> <!--end showpreview-->
-					</div>  <!--end preview-->
-				</div><!--split-div-->
-			</div><!--fin container formulario-->
-		</main>
-
-		<footer class="footer">
-			<div class="footer__items">
-				<img src="images/Mediaqueers.png" class="footer__logo"  alt="logo">
-				<p> &copy; 2017 </p>
-			</div>
-
-			<div class="footer_items">
-				<p>¿Dónde estamos? </p>
-				<div class="footer__map"> <iframe class="footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.8243883784326!2d-3.708031684604198!3d40.412740979365644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227d58772a6e1%3A0xf3b5fc75d6a7b133!2sutopic_US!5e0!3m2!1ses!2ses!4v1511432618667" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<footer class="footer">
+				<div class="footer__items">
+					<img src="images/Mediaqueers.png" class="logo--footer"  alt="logo">
+					<p> &copy; 2017 </p>
 				</div>
-			</div>
 
-			<div class="footer__items">
-				<div class="footer__questions">
-					<a class="footer__link" href="formulario.html" target="_blank" class="main__form">¿Qué tal lo hemos hecho?</a>
-					<span class="footer__pencil"><a href="formulario.html" target="_blank" class="main__form"><img src="images/writing.png" alt="dibujo hoja lapiz"></a></span>
+				<div class="footer_items">
+					<p>¿Dónde estamos? </p>
+					<div class="footer__map"> <iframe class="footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.8243883784326!2d-3.708031684604198!3d40.412740979365644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227d58772a6e1%3A0xf3b5fc75d6a7b133!2sutopic_US!5e0!3m2!1ses!2ses!4v1511432618667" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
 				</div>
-			</div>
-		</footer>
-	</div> <!--FIN DIV OVERFLOW-->
 
-	<script type="text/javascript" src="js/main.min.js"></script>
-</body>
-</html>
+				<div class="footer__items">
+					<div class="footer__questions">
+						<a class="footer__link" href="formulario.html" target="_blank" class="main__form">¿Qué tal lo hemos hecho?</a>
+						<span class="footer__pencil"><a href="formulario.html" target="_blank" class="main__form"><img src="images/writing.png" alt="dibujo hoja lapiz"></a></span>
+					</div>
+				</div>
+			</footer>
+		</div> <!--FIN DIV OVERFLOW-->
+
+		<script type="text/javascript" src="js/main.min.js"></script>
+	</body>
+	</html>
