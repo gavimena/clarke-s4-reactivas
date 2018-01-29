@@ -1,0 +1,21 @@
+.logo--header{
+	display: block;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	padding: 5px;
+}
+
+.form__experience--plusImg {
+	position: absolute;
+	left: 200px;
+
+	@media all and (min-width: 481px){
+		left: 283px;
+	}
+
+	@media all and (min-width: 769px){
+		position: absolute;
+		left: 298px;
+	}
+}
