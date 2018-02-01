@@ -9,7 +9,7 @@
 
 //Preview section
 .preview__generalContainer {
-	display: none;
+	display: block;
 
 	@media all and (min-width: 769px){
 		padding: 39px 0;

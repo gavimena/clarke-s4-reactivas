@@ -316,7 +316,7 @@ input {
   display: flex; }
 
 .preview__generalContainer {
-  display: none; }
+  display: block; }
   @media all and (min-width: 769px) {
     .preview__generalContainer {
       padding: 39px 0;
