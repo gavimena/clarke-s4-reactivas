@@ -10,22 +10,19 @@ class App extends React.Component {
 	constructor(props) {
 		super(props);
 		// this.handleClickShowItem = this.handleClickShowItem.bind(this);
-		// // this.showItem = this.showItem.bind(this);
-		// this.state = {
-		// 	show: false
-		// }
+		this.state = {
+			show: false
+		}
 	}
 
 	// handleClickShowItem(){
 	// 	this.setState({
 	// 		show: !this.state.show
-	// 	}, showItem(){
-	// 			let display= 'none';
-	// 			if(this.state.show){
-	// 				display = 'block';
-	// 			}
-	// 			return(display);
-	// 			console.log(display);
+	// 	}, showItem() {
+	// 		const display = '';
+	// 		return (
+	// 			display = {this.state.show? 'block':'none'}
+	// 		);
 	// 		}
  	// 	);
 	// }
