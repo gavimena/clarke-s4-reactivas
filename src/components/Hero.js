@@ -7,7 +7,9 @@ class Hero from React.Component {
 
 
 	render(){
-		return()
+		return(
+			
+		)
 	}
 }
 
