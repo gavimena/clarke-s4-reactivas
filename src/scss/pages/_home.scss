@@ -17,6 +17,10 @@
 	}
 }
 
+.preview__generalContainer--off {
+	display: none;
+}
+
 .preview__container--print {
 	display: flex;
 	flex-direction: column;

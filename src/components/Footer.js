@@ -10,7 +10,7 @@ class Footer extends React.Component {
 		return(
 			<footer className="footer">
 				<div className="footer__items">
-					<img src="images/Mediaqueers.png" className="footer__logo"  alt="logo" />
+					<img className="footer__logo"  src="../images/Mediaqueers.png" alt="logo"/>
 					<p> &copy; 2017 </p>
 				</div>
 
@@ -23,7 +23,7 @@ class Footer extends React.Component {
 				<div className="footer__items">
 					<div className="footer__questions">
 						<a className="footer__link" href="formulario.html" target="_blank" className="main__form">¿Qué tal lo hemos hecho?</a>
-						<span className="footer__pencil"><a href="formulario.html" target="_blank" className="main__form"><img src="images/writing.png" alt="dibujo hoja lapiz" /></a></span>
+						<span className="footer__pencil"><a href="formulario.html" target="_blank" className="main__form"><img src="../images/writing.png" alt="dibujo hoja lapiz" /></a></span>
 					</div>
 				</div>
 			</footer>

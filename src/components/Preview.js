@@ -11,12 +11,14 @@ class Preview extends React.Component {
 		super(props);
 	}
 
-
 	render(){
+		let visible = this.props.visible;
+		let clase = (visible) ? 'preview__generalContainer' : 'preview__generalContainer--off';
+
 		return(
-			<div className="preview__generalContainer printPreview" id="preview">
+			<div className={`${clase} printPreview`} id="preview">
 				<div className="preview__showContainer preview__container--padding">
-					<img className="preview__button--hide" src="images/cancel.png" alt="boton cerrar" onclick="cerrar('preview')" />
+					<img className="preview__button--hide" src="images/cancel.png" alt="boton cerrar" onClick={this.props.closePreview} />
 					<Profile />
 					<hr className="line__top" />
 					<Summary />

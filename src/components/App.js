@@ -7,37 +7,30 @@ import Preview from './Preview';
 import Form from './Form';
 
 class App extends React.Component {
+
 	constructor(props) {
 		super(props);
-		// this.handleClickShowItem = this.handleClickShowItem.bind(this);
+		this.handleClickShowPreview = this.handleClickShowPreview.bind(this);
 		this.state = {
-			show: false
+			visible: false
 		}
 	}
 
-	// handleClickShowItem(){
-	// 	this.setState({
-	// 		show: !this.state.show
-	// 	}, showItem() {
-	// 		const display = '';
-	// 		return (
-	// 			display = {this.state.show? 'block':'none'}
-	// 		);
-	// 		}
- 	// 	);
-	// }
-
+	handleClickShowPreview(){
+		this.setState({visible: !this.state.visible})
+	}
 
 	render() {
 		return (
 			<div className="overflow">
-				<Header />
+				<Header clickPreview={this.handleClickShowPreview}/>
 				<main>
 					<Hero />
 					<div className="resume-container" id="empezar">
 						<div className="split-div">
 							<Form />
-							<Preview />
+							<Preview visible={this.state.visible}
+								closePreview={this.handleClickShowPreview}/>
 						</div>
 					</div>
 				</main>
