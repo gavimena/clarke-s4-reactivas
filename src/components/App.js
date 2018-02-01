@@ -11,9 +11,21 @@ class App extends React.Component {
 		super(props);
 		// this.handleClickShowItem = this.handleClickShowItem.bind(this);
 		this.state = {
-			show: false
+			show: false,
+			nameState: '',
+			surnameState: '',
+			professionState: ''
 		}
+		this.inputNameChangeListener = this.inputNameChangeListener.bind(this);
 	}
+
+	inputNameChangeListener(event) {
+		this.setState( {
+			nameState: document.getElementById('name').value
+		});
+	}
+
+
 
 	// handleClickShowItem(){
 	// 	this.setState({
@@ -26,7 +38,7 @@ class App extends React.Component {
 	// 		}
  	// 	);
 	// }
-
+			// <ProfilePreview nameProp={this.state.nameState} />
 
 	render() {
 		return (
@@ -36,8 +48,8 @@ class App extends React.Component {
 					<Hero />
 					<div className="resume-container" id="empezar">
 						<div className="split-div">
-							<Form />
-							<Preview />
+							<Form handlerFormProp={this.inputNameChangeListener}/>
+							<Preview handlerPrevProp={this.state.nameState} />
 						</div>
 					</div>
 				</main>

@@ -12,7 +12,7 @@ class Profile extends React.Component {
 				</div>
 
 				<div id="content-profile" className="form__sectionContent">
-					<input type="text" name="name" id="name" placeholder="Nombre" />
+					<input type="text" name="name" id="name" placeholder="Nombre" onChange={this.props.handlerProfileProp} />
 					<input type="text" name="lastname" id="lastname" placeholder="Apellidos" />
 					<input type="text" name="profession" id="profession" placeholder="Profesión" />
 					<input type="button" name="save" className="saveProfile form__button--saveDeleteClose" value="Guardar" />
