@@ -8,10 +8,10 @@ class Hero extends React.Component {
 
 	render(){
 		return(
-			<div className="cover">
-				<div className="create">
-					<h1>Crea tu propio CV</h1>
-					<a href="#empezar" className="scroll" data-speed="1000">Empezar</a>
+			<div className="main__cover">
+				<div className="main__cover__create">
+					<h1 className="main__cover__create__title">Crea tu propio CV</h1>
+					<a href="#empezar" className="main__cover__create__link" data-speed="1000">Empezar</a>
 				</div>
 			</div>
 		)
