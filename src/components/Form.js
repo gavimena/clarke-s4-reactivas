@@ -13,9 +13,10 @@ class Form extends React.Component {
 
 
 	render(){
+		// debugger
 		return(
 			<form className="resume-form" action="/signup" method="post">
-				<Profile handlerProfileProp= {this.props.handlerFormProp}/>
+				<Profile updatePreview= {this.props.updatePreviewForm}/>
 				<Summary />
 				<Contact />
 				<Experience />

@@ -10,20 +10,19 @@ class Preview extends React.Component {
 	constructor(props){
 		super(props);
 	}
-	// <ProfilePreview nameProp={this.state.nameState} />
 
 	render(){
-		const {
-			nameProp,
-			surnameProp,
-			professionProp
-		} = this.props;
 
+		// const {
+		// 	nameProp,
+		// 	surnameProp,
+		// 	professionProp
+		// } = this.props;
 		return(
 			<div className="preview__generalContainer printPreview" id="preview">
 				<div className="preview__showContainer preview__container--padding">
-					<img className="preview__button--hide" src="images/cancel.png" alt="boton cerrar" onclick="cerrar('preview')" />
-					<Profile handlerProfProp={this.props.handlerPrevProp}/>
+					<img className="preview__button--hide" src="images/cancel.png" alt="boton cerrar" onClick="cerrar('preview')" />
+					<Profile name={this.props.namePrev}  lastname= {this.props.surname}  profession={this.props.job} />
 					<hr className="line__top" />
 					<Summary />
 					<Contact />
