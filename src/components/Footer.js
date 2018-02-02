@@ -25,7 +25,7 @@ class Footer extends React.Component {
 				<div className="footer__items">
 					<div className="footer__questions">
 						<a className="footer__link" href="formulario.html" target="_blank" className="main__form">¿Qué tal lo hemos hecho?</a>
-						<span className="footer__pencil"><a href="formulario.html" target="_blank" className="main__form"><img src={contact} alt="dibujo hoja lapiz" /></a></span>
+						<span className="footer__pencil"><img src={contact} alt="dibujo hoja lapiz"/></span>
 					</div>
 				</div>
 			</footer>
