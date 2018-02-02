@@ -8,7 +8,7 @@ class Profile extends React.Component {
  }
 
  handleChange(event) {
-        this.props.updatePreview(event.target.name,event.target.value);
+        this.props.updatePreview(event.target.id,event.target.value);
   }
 
 	render(){
@@ -22,10 +22,10 @@ class Profile extends React.Component {
 				</div>
 
 				<div id="content-profile" className="form__sectionContent">
-					<input type="text" name="name" id="name" placeholder="Nombre" onChange={this.handleChange} />
-					<input type="text" name="lastname" id="lastname" placeholder="Apellidos" onChange={this.handleChange} />
-					<input type="text" name="profession" id="profession" placeholder="Profesión" onChange={this.handleChange}/>
-					<input type="button" name="delete" value="Borrar" className="delete-profile form__button--saveDeleteClose" />
+					<input type="text" id="name" placeholder="Nombre" onChange={this.handleChange} />
+					<input type="text" id="lastname" placeholder="Apellidos" onChange={this.handleChange} />
+					<input type="text" id="profession" placeholder="Profesión" onChange={this.handleChange}/>
+					<input type="button" value="Borrar" className="delete-profile form__button--saveDeleteClose" />
 					<input type="button" value="cerrar" className="form__button--saveDeleteClose" onclick="cerrar('content-profile')" />
 				</div>
 			</div>
