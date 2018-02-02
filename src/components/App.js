@@ -39,7 +39,8 @@ class App extends React.Component {
 							<Form updatePreviewForm = {this.updateState}/>
 							<Preview visible={this.state.visible}
 								closePreview={this.handleClickShowPreview}
-								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession}/>
+								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession}
+								summary={this.state.summary} />
 						</div>
 					</div>
 				</main>

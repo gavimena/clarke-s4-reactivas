@@ -20,13 +20,13 @@ class Preview extends React.Component {
             <div className={`${clase} printPreview`} id="preview">
 							<div className="preview__showContainer preview__container--padding">
 								<img className="preview__button--hide" src="images/cancel.png" alt="boton cerrar" onClick={this.props.closePreview} />
-                    <Profile name={this.props.namePrev}  lastname= {this.props.surname}  profession={this.props.job} />
-                    <hr className="line__top" />
-                    <Summary />
-                    <Contact />
-                    <Experience />
-                    <Additional />
-                </div>
+								<Profile name={this.props.namePrev}  lastname= {this.props.surname}  profession={this.props.job} />
+								<hr className="line__top" />
+								<Summary summary={this.props.summary}/>
+								<Contact />
+								<Experience />
+								<Additional />
+							</div>
             </div>
         )
 	}
