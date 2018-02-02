@@ -38,7 +38,8 @@ class App extends React.Component {
 						<div className="split-div">
 							<Form updatePreviewForm = {this.updateState}/>
 							<Preview visible={this.state.visible}
-								closePreview={this.handleClickShowPreview} namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession}/>
+								closePreview={this.handleClickShowPreview}
+								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession}/>
 						</div>
 					</div>
 				</main>
