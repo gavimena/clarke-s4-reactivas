@@ -368,7 +368,7 @@ input {
   margin-bottom: 1em; }
 
 .form__sectionContent {
-  display: none;
+  display: block;
   background-color: rgba(226, 226, 226, 0.72); }
 
 .form__container--colorButtons {

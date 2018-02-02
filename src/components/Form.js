@@ -16,7 +16,7 @@ class Form extends React.Component {
 		return(
 			<form className="resume-form" action="/signup" method="post">
 
-				<Profile />
+				<Profile updatePreview= {this.props.updatePreviewForm}/>
 				<Summary />
 				<Contact />
 				<Experience />

@@ -1,6 +1,16 @@
 import React from 'react';
 
 class Profile extends React.Component {
+
+	constructor(props){
+   super(props);
+   this.handleChange = this.handleChange.bind(this);
+ }
+
+ handleChange(event) {
+        this.props.updatePreview(event.target.name,event.target.value);
+  }
+
 	render(){
 		return(
 			<div className="profile section">
@@ -12,10 +22,9 @@ class Profile extends React.Component {
 				</div>
 
 				<div id="content-profile" className="form__sectionContent">
-					<input type="text" name="name" id="name" placeholder="Nombre" />
-					<input type="text" name="lastname" id="lastname" placeholder="Apellidos" />
-					<input type="text" name="profession" id="profession" placeholder="Profesión" />
-					<input type="button" name="save" className="saveProfile form__button--saveDeleteClose" value="Guardar" />
+					<input type="text" name="name" id="name" placeholder="Nombre" onChange={this.handleChange} />
+					<input type="text" name="lastname" id="lastname" placeholder="Apellidos" onChange={this.handleChange} />
+					<input type="text" name="profession" id="profession" placeholder="Profesión" onChange={this.handleChange}/>
 					<input type="button" name="delete" value="Borrar" className="delete-profile form__button--saveDeleteClose" />
 					<input type="button" value="cerrar" className="form__button--saveDeleteClose" onclick="cerrar('content-profile')" />
 				</div>
