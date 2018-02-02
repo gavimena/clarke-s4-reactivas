@@ -1,14 +1,23 @@
 @import "core/variables";
 
+
 @import "components/buttons";
 @import "components/forms";
+@import "components/images";
 @import "components/typography";
 @import "components/images";
+
 
 @import "layout/common";
 @import "layout/header";
 @import "layout/footer";
 @import "layout/main";
 
+<<<<<<< HEAD:src/scss/main.scss
+=======
+
+@import "pages/about-us";
+@import "pages/contact";
+>>>>>>> master:scss/main.scss
 @import "pages/home";
 @import "old/style";
