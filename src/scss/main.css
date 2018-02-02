@@ -685,3 +685,124 @@
 
 .theme4 .line__top {
   border: 1px solid #B0C0BC; }
+
+/*Estilos botones de color*/
+/*preview*/
+/*Acaba la parte de Laura------------------------------------------------*/
+/*Acaba la parte de Gabi----------------------------------------------------*/
+.show {
+  display: block; }
+
+.show h2 {
+  font-size: 34px;
+  margin-top: 34px; }
+
+.thanks.show p {
+  font-size: 20px;
+  margin-top: 20px; }
+
+.logo_thanks {
+  border-radius: 100%;
+  width: 200px;
+  margin-top: 28px; }
+
+@media all and (min-width: 481px) {
+  iframe {
+    width: auto;
+    height: auto; }
+  footer {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center; }
+  footer .logen {
+    margin-top: 20%;
+    width: 128px;
+    height: 128px; }
+  /*Formulario*/
+  .formmain__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 25%; }
+  .formmain__form h1 {
+    margin-bottom: 20px; }
+  .formmain__form {
+    width: 50%; } }
+
+@media all and (min-width: 769px) {
+  .logen {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    padding: 5px 0;
+    margin: 0 auto; }
+  .split-div {
+    display: flex;
+    flex-direction: row; }
+  .resume-form {
+    padding: 20px 0;
+    width: 45%;
+    margin-left: 10px;
+    min-width: 500px; }
+  input {
+    width: 95%;
+    border: none; }
+  .span-titles {
+    font-size: 22px; }
+  .horizontal-line {
+    width: 100%;
+    color: red; }
+  .cover {
+    background-position: center 2%;
+    padding-bottom: 300px; }
+  .create {
+    justify-content: flex-end;
+    margin-top: 100px; }
+  .create h1 {
+    font-size: 50px; }
+  .create a {
+    width: 35%;
+    border-radius: 4px;
+    background-color: #E3C18B;
+    padding: 9px;
+    text-align: center;
+    margin-top: 20px;
+    color: #263d42;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 23px; }
+  iframe {
+    width: auto;
+    height: auto; }
+  footer {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center; }
+  .thanks {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #599675;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    transition: all .3s;
+    text-align: center;
+    padding-top: 100px; }
+  .show {
+    display: block; }
+  .show h2 {
+    font-size: 57px; }
+  .thanks.show p {
+    font-size: 28px;
+    margin-top: 10px; }
+  .logo_thanks {
+    border-radius: 100%;
+    margin-top: 50px;
+    width: 250px;
+    height: auto; } }
+
+/*Acaba la parte de Mamen-------------------------------------------------*/
