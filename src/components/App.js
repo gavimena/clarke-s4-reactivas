@@ -13,8 +13,10 @@ class App extends React.Component {
 		super(props);
 		this.handleClickShowPreview = this.handleClickShowPreview.bind(this);
 		this.updateState = this.updateState.bind(this);
+		this.scrollSlow = this.scrollSlow.bind(this);
 		this.state = {
-			visible: false
+			visible: false,
+			scroll: false
 		}
 	}
 
@@ -27,16 +29,22 @@ class App extends React.Component {
         newState[key]=value;
         this.setState(newState);
     }
+		scrollSlow(e){
+				// alert ('Si, funciona');
+				e.preventDefault();
+				this.setState({scroll: true})
+
+		}
 
 	render() {
 		return (
 			<div className="overflow">
 				<Header clickPreview={this.handleClickShowPreview}/>
 				<main>
-					<Hero />
+					<Hero scroll={this.scrollSlow} />
 					<div className="resume-container" id="empezar">
 						<div className="split-div">
-							<Form updatePreviewForm = {this.updateState}/>
+							<Form updatePreviewForm = {this.updateState} scroll={this.state.scroll}/>
 							<Preview visible={this.state.visible}
 								closePreview={this.handleClickShowPreview}
 								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession}/>

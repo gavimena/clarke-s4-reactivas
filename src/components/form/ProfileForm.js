@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 class Profile extends React.Component {
 
@@ -11,6 +12,14 @@ class Profile extends React.Component {
         this.props.updatePreview(event.target.name,event.target.value);
   }
 
+	componentWillUpdate() {
+		if(this.props.scroll === true){
+			const object = ReactDOM.findDOMNode(this.refs.contentProfile)
+			console.log(object)
+			window.scrollTo(0, object.offsetTop);
+		}
+	}
+
 	render(){
 		return(
 			<div className="profile section">
@@ -21,7 +30,7 @@ class Profile extends React.Component {
 					</div>
 				</div>
 
-				<div id="content-profile" className="form__sectionContent">
+				<div id="content-profile" className="form__sectionContent" ref="contentProfile">
 					<input type="text" name="name" id="name" placeholder="Nombre" onChange={this.handleChange} />
 					<input type="text" name="lastname" id="lastname" placeholder="Apellidos" onChange={this.handleChange} />
 					<input type="text" name="profession" id="profession" placeholder="Profesión" onChange={this.handleChange}/>

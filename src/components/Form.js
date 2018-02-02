@@ -6,9 +6,11 @@ import Experience from './form/ExperienceForm';
 import Additional from './form/AdditionalForm';
 import Personalize from './form/PersonalizeForm';
 
+
 class Form extends React.Component {
 	constructor(props){
 		super(props);
+
 	}
 
 
@@ -16,7 +18,7 @@ class Form extends React.Component {
 		return(
 			<form className="resume-form" action="/signup" method="post">
 
-				<Profile updatePreview= {this.props.updatePreviewForm}/>
+				<Profile scroll={this.props.scroll} updatePreview= {this.props.updatePreviewForm}	/>
 				<Summary />
 				<Contact />
 				<Experience />
