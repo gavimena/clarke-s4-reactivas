@@ -17,12 +17,15 @@ class Profile extends React.Component {
 			const object = ReactDOM.findDOMNode(this.refs.contentProfile)
 			console.log(object)
 			window.scrollTo(0, object.offsetTop);
+			// window.scrollIntoView({ behavior: 'smooth' });
+			// window.configureAnchors({offset: -60, scrollDuration: 200})
 		}
 	}
 
+
 	render(){
 		return(
-			<div className="profile section">
+			<div className="profile section" ref="contentProfile">
 				<div className="info">
 					<h2 className="section-title">Perfil</h2>
 					<div className="section-buttons">
@@ -30,7 +33,7 @@ class Profile extends React.Component {
 					</div>
 				</div>
 
-				<div id="content-profile" className="form__sectionContent" ref="contentProfile">
+				<div id="content-profile" className="form__sectionContent">
 					<input type="text" name="name" id="name" placeholder="Nombre" onChange={this.handleChange} />
 					<input type="text" name="lastname" id="lastname" placeholder="Apellidos" onChange={this.handleChange} />
 					<input type="text" name="profession" id="profession" placeholder="Profesión" onChange={this.handleChange}/>

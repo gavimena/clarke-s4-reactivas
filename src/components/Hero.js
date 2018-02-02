@@ -13,7 +13,7 @@ class Hero extends React.Component {
 			<div className="main__cover">
 				<div className="main__cover__create">
 					<h1 className="main__cover__create__title">Crea tu propio CV</h1>
-					<button onClick={this.props.scroll}><a href="" className="main__cover__create__link" >Empezar</a></button>
+					<button onClick={this.props.scroll} className="main__cover__create__link">Empezar</button>
 				</div>
 			</div>
 		)

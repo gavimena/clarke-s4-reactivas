@@ -1,6 +1,17 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 class Contact extends React.Component {
+
+	constructor(props){
+   super(props);
+   this.handleChange = this.handleChange.bind(this);
+ }
+
+ 	handleChange(event) {
+		this.props.updatePreview(event.target.name,event.target.value);
+	}
+
 	render(){
 		return(
 			<div className="contact-information section">
@@ -11,11 +22,10 @@ class Contact extends React.Component {
 					</div>
 				</div>
 				<div id="content-contact-info" className="form__sectionContent">
-					<input type="tel" name="telephone" id="telephone" placeholder="Teléfono" />
+					<input type="tel" name="telephone" id="telephone" placeholder="Teléfono" onChange={this.handleChange} />
 					<span className="error error_telephone"></span>
-					<input type="email" name="email" id="email" placeholder="Email" />
+					<input type="email" name="email" id="email" placeholder="Email" onChange={this.handleChange} />
 					<span className="error error_email"></span>
-					<input type="button" name="save" value="Guardar" className="saveContact form__button--saveDeleteClose" />
 					<input type="button" name="delete" value="Borrar" className="delete-contact form__button--saveDeleteClose" />
 					<input type="button" value="cerrar" className="form__button--saveDeleteClose" onclick="cerrar('content-contact-info')" />
 				</div>

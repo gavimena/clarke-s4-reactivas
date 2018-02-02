@@ -20,7 +20,7 @@ class Form extends React.Component {
 
 				<Profile scroll={this.props.scroll} updatePreview= {this.props.updatePreviewForm}	/>
 				<Summary />
-				<Contact />
+				<Contact updatePreview= {this.props.updatePreviewForm} />
 				<Experience />
 				<Additional />
 				<Personalize />

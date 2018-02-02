@@ -47,7 +47,7 @@ class App extends React.Component {
 							<Form updatePreviewForm = {this.updateState} scroll={this.state.scroll}/>
 							<Preview visible={this.state.visible}
 								closePreview={this.handleClickShowPreview}
-								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession}/>
+								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession} phone={this.state.telephone} mail={this.state.email} />
 						</div>
 					</div>
 				</main>
