@@ -9,7 +9,7 @@ class Profile extends React.Component {
  }
 
  handleChange(event) {
-        this.props.updatePreview(event.target.name,event.target.value);
+        this.props.updatePreview(event.target.id,event.target.value);
   }
 
 	componentWillUpdate() {
@@ -17,7 +17,7 @@ class Profile extends React.Component {
 			const object = ReactDOM.findDOMNode(this.refs.contentProfile)
 			console.log(object)
 			window.scrollTo(0, object.offsetTop);
-			// window.scrollIntoView({ behavior: 'smooth' });
+			// element.scrollIntoView({ behavior: 'smooth' });
 			// window.configureAnchors({offset: -60, scrollDuration: 200})
 		}
 	}

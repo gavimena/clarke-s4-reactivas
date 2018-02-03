@@ -6,10 +6,15 @@ class Contact extends React.Component {
 	constructor(props){
    super(props);
    this.handleChange = this.handleChange.bind(this);
+	 this.handleButtonClose = this.handleButtonClose.bind(this);
  }
 
  	handleChange(event) {
-		this.props.updatePreview(event.target.name,event.target.value);
+		this.props.updatePreview(event.target.id,event.target.value);
+	}
+
+	handleButtonClose (event){
+		this.props.onClickListener(event.target.value);
 	}
 
 	render(){
@@ -26,7 +31,7 @@ class Contact extends React.Component {
 					<span className="error error_telephone"></span>
 					<input type="email" name="email" id="email" placeholder="Email" onChange={this.handleChange} />
 					<span className="error error_email"></span>
-					<input type="button" name="delete" value="Borrar" className="delete-contact form__button--saveDeleteClose" />
+					<button onReset={this.handleButtonClose} name="delete" value="Borrar" className="delete-contact form__button--saveDeleteClose"></button>
 					<input type="button" value="cerrar" className="form__button--saveDeleteClose" onclick="cerrar('content-contact-info')" />
 				</div>
 			</div>

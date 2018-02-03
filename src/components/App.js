@@ -16,7 +16,8 @@ class App extends React.Component {
 		this.scrollSlow = this.scrollSlow.bind(this);
 		this.state = {
 			visible: false,
-			scroll: false
+			scroll: false,
+			buttonClose: false
 		}
 	}
 
@@ -36,6 +37,12 @@ class App extends React.Component {
 
 		}
 
+	onClickListener = (event) => {
+		alert('botón de cerrar');
+		this.setState({buttoClose: !this.state.buttonClose})
+	}
+
+
 	render() {
 		return (
 			<div className="overflow">
@@ -44,7 +51,8 @@ class App extends React.Component {
 					<Hero scroll={this.scrollSlow} />
 					<div className="resume-container" id="empezar">
 						<div className="split-div">
-							<Form updatePreviewForm = {this.updateState} scroll={this.state.scroll}/>
+							<Form updatePreviewForm = {this.updateState} scroll={this.state.scroll}
+								closeButton = {this.onClickListener} />
 							<Preview visible={this.state.visible}
 								closePreview={this.handleClickShowPreview}
 								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession} phone={this.state.telephone} mail={this.state.email} />
