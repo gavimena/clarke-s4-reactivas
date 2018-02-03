@@ -1,17 +1,29 @@
 import React from 'react';
 
 class Additional extends React.Component {
+	constructor(props){
+		super(props);
+		this.editForm=this.editForm.bind(this);
+		this.state = {
+			editForm: false
+}
+	}
+
+	editForm() {
+		this.setState({editForm: !this.state.editForm})
+	}
+
 	render(){
 		return(
 			<div className="additional section">
 				<div className="info">
 					<h2 className="section-title">Más información</h2>
 					<div className="section-buttons">
-						<input type="button" className="form__button--edit" value="Editar" onclick="editar('content-additional')" />
+						<button type="button" className="form__button--edit" value="Editar" onClick={this.editForm}> Editar  </button>
 					</div>
 				</div>
 
-				<div id="content-additional" className="form__sectionContent">
+				{ this.state.editForm === true ? <div id="content-additional" className="form__sectionContent">
 					<div className="addMore">
 						<div className="form__newItem">
 							<input className="education" type="text" name="education" placeholder="Estudios" />
@@ -46,7 +58,7 @@ class Additional extends React.Component {
 					<input type="button" name="save" value="Guardar" className="saveMore form__button--saveDeleteClose" />
 					<input type="button" name="delete" value="Borrar" className="delete-additional form__button--saveDeleteClose" />
 					<input type="button" value="cerrar" className="form__button--saveDeleteClose" onclick="cerrar('content-additional')" />
-				</div>
+				</div> : null }
 			</div>
 
 		);
