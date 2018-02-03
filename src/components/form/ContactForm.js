@@ -19,7 +19,7 @@ class Contact extends React.Component {
 				<div className="info">
 					<h2 className="section-title">Datos de contacto</h2>
 					<div className="section-buttons">
-						<button type="button" className="form__button--edit" value="Editar" onClick={this.editForm}> Editar  </button>
+						<button type="button" className="form__button--edit" value="Editar" onClick={this.editForm}> { this.state.editForm? 'Cerrar':'Editar'}  </button>
 					</div>
 				</div>
 				{ this.state.editForm === true ? <div id="content-contact-info" className="form__sectionContent">
