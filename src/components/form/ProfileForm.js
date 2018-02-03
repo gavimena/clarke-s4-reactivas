@@ -34,7 +34,6 @@ class Profile extends React.Component {
 					<input type="text" id="lastname" placeholder="Apellidos" onChange={this.handleChange} />
 					<input type="text" id="profession" placeholder="Profesión" onChange={this.handleChange}/>
 					<input type="button" value="Borrar" className="delete-profile form__button--saveDeleteClose" />
-					<input type="button" value="cerrar" className="form__button--saveDeleteClose" onclick="cerrar('content-profile')" />
 				</div> : null }
 			</div>
 		);

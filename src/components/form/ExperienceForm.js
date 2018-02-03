@@ -58,7 +58,6 @@ class Experience extends React.Component {
 
 					<input type="button" name="save" value="Guardar" className="saveExperience form__button--saveDeleteClose" />
 					<input type="button" name="delete" value="Borrar" className="delete-experience form__button--saveDeleteClose" />
-					<input type="button" value="cerrar" className="form__button--saveDeleteClose" onclick="cerrar('content-experience')" />
 				</div> :null }
 			</div>
 		);

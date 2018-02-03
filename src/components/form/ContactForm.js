@@ -29,7 +29,6 @@ class Contact extends React.Component {
 					<span className="error error_email"></span>
 					<input type="button" name="save" value="Guardar" className="saveContact form__button--saveDeleteClose" />
 					<input type="button" name="delete" value="Borrar" className="delete-contact form__button--saveDeleteClose" />
-					<input type="button" value="cerrar" className="form__button--saveDeleteClose" onclick="cerrar('content-contact-info')" />
 				</div> : null }
 			</div>
 		);

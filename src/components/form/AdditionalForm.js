@@ -57,7 +57,6 @@ class Additional extends React.Component {
 					</div>
 					<input type="button" name="save" value="Guardar" className="saveMore form__button--saveDeleteClose" />
 					<input type="button" name="delete" value="Borrar" className="delete-additional form__button--saveDeleteClose" />
-					<input type="button" value="cerrar" className="form__button--saveDeleteClose" onclick="cerrar('content-additional')" />
 				</div> : null }
 			</div>
 

@@ -32,7 +32,6 @@ class Summary extends React.Component {
 				{ this.state.editForm === true ? <div id="content-summary" className="form__sectionContent">
 					<textarea name="summary" id="summary" onChange={this.handleChange} className="form__textarea--summary" rows="8" cols="80" placeholder="Introduce una pequeña descripción"></textarea>
 					<input type="button" name="delete" value="Borrar" className="delete-summary form__button--saveDeleteClose" />
-					<input type="button" value="cerrar" className="form__button--saveDeleteClose" onclick="cerrar('content-summary')" />
 				</div> : null }
 			</div>
 		);
