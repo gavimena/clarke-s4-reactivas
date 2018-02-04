@@ -17,7 +17,7 @@ class App extends React.Component {
 		this.state = {
 			visible: false,
 			scroll: false,
-			buttonClose: false
+			buttonDelete: false
 		}
 	}
 
@@ -38,8 +38,8 @@ class App extends React.Component {
 		}
 
 	onClickListener = (event) => {
-		alert('botón de cerrar');
-		this.setState({buttoClose: !this.state.buttonClose})
+		alert('botón de borrar');
+		this.setState({buttonDelete: !this.state.buttonClose})
 	}
 
 
@@ -52,7 +52,7 @@ class App extends React.Component {
 					<div className="resume-container" id="empezar">
 						<div className="split-div">
 							<Form updatePreviewForm = {this.updateState} scroll={this.state.scroll}
-								closeButton = {this.onClickListener} />
+								deleteButton = {this.onClickListener} />
 							<Preview visible={this.state.visible}
 								closePreview={this.handleClickShowPreview}
 								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession} phone={this.state.telephone} mail={this.state.email} />

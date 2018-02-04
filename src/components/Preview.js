@@ -24,7 +24,7 @@ class Preview extends React.Component {
 								<hr className="line__top" />
 								<Summary />
 								<Contact telephone={this.props.phone} email={this.props.mail} />
-                    <Experience />
+								<Experience />
                     <Additional />
                 </div>
             </div>
