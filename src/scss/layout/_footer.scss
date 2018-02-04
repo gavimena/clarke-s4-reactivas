@@ -26,9 +26,9 @@
 	border-radius: 10px;
 }
 
-.footer__link, .form__link{
+.footer__link {
 	text-decoration: none;
-	color:white;
+	color: white;
 }
 
 .footer__link:hover {
@@ -72,4 +72,10 @@
 .footer__pencil {
 	margin-top: 20px;
 	display: block;
+}
+
+
+.footer__text {
+	margin: 0;
+	padding: 0;
 }

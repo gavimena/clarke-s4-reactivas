@@ -6,7 +6,6 @@ import Footer from './Footer';
 import Preview from './Preview';
 import Form from './Form';
 
-
 class App extends React.Component {
 
 	constructor(props) {

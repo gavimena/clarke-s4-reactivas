@@ -226,7 +226,7 @@
   color: #263d42;
   border-radius: 10px; }
 
-.footer__link, .form__link {
+.footer__link {
   text-decoration: none;
   color: white; }
 
@@ -264,6 +264,10 @@
 .footer__pencil {
   margin-top: 20px;
   display: block; }
+
+.footer__text {
+  margin: 0;
+  padding: 0; }
 
 /*Cover*/
 .main__cover {
