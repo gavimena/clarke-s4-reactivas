@@ -6,11 +6,13 @@ import Footer from './Footer';
 import Preview from './Preview';
 import Form from './Form';
 
+
 class App extends React.Component {
 
 	constructor(props) {
 		super(props);
 		this.handleClickShowPreview = this.handleClickShowPreview.bind(this);
+		this.updateState = this.updateState.bind(this);
 		this.state = {
 			visible: false
 		}
@@ -20,6 +22,12 @@ class App extends React.Component {
 		this.setState({visible: !this.state.visible})
 	}
 
+	updateState(key,value) {
+        const newState= {};
+        newState[key]=value;
+        this.setState(newState);
+    }
+
 	render() {
 		return (
 			<div className="overflow">
@@ -28,9 +36,11 @@ class App extends React.Component {
 					<Hero />
 					<div className="resume-container" id="empezar">
 						<div className="split-div">
-							<Form />
+							<Form updatePreviewForm = {this.updateState}/>
 							<Preview visible={this.state.visible}
-								closePreview={this.handleClickShowPreview}/>
+								closePreview={this.handleClickShowPreview}
+								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession}
+								summary={this.state.summary} />
 						</div>
 					</div>
 				</main>

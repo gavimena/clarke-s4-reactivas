@@ -1,17 +1,30 @@
 import React from 'react';
 
 class Experience extends React.Component {
+	constructor(props) {
+		super(props);
+		this.editForm=this.editForm.bind(this);
+		this.state = {
+			editForm: false
+}
+	}
+
+	editForm() {
+		this.setState({editForm: !this.state.editForm})
+	}
+
+
 	render(){
 		return(
 			<div className="experience section">
 				<div className="info">
 					<h2 className="section-title">Experiencia laboral</h2>
 					<div className="section-buttons">
-						<input type="button" className="form__button--edit" value="Editar" onclick="editar('content-experience')" />
+						<button type="button" className="form__button--edit" value="Editar" onClick={this.editForm}> { this.state.editForm? 'Cerrar':'Editar'}  </button>
 					</div>
 				</div>
 
-				<div id="content-experience" className="form__sectionContent">
+				{ this.state.editForm === true ? <div id="content-experience" className="form__sectionContent">
 					<div className="addMore">
 						<div className="form__newItem">
 							<div className="work">
@@ -45,8 +58,7 @@ class Experience extends React.Component {
 
 					<input type="button" name="save" value="Guardar" className="saveExperience form__button--saveDeleteClose" />
 					<input type="button" name="delete" value="Borrar" className="delete-experience form__button--saveDeleteClose" />
-					<input type="button" value="cerrar" className="form__button--saveDeleteClose" onclick="cerrar('content-experience')" />
-				</div>
+				</div> :null }
 			</div>
 		);
 	}
