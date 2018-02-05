@@ -17,7 +17,7 @@ class App extends React.Component {
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleImageChange = this.handleImageChange.bind(this);
 		this.state = {
-			visible: false,
+			visible: true, //HACK: Remove after testing...
 			scroll: false,
 			file:'',
 			imagePreviewUrl:'',
