@@ -522,6 +522,18 @@ input {
   width: 0;
   background-color: #b0c0bc; }
 
+.preview__levelSkill--theme1 {
+  background-color: #04724D; }
+
+.preview__levelSkill--theme2 {
+  background-color: #7A6174; }
+
+.preview__levelSkill--theme3 {
+  background-color: #F6E27F; }
+
+.preview__levelSkill--theme4 {
+  background-color: #B0C0BC; }
+
 .preview__experience--position {
   list-style: none; }
 

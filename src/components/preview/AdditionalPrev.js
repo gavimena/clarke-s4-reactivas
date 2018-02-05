@@ -24,17 +24,17 @@ class Additional extends React.Component {
 				<div className="skill_container preview__container--padding">
 					<span className="preview__section__subtitle">Habilidades:</span>
 					<div className="barSkillsSection preview__container--padding">
-						<div className="preview__levelSkill preview__container--padding" style={{ width: `${this.props.idlevel1}%` }}>
+						<div className={`preview__levelSkill preview__levelSkill--${selectedTheme} preview__container--padding`} style={{ width: `${this.props.idlevel1}%` }}>
 							<p id="skillName1" className="preview__data__skillName">{this.props.skills1}</p>
 						</div>
 					</div>
 					<div className="barSkillsSection preview__container--padding">
-						<div className="preview__levelSkill preview__container--padding"  style={{ width: `${this.props.idlevel2}%` }}>
+						<div className={`preview__levelSkill preview__levelSkill--${selectedTheme} preview__container--padding`} style={{ width: `${this.props.idlevel2}%` }}>
 							<p id="skillName2" className="preview__data__skillName">{this.props.skills2}</p>
 						</div>
 					</div>
 					<div className="barSkillsSection preview__container--padding">
-						<div className="preview__levelSkill preview__container--padding"  style={{ width: `${this.props.idlevel3}%` }}>
+						<div className={`preview__levelSkill preview__levelSkill--${selectedTheme} preview__container--padding`} style={{ width: `${this.props.idlevel3}%` }}>
 							<p id="skillName3" className="preview__data__skillName">{this.props.skills3}</p>
 						</div>
 					</div>
