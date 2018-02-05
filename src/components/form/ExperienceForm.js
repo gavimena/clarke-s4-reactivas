@@ -6,15 +6,10 @@ class Experience extends React.Component {
 		super(props);
 		this.editForm= this.editForm.bind(this);
 		this.handleChange = this.handleChange.bind(this);
+		this.addJob = this.addJob.bind(this);
 		this.state = {
-			editForm: false, 
-			job: {position: '',
-					company: '',
-					monthStart: '',
-					monthEnd: '',
-					yearStart: '',
-					yearEnd: ''
-				},
+			editForm: false,
+			jobs: [{}]
 		}
 	}
 
@@ -23,8 +18,26 @@ class Experience extends React.Component {
 	}
 
 	handleChange(event) {
-		this.props.updatePreview(event.target.id, event.target.value);
+		const currentJobId = this.refs.jobId.value;
+		let currentJob = this.state.jobs[currentJobId];
+		currentJob[event.target.id] = event.target.value;
+
+		this.props.updatePreview('jobList', this.state.jobs);
    }
+
+	addJob(){
+		this.state.jobs.push({});
+		this.cleanForm();
+	}
+
+	cleanForm(){
+		this.refs.position.value = '';
+		this.refs.company.value = '';
+		this.refs.monthStart.value = '';
+		this.refs.yearStart.value = '';
+		this.refs.monthEnd.value = '';
+		this.refs.yearEnd.value = '';
+	}
 
 	render(){
 		let yearOptions = [];
@@ -57,16 +70,17 @@ class Experience extends React.Component {
 					<div className="addMore">
 						<div className="form__newItem">
 							<div className="work">
-								<input id="position" type="text" name="name" placeholder="Cargo" onChange={this.handleChange}/>
-								<input id="company" type="text" name="name" placeholder="Empresa" onChange={this.handleChange}/>
+								<input type="hidden" ref="jobId" value={this.state.jobs.length-1}/>
+								<input id="position" ref="position" type="text" name="name" placeholder="Cargo" onChange={this.handleChange}/>
+								<input id="company" ref="company" type="text" name="name" placeholder="Empresa" onChange={this.handleChange}/>
 								<div className="form__experience--startBlock">
 									<label>Fecha de inicio</label>
 									<div className="form__experience--startDate">
-										<select className="month select" name="start-month" id="monthStart" onChange={this.handleChange}>
+										<select className="month select" name="start-month" id="monthStart" ref="monthStart" onChange={this.handleChange}>
 											<option value="">-Mes-</option>
 											{monthOptions}
 										</select>
-										<select className="year select" name="start-year" id="yearStart" onChange={this.handleChange}>
+										<select className="year select" name="start-year" id="yearStart" ref="yearStart" onChange={this.handleChange}>
 											<option value="">-Año-</option>
 											{yearOptions}
 										</select>
@@ -75,11 +89,11 @@ class Experience extends React.Component {
 								<div className="form__experience--endBlock">
 									<label>Fecha de fin</label>
 									<div className="form__experience--endDate">
-										<select className="month select" name="end-month" id="monthEnd" onChange={this.handleChange}>
+										<select className="month select" name="end-month" id="monthEnd" ref="monthEnd" onChange={this.handleChange}>
 											<option value="">-Mes-</option>
 											{monthOptions}
 										</select>
-										<select className="year select" name="end-year" id="yearEnd" onChange={this.handleChange}>
+										<select className="year select" name="end-year" id="yearEnd" ref="yearEnd" onChange={this.handleChange}>
 											<option value="">-Año-</option>
 											{yearOptions}
 										</select>
@@ -90,7 +104,7 @@ class Experience extends React.Component {
 									<label>Actualmente</label>
 									<input className="form__experience--currentCheckbox" id="actuality" type="checkbox" value="" name="actual" />
 									<div className="buttonrelative">
-										<img className="prueba_experience" src={add} alt="botonprueba" title="prueba" />
+										<img className="prueba_experience" src={add} alt="botonprueba" title="prueba" onClick={this.addJob} />
 									</div>
 								</div>
 							</div>

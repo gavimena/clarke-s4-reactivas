@@ -22,12 +22,7 @@ class Preview extends React.Component {
 						<Summary summary={this.props.summary}/>
 						<Contact telephone={this.props.phone} email={this.props.mail} selectedTheme={this.props.selectedTheme} />
 						<Experience selectedTheme={this.props.selectedTheme}
-							position={this.props.position}
-							company={this.props.company}
-							monthStart={this.props.monthStart}
-							yearStart={this.props.yearStart}
-							monthEnd={this.props.monthEnd}
-							yearEnd={this.props.yearEnd}/>
+							jobList={this.props.jobList}/>
 						<Additional selectedTheme={this.props.selectedTheme}
 							studies={this.props.studies}
 							school={this.props.school}
