@@ -4,6 +4,7 @@ import Summary from './preview/SummaryPrev';
 import Contact from './preview/ContactPrev';
 import Experience from './preview/ExperiencePrev';
 import Additional from './preview/AdditionalPrev';
+import cancel from '../images/cancel.png';
 
 
 class Preview extends React.Component {
@@ -19,7 +20,7 @@ class Preview extends React.Component {
 		return(
             <div className={`${clase} printPreview`} id="preview">
 							<div className="preview__showContainer preview__container--padding">
-								<img className="preview__button--hide" src="images/cancel.png" alt="boton cerrar" onClick={this.props.closePreview} />
+								<img className="preview__button--hide" src={cancel} alt="boton cerrar" onClick={this.props.closePreview} />
 								<Profile name={this.props.namePrev}  lastname= {this.props.surname}  profession={this.props.job} />
 								<hr className="line__top" />
 								<Summary summary={this.props.summary}/>
