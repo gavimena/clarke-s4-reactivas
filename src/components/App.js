@@ -17,7 +17,7 @@ class App extends React.Component {
 
 		this.state = {
 			visible: false,
-			themeSt: 'theme4'
+			themeSt: ''
 		}
 	}
 

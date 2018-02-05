@@ -488,6 +488,8 @@ input {
   padding: 5px; }
 
 .titles {
+  color: #263d42;
+  background-color: #b0c0bc;
   text-align: left; }
 
 .line__top {
