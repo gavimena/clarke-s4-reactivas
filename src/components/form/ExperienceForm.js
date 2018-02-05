@@ -5,15 +5,26 @@ class Experience extends React.Component {
 	constructor(props) {
 		super(props);
 		this.editForm= this.editForm.bind(this);
+		this.handleChange = this.handleChange.bind(this);
 		this.state = {
-			editForm: false,
-			jobList: []
-}
+			editForm: false, 
+			job: {position: '',
+					company: '',
+					monthStart: '',
+					monthEnd: '',
+					yearStart: '',
+					yearEnd: ''
+				},
+		}
 	}
 
 	editForm() {
 		this.setState({editForm: !this.state.editForm})
 	}
+
+	handleChange(event) {
+		this.props.updatePreview(event.target.id, event.target.value);
+   }
 
 	render(){
 		let yearOptions = [];
@@ -54,15 +65,15 @@ class Experience extends React.Component {
 					<div className="addMore">
 						<div className="form__newItem">
 							<div className="work">
-								<input id="position" type="text" name="name" placeholder="Cargo" />
-								<input id="experience" type="text" name="name" placeholder="Empresa" />
+								<input id="position" type="text" name="name" placeholder="Cargo" onChange={this.handleChange}/>
+								<input id="company" type="text" name="name" placeholder="Empresa" onChange={this.handleChange}/>
 								<div className="form__experience--startBlock">
 									<label>Fecha de inicio</label>
 									<div className="form__experience--startDate">
-										<select className="month select" name="start-month" id="month-start">
+										<select className="month select" name="start-month" id="monthStart" onChange={this.handleChange}>
 											{monthOptions}
 										</select>
-										<select className="year select" name="start-year" id="year">
+										<select className="year select" name="start-year" id="yearStart" onChange={this.handleChange}>
 											{yearOptions}
 										</select>
 									</div>
@@ -70,10 +81,10 @@ class Experience extends React.Component {
 								<div className="form__experience--endBlock">
 									<label>Fecha de fin</label>
 									<div className="form__experience--endDate">
-										<select className="month select" name="end-month" id="month-end">
+										<select className="month select" name="end-month" id="monthEnd" onChange={this.handleChange}>
 											{monthOptions}
 										</select>
-										<select className="year select" name="end-year" id="year-end">
+										<select className="year select" name="end-year" id="yearEnd" onChange={this.handleChange}>
 											{yearOptions}
 										</select>
 									</div>
@@ -89,8 +100,6 @@ class Experience extends React.Component {
 							</div>
 						</div>
 					</div>
-
-					<input type="button" name="save" value="Guardar" className="saveExperience form__button--saveDeleteClose" />
 					<input type="button" name="delete" value="Borrar" className="delete-experience form__button--saveDeleteClose" />
 				</div> :null }
 			</div>

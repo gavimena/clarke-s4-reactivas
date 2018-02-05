@@ -7,18 +7,12 @@ import Additional from './form/AdditionalForm';
 import Personalize from './form/PersonalizeForm';
 
 class Form extends React.Component {
-
-	// constructor(prosps) {
-	// 	super(props);
-	// 	this.editDivState=this.editDivState.bind(this);
-	// }
-
-	// editDivState(key,value){
-	// 	const showEditDiv = {};
-	// 	showEditDiv[key] = value;
-	// 	this.setState(showEditDiv);
-	// }
-
+constructor(props){
+	super(props);
+		this.state = {
+			jobList: []
+		}
+}
 	render(){
 		return(
 			<form className="resume-form" action="/signup" method="post">
@@ -26,7 +20,7 @@ class Form extends React.Component {
 				<Profile updatePreview= {this.props.updatePreviewForm} />
 				<Summary updatePreview= {this.props.updatePreviewForm} />
 				<Contact />
-				<Experience />
+				<Experience updatePreview= {this.props.updatePreviewForm}/>
 				<Additional />
 				<Personalize />
 			</form>

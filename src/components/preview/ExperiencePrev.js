@@ -9,7 +9,7 @@ class Experience extends React.Component {
 					<hr className="line__bottom" />
 				</div>
 				<div className="preview__container--padding">
-					<ul id="data-position" className="preview__experience--position"></ul>
+					<ul id="data-position" className="preview__experience--position">{this.props.position}{this.props.company}{this.props.monthStart}{this.props.yearStart}{this.props.monthEnd}{this.props.yearEnd}</ul>
 				</div>
 			</div>
 		);

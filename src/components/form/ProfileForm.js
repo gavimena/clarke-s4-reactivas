@@ -12,7 +12,7 @@ class Profile extends React.Component {
  }
 
  handleChange(event) {
-        this.props.updatePreview(event.target.id,event.target.value);
+        this.props.updatePreview(event.target.id, event.target.value);
   }
 
 	editForm() {

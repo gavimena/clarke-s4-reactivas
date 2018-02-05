@@ -25,7 +25,9 @@ class App extends React.Component {
         const newState= {};
         newState[key]=value;
         this.setState(newState);
-    }
+   }
+
+	//update
 
 	render() {
 		return (
@@ -39,7 +41,13 @@ class App extends React.Component {
 							<Preview visible={this.state.visible}
 								closePreview={this.handleClickShowPreview}
 								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession}
-								summary={this.state.summary} />
+								summary={this.state.summary}
+								position={this.state.position}
+								company={this.state.company}
+								monthStart={this.state.monthStart}
+								monthEnd={this.state.monthEnd}
+								yearStart={this.state.yearStart}
+								yearEnd={this.state.yearEnd} />
 						</div>
 					</div>
 				</main>
