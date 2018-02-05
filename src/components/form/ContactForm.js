@@ -6,7 +6,7 @@ class Contact extends React.Component {
 	constructor(props) {
 		super(props);
 		this.handleChange = this.handleChange.bind(this);
-		this.handleButtonDelete = this.handleButtonDelete.bind(this);
+		this.handleDelete = this.handleDelete.bind(this);
 		this.editForm=this.editForm.bind(this);
 		this.state = {
 			editForm: false
@@ -17,8 +17,11 @@ class Contact extends React.Component {
 		this.props.updatePreview(event.target.id,event.target.value);
 	}
 
-	handleButtonDelete (event){
-		this.props.onClickListener(event.target.value);
+	handleDelete(event) {
+      this.props.updatePreview("telephone", "");
+			this.props.updatePreview("email", "");
+			this.refs.telephone.value = "";
+			this.refs.email.value = "";
 	}
 
 	editForm() {
@@ -35,11 +38,11 @@ class Contact extends React.Component {
 					</div>
 				</div>
 				{ this.state.editForm === true ? <div id="content-contact-info" className="form__sectionContent">
-					<input type="tel" name="telephone" id="telephone" placeholder="Teléfono" onChange={this.handleChange} />
+					<input type="tel" name="telephone" id="telephone" placeholder="Teléfono" onChange={this.handleChange} ref="telephone"/>
 					<span className="error error_telephone"></span>
-					<input type="email" name="email" id="email" placeholder="Email" onChange={this.handleChange} />
+					<input type="email" name="email" id="email" placeholder="Email" onChange={this.handleChange} ref="email"/>
 					<span className="error error_email"></span>
-					<button onReset={this.handleButtonDelete} name="delete" value="Borrar" className="delete-contact form__button--saveDeleteClose">Borrar</button>
+					<input type="button" value="Borrar" className="delete-profile form__button--saveDeleteClose" onClick={this.handleDelete}/>
 				</div> : null }
 			</div>
 		);

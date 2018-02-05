@@ -21,7 +21,7 @@ class Preview extends React.Component {
             <div className={`${clase} printPreview`} id="preview">
 							<div className="preview__showContainer preview__container--padding">
 								<img className="preview__button--hide" src={cancel} alt="boton cerrar" onClick={this.props.closePreview} />
-								<Profile name={this.props.namePrev}  lastname= {this.props.surname}  profession={this.props.job} />
+								<Profile submit={this.props.submit} imagePreviewUrl={this.props.imagePreviewUrl} name={this.props.namePrev}  lastname= {this.props.surname}  profession={this.props.job} />
 								<hr className="line__top" />
 								<Summary summary={this.props.summary}/>
 								<Contact telephone={this.props.phone} email={this.props.mail} />

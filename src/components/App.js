@@ -14,10 +14,13 @@ class App extends React.Component {
 		this.handleClickShowPreview = this.handleClickShowPreview.bind(this);
 		this.updateState = this.updateState.bind(this);
 		this.scrollSlow = this.scrollSlow.bind(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
+		this.handleImageChange = this.handleImageChange.bind(this);
 		this.state = {
 			visible: false,
 			scroll: false,
-			buttonDelete: false
+			file:'',
+			imagePreviewUrl:''
 		}
 	}
 
@@ -37,13 +40,28 @@ class App extends React.Component {
 
 		}
 
-	onClickListener = (event) => {
-		alert('botón de borrar');
-		this.setState({buttonDelete: !this.state.buttonClose})
+	handleSubmit(event){
+		event.preventDefault();
 	}
 
 
+	handleImageChange(event){
+		debugger
+		event.preventDefault();
+		let reader = new FileReader();
+		let file = event.target.files[0];
+
+		reader.onloadend = () => {
+			this.setState ({
+				file: file,
+				imagePreviewUrl: reader.result
+			});
+		}
+		reader.readAsDataURL(file)
+	}
+
 	render() {
+
 		return (
 			<div className="overflow">
 				<Header clickPreview={this.handleClickShowPreview}/>
@@ -51,11 +69,10 @@ class App extends React.Component {
 					<Hero scroll={this.scrollSlow} />
 					<div className="resume-container" id="empezar">
 						<div className="split-div">
-							<Form updatePreviewForm = {this.updateState} scroll={this.state.scroll}
-								deleteButton = {this.onClickListener} />
+							<Form updatePreviewForm = {this.updateState} scroll={this.state.scroll} submit={this.handleSubmit} imageChange={this.handleImageChange} />
 							<Preview visible={this.state.visible}
 								closePreview={this.handleClickShowPreview}
-								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession} summary={this.state.summary} phone={this.state.telephone} mail={this.state.email} />
+								submit={this.handleSubmit} imagePreviewUrl={this.state.imagePreviewUrl} namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession} summary={this.state.summary} phone={this.state.telephone} mail={this.state.email} />
 						</div>
 					</div>
 				</main>
