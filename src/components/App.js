@@ -17,7 +17,7 @@ class App extends React.Component {
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleImageChange = this.handleImageChange.bind(this);
 		this.state = {
-			visible: false,
+			visible: true, //HACK: Remove after testing...
 			scroll: false,
 			file:'',
 			imagePreviewUrl:'',
@@ -83,24 +83,13 @@ class App extends React.Component {
 								summary={this.state.summary}
 								phone={this.state.telephone}
 								mail={this.state.email}
-								jobs={this.state.jobList}
-								position={this.state.position}
-								company={this.state.company}
-								monthStart={this.state.monthStart}
-								monthEnd={this.state.monthEnd}
-								yearStart={this.state.yearStart}
-								yearEnd={this.state.yearEnd}
-								studies={this.state.studies}
-								school={this.state.school}
-								language={this.state.language}
-								languagelevel={this.state.languagelevel}
+								jobList={this.state.jobList}
 								skills1={this.state.skills1}
 								idlevel1={this.state.idlevel1}
 								skills2={this.state.skills2}
 								idlevel2={this.state.idlevel2}
 								skills3={this.state.skills3}
 								idlevel3={this.state.idlevel3}
-								interest={this.state.interest}
 								selectedTheme={this.state.themeSt}
 								/>
 							</div>
