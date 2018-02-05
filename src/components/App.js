@@ -76,25 +76,16 @@ class App extends React.Component {
 					<Hero scroll={this.scrollSlow} />
 					<div className="resume-container" id="empezar">
 						<div className="split-div">
-							<<<<<<< HEAD
-							<Form updatePreviewForm = {this.updateState} saveTheme = {this.saveTheme}/>
+							<Form updatePreviewForm = {this.updateState} scroll={this.state.scroll} submit={this.handleSubmit} imageChange={this.handleImageChange} saveTheme = {this.saveTheme} />
 							<Preview visible={this.state.visible}
 								closePreview={this.handleClickShowPreview}
-								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession}
-								summary={this.state.summary}
-								skills1={this.state.skills1}
+								submit={this.handleSubmit} imagePreviewUrl={this.state.imagePreviewUrl} namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession} summary={this.state.summary} phone={this.state.telephone} mail={this.state.email} 							skills1={this.state.skills1}
 								idlevel1={this.state.idlevel1}
 								skills2={this.state.skills2}
 								idlevel2={this.state.idlevel2}
 								skills3={this.state.skills3}
 								idlevel3={this.state.idlevel3}
-								selectedTheme={this.state.themeSt}/>
-=======
-							<Form updatePreviewForm = {this.updateState} scroll={this.state.scroll} submit={this.handleSubmit} imageChange={this.handleImageChange} />
-							<Preview visible={this.state.visible}
-								closePreview={this.handleClickShowPreview}
-								submit={this.handleSubmit} imagePreviewUrl={this.state.imagePreviewUrl} namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession} summary={this.state.summary} phone={this.state.telephone} mail={this.state.email} />
->>>>>>> 97f3feeedc203e88d44ae7da97b4fc612f52b2a0
+								selectedTheme={this.state.themeSt} />
 						</div>
 					</div>
 				</main>
