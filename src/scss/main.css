@@ -428,11 +428,6 @@ input {
 .preview__section--h {
   margin: 0; }
 
-.titles {
-  color: #263d42;
-  background-color: #b0c0bc;
-  text-align: left; }
-
 .preview__section__subtitle {
   font-size: 19px;
   font-weight: 400; }
@@ -492,6 +487,9 @@ input {
 .preview__container--padding {
   padding: 5px; }
 
+.titles {
+  text-align: left; }
+
 .line__top {
   border: 1px solid #b0c0bc;
   width: 80%; }
@@ -505,46 +503,21 @@ input {
 .line__bottom {
   margin: 0; }
 
-.theme1 .titles, .theme1 .preview__data__skillName, .theme1 .data__interest--li {
+.titles--theme1 {
   background-color: #04724D;
   color: white; }
 
-.theme1 .line__bottom {
-  border: 1px solid #04724D; }
-
-.theme1 .line__top {
-  border: 1px solid #04724D; }
-
-/* Theme 2 */
-.theme2 .titles, .theme2 .preview__data__skillName, .theme2 .data__interest--li {
+.titles--theme2 {
   background-color: #7A6174;
   color: white; }
 
-.theme2 .line__bottom {
-  border: 1px solid #7A6174; }
+.titles--theme3 {
+  background-color: #F6E27F;
+  color: white; }
 
-.theme2 .line__top {
-  border: 1px solid #7A6174; }
-
-/* Theme 3 */
-.theme3 .titles, .theme3 .preview__data__skillName, .theme3 .data__interest--li {
-  background-color: #F6E27F; }
-
-.theme3 .line__bottom {
-  border: 1px solid #F6E27F; }
-
-.theme3 .line__top {
-  border: 1px solid #F6E27F; }
-
-/* Theme 4 */
-.theme4 .titles, .theme4 .preview__data__skillName, .theme4 .data__interest--li {
-  background-color: #B0C0BC; }
-
-.theme4 .line__bottom {
-  border: 1px solid #B0C0BC; }
-
-.theme4 .line__top {
-  border: 1px solid #B0C0BC; }
+.titles--theme4 {
+  background-color: #B0C0BC;
+  color: white; }
 
 /*Estilos botones de color*/
 /*preview*/

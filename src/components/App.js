@@ -13,8 +13,11 @@ class App extends React.Component {
 		super(props);
 		this.handleClickShowPreview = this.handleClickShowPreview.bind(this);
 		this.updateState = this.updateState.bind(this);
+		this.saveTheme = this.saveTheme.bind(this);
+
 		this.state = {
-			visible: false
+			visible: false,
+			themeSt: 'theme4'
 		}
 	}
 
@@ -28,6 +31,12 @@ class App extends React.Component {
         this.setState(newState);
     }
 
+	saveTheme(x) {
+		const selectedThemeSt = x;
+
+		this.setState({themeSt: selectedThemeSt});
+	}
+
 	render() {
 		return (
 			<div className="overflow">
@@ -36,10 +45,10 @@ class App extends React.Component {
 					<Hero />
 					<div className="resume-container" id="empezar">
 						<div className="split-div">
-							<Form updatePreviewForm = {this.updateState}/>
+							<Form updatePreviewForm = {this.updateState} saveTheme = {this.saveTheme}/>
 							<Preview visible={this.state.visible}
 								closePreview={this.handleClickShowPreview}
-								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession}/>
+								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession} selectedTheme={this.state.themeSt}/>
 						</div>
 					</div>
 				</main>
