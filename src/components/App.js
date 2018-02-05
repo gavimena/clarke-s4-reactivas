@@ -71,18 +71,19 @@ class App extends React.Component {
 							<Form updatePreviewForm = {this.updateState} scroll={this.state.scroll} submit={this.handleSubmit} imageChange={this.handleImageChange} />
 							<Preview visible={this.state.visible}
 								closePreview={this.handleClickShowPreview}
-<<<<<<< HEAD
-								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession}
+								namePrev={this.state.name}
+								surname={this.state.lastname}
+								submit={this.handleSubmit} imagePreviewUrl={this.state.imagePreviewUrl}
+								job={this.state.profession}
 								summary={this.state.summary}
+								phone={this.state.telephone}
+								mail={this.state.email}
 								position={this.state.position}
 								company={this.state.company}
 								monthStart={this.state.monthStart}
 								monthEnd={this.state.monthEnd}
 								yearStart={this.state.yearStart}
 								yearEnd={this.state.yearEnd} />
-=======
-								submit={this.handleSubmit} imagePreviewUrl={this.state.imagePreviewUrl} namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession} summary={this.state.summary} phone={this.state.telephone} mail={this.state.email} />
->>>>>>> development
 						</div>
 					</div>
 				</main>
