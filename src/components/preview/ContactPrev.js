@@ -8,7 +8,7 @@ class Contact extends React.Component {
 				<div className="preview__section__title">
 					<div className={`titles titles--${selectedTheme} preview__container--padding`}><h3 className="preview__section--h">Datos de contacto</h3>
 					</div>
-					<hr className="line__bottom" />
+					<hr className={`line__bottom line__bottom--${selectedTheme}`}/>
 				</div>
 				<div className="preview__container--padding">
 					<span className="preview__section__subtitle">Teléfono:</span> <span id="data-telephone"></span>

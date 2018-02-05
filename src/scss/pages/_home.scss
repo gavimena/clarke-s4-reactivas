@@ -158,14 +158,11 @@
 .line__bottom {
 	border: 1px solid $secondary-color;
 	width:100%;
+	margin: 0;
 }
 
 /*Estilos dinámicos de color para preview*/
 /* Theme 1 */
-.line__bottom {
-	margin: 0;
-}
-
 // .theme1 .titles, .theme1 .preview__data__skillName, .theme1 .data__interest--li{
 // 	background-color: #04724D;
 // 	color: white;
@@ -239,4 +236,36 @@
 .titles--theme4 {
 	background-color: #B0C0BC;
 	color: white;
+}
+
+.line__top--theme1 {
+	border: 1px solid #04724D;
+}
+
+.line__top--theme2 {
+	border: 1px solid #7A6174;
+}
+
+.line__top--theme3 {
+	border: 1px solid #F6E27F;
+}
+
+.line__top--theme4 {
+	border: 1px solid #B0C0BC;
+}
+
+.line__bottom--theme1 {
+	border: 1px solid #04724D;
+}
+
+.line__bottom--theme2 {
+	border: 1px solid #7A6174;
+}
+
+.line__bottom--theme3 {
+	border: 1px solid #F6E27F;
+}
+
+.line__bottom--theme4 {
+	border: 1px solid #B0C0BC;
 }

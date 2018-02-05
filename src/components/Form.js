@@ -11,7 +11,6 @@ class Form extends React.Component {
 		super(props);
 	}
 
-
 	render(){
 		return(
 			<form className="resume-form" action="/signup" method="post">

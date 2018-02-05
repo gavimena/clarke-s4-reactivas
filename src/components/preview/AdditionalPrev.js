@@ -2,11 +2,13 @@ import React from 'react';
 
 class Additional extends React.Component {
 	render(){
+		const selectedTheme = this.props.selectedTheme;
+
 		return(
 			<div className="preview__section preview__container--padding">
 				<div className="preview__section__title preview__container--padding">
-					<div className="titles preview__container--padding"><h3 className="preview__section--h">Más información</h3></div>
-					<hr className="line__bottom" />
+					<div className={`titles titles--${selectedTheme} preview__container--padding`}><h3 className="preview__section--h">Más información</h3></div>
+					<hr className={`line__bottom line__bottom--${selectedTheme}`}/>
 				</div>
 				<div className="preview__container--padding">
 					<span className="preview__section__subtitle">Estudios:</span> <br />
