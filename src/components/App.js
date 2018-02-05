@@ -6,7 +6,6 @@ import Footer from './Footer';
 import Preview from './Preview';
 import Form from './Form';
 
-
 class App extends React.Component {
 
 	constructor(props) {
@@ -79,13 +78,25 @@ class App extends React.Component {
 							<Form updatePreviewForm = {this.updateState} scroll={this.state.scroll} submit={this.handleSubmit} imageChange={this.handleImageChange} saveTheme = {this.saveTheme} />
 							<Preview visible={this.state.visible}
 								closePreview={this.handleClickShowPreview}
-								submit={this.handleSubmit} imagePreviewUrl={this.state.imagePreviewUrl} namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession} summary={this.state.summary} phone={this.state.telephone} mail={this.state.email} 							skills1={this.state.skills1}
+								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession}
+								submit={this.handleSubmit} imagePreviewUrl={this.state.imagePreviewUrl}
+								summary={this.state.summary}
+								phone={this.state.telephone}
+								mail={this.state.email}
+								position={this.state.position}
+								company={this.state.company}
+								monthStart={this.state.monthStart}
+								monthEnd={this.state.monthEnd}
+								yearStart={this.state.yearStart}
+								yearEnd={this.state.yearEnd}
+								skills1={this.state.skills1}
 								idlevel1={this.state.idlevel1}
 								skills2={this.state.skills2}
 								idlevel2={this.state.idlevel2}
 								skills3={this.state.skills3}
 								idlevel3={this.state.idlevel3}
-								selectedTheme={this.state.themeSt} />
+								selectedTheme={this.state.themeSt}
+							/>
 						</div>
 					</div>
 				</main>

@@ -16,17 +16,18 @@ class Preview extends React.Component {
 
 		return(
             <div className={`${clase} printPreview`} id="preview">
-							<div className="preview__showContainer preview__container--padding">
-								<img className="preview__button--hide" src={cancel} alt="boton cerrar" onClick={this.props.closePreview} />
-								<Profile submit={this.props.submit} imagePreviewUrl={this.props.imagePreviewUrl} name={this.props.namePrev}  lastname= {this.props.surname}  profession={this.props.job} />
-								<hr className={`line__top line__top--${selectedTheme}`} />
-								<Summary summary={this.props.summary}/>
-								<Contact telephone={this.props.phone} email={this.props.mail} selectedTheme={this.props.selectedTheme} />
-								<Experience selectedTheme={this.props.selectedTheme}/>
-								<Experience selectedTheme={this.props.selectedTheme} />
-								<Additional selectedTheme={this.props.selectedTheme} skills1={this.props.skills1} idlevel1={this.props.idlevel1}
-									skills2={this.props.skills2} idlevel2={this.props.idlevel2}
-									skills3={this.props.skills3} idlevel3={this.props.idlevel3}/>
+					<div className="preview__showContainer preview__container--padding">
+						<img className="preview__button--hide" src={cancel} alt="boton cerrar" onClick={this.props.closePreview} />
+						<Profile submit={this.props.submit} imagePreviewUrl={this.props.imagePreviewUrl}
+							name={this.props.namePrev}  lastname= {this.props.surname}  profession={this.props.job} />
+						<hr className={`line__top line__top--${selectedTheme}`} />
+						<Summary summary={this.props.summary}/>
+						<Contact selectedTheme={this.props.selectedTheme} 				telephone={this.props.phone}
+							email={this.props.mail}/>
+						<Experience selectedTheme={this.props.selectedTheme} />
+						<Additional selectedTheme={this.props.selectedTheme} skills1={this.props.skills1} idlevel1={this.props.idlevel1}
+							skills2={this.props.skills2} idlevel2={this.props.idlevel2}
+							skills3={this.props.skills3} idlevel3={this.props.idlevel3}/>
 							</div>
             </div>
         )
