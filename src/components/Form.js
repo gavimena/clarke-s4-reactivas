@@ -16,10 +16,9 @@ constructor(props){
 	render(){
 		return(
 			<form className="resume-form" action="/signup" method="post">
-
-				<Profile updatePreview= {this.props.updatePreviewForm} />
+				<Profile scroll={this.props.scroll} updatePreview= {this.props.updatePreviewForm} submit={this.props.submit} imageChange={this.props.imageChange} />
 				<Summary updatePreview= {this.props.updatePreviewForm} />
-				<Contact />
+				<Contact updatePreview= {this.props.updatePreviewForm} />
 				<Experience updatePreview= {this.props.updatePreviewForm}/>
 				<Additional />
 				<Personalize />

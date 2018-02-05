@@ -23,10 +23,16 @@ class Preview extends React.Component {
 						<Profile name={this.props.namePrev}  lastname= {this.props.surname}  profession={this.props.job} />
 						<hr className="line__top" />
 						<Summary summary={this.props.summary}/>
-						<Contact />
-						<Experience experience={this.props.experience} 				position={this.props.position}							company={this.props.company} monthStart={this.props.monthStart} yearStart={this.props.yearStart}							monthEnd={this.props.monthEnd}							yearEnd={this.props.yearEnd}/>
+						<Contact telephone={this.props.phone}
+							email={this.props.mail}/>
+						<Experience position={this.props.position}
+							company={this.props.company}
+							monthStart={this.props.monthStart}
+							yearStart={this.props.yearStart}
+							monthEnd={this.props.monthEnd}
+							yearEnd={this.props.yearEnd}/>
 						<Additional />
-					</div>
+							</div>
             </div>
         )
 	}
