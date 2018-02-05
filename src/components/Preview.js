@@ -22,11 +22,11 @@ class Preview extends React.Component {
 								<img className="preview__button--hide" src="images/cancel.png" alt="boton cerrar" onClick={this.props.closePreview} />
 								<Profile name={this.props.namePrev}  lastname= {this.props.surname}  profession={this.props.job} />
 								<hr className="line__top" />
-								<Summary />
+								<Summary summary={this.props.summary}/>
 								<Contact telephone={this.props.phone} email={this.props.mail} />
 								<Experience />
-                    <Additional />
-                </div>
+								<Additional />
+							</div>
             </div>
         )
 	}

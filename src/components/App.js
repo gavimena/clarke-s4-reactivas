@@ -55,7 +55,7 @@ class App extends React.Component {
 								deleteButton = {this.onClickListener} />
 							<Preview visible={this.state.visible}
 								closePreview={this.handleClickShowPreview}
-								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession} phone={this.state.telephone} mail={this.state.email} />
+								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession} summary={this.state.summary} phone={this.state.telephone} mail={this.state.email} />
 						</div>
 					</div>
 				</main>
