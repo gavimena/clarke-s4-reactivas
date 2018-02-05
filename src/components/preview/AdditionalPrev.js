@@ -12,7 +12,9 @@ class Additional extends React.Component {
 				</div>
 				<div className="preview__container--padding">
 					<span className="preview__section__subtitle">Estudios:</span> <br />
-					<ul id="data-studies" className="preview__data__studies"></ul>
+					<ul id="data-studies" className="preview__data__studies">{this.props.studies}
+						<br />
+						{this.props.school}</ul>
 				</div>
 				<div className="preview__container--padding">
 					<span className="preview__section__subtitle">Idiomas:</span>
@@ -38,8 +40,8 @@ class Additional extends React.Component {
 					</div>
 				</div>
 				<div className="preview__container--padding">
-					<span className="preview__section__subtitle">Intereses:</span>
-					<ul className="preview__data__interest"></ul>
+						<span className="preview__section__subtitle">Intereses:</span>
+						<ul className={`preview__data__interest preview__data__interest--${selectedTheme}`}>{this.props.interest}</ul>
 				</div>
 			</div>
 		);

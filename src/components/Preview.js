@@ -23,9 +23,13 @@ class Preview extends React.Component {
 								<Summary summary={this.props.summary}/>
 								<Contact telephone={this.props.phone} email={this.props.mail} selectedTheme={this.props.selectedTheme} />
 								<Experience selectedTheme={this.props.selectedTheme}/>
-								<Additional selectedTheme={this.props.selectedTheme} skills1={this.props.skills1} idlevel1={this.props.idlevel1}
+								<Additional selectedTheme={this.props.selectedTheme}
+									studies={this.props.studies}
+									school={this.props.school}
+									skills1={this.props.skills1} idlevel1={this.props.idlevel1}
 									skills2={this.props.skills2} idlevel2={this.props.idlevel2}
-									skills3={this.props.skills3} idlevel3={this.props.idlevel3}/>
+									skills3={this.props.skills3} idlevel3={this.props.idlevel3}
+									interest={this.props.interest}/>
 							</div>
             </div>
         )
