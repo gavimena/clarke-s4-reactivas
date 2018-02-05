@@ -11,10 +11,10 @@ class Contact extends React.Component {
 					<hr className={`line__bottom line__bottom--${selectedTheme}`}/>
 				</div>
 				<div className="preview__container--padding">
-					<span className="preview__section__subtitle">Teléfono:</span> <span id="data-telephone"></span>
+					<span className="preview__section__subtitle">Teléfono:</span><span id="data-telephone">{this.props.telephone}</span>
 				</div>
 				<div className="preview__container--padding">
-					<span className="preview__section__subtitle">Email:</span> <span id="data-email"></span>
+					<span className="preview__section__subtitle">Email:</span> <span id="data-email">{this.props.email}</span>
 				</div>
 			</div>
 		);
