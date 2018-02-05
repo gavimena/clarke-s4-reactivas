@@ -18,7 +18,7 @@ class Additional extends React.Component {
 				</div>
 				<div className="preview__container--padding">
 					<span className="preview__section__subtitle">Idiomas:</span>
-					<ul className="preview__data__languages"></ul>
+					<ul className="preview__data__languages">{this.props.language} - {this.props.languagelevel}</ul>
 				</div>
 
 				<div className="skill_container preview__container--padding">

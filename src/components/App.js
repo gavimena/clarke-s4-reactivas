@@ -91,6 +91,8 @@ class App extends React.Component {
 								yearEnd={this.state.yearEnd}
 								studies={this.state.studies}
 								school={this.state.school}
+								language={this.state.language}
+								languagelevel={this.state.languagelevel}
 								skills1={this.state.skills1}
 								idlevel1={this.state.idlevel1}
 								skills2={this.state.skills2}

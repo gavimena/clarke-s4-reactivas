@@ -49,9 +49,16 @@ class Additional extends React.Component {
 
 					<div className="addMore">
 						<div className="form__newItem">
-							<input className="languages" type="text" name="languages" placeholder="Idiomas" />
+							<input className="languages" id="language" type="text" name="languages" placeholder="Idiomas" onChange={this.handleChangeSkill} />
 							<label for="level">Nivel</label>
-							<select id="level" className="select level" name="level"></select>
+							<select id="languagelevel" className="select level" name="level" onChange={this.handleChangeSkill}>
+								<option value="A1">A1</option>
+								<option value="A2">A2</option>
+								<option value="B1">B1</option>
+								<option value="B2">B2</option>
+								<option value="C1">C1</option>
+								<option value="C2">C2</option>
+							</select>
 						</div>
 					</div>
 
