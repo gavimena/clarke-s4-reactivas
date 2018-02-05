@@ -33,7 +33,6 @@ class Additional extends React.Component {
 						<div className="form__newItem">
 							<input className="education" type="text" name="education" placeholder="Estudios" />
 							<input className="education_university" type="text" name="education_university" placeholder="Institucion" />
-							<img className="prueba" src="images/more.png" alt="botonprueba" title="prueba" />
 						</div>
 					</div>
 
@@ -42,7 +41,6 @@ class Additional extends React.Component {
 							<input className="languages" type="text" name="languages" placeholder="Idiomas" />
 							<label for="level">Nivel</label>
 							<select id="level" className="select level" name="level"></select>
-							<img className="prueba_language" src="images/more.png" alt="botonprueba" title="prueba" />
 						</div>
 					</div>
 
@@ -57,10 +55,8 @@ class Additional extends React.Component {
 					<div className="addMore">
 						<div className="form__newItem">
 							<input id="interest" type="text" name="interest" placeholder="Intereses" />
-							<img className="prueba_interest" src="images/more.png" alt="botonprueba" title="prueba" />
 						</div>
 					</div>
-					<input type="button" name="save" value="Guardar" className="saveMore form__button--saveDeleteClose" />
 					<input type="button" name="delete" value="Borrar" className="delete-additional form__button--saveDeleteClose" />
 				</div> : null }
 			</div>
