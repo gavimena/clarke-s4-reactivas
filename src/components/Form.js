@@ -20,8 +20,8 @@ constructor(props){
 				<Summary updatePreview= {this.props.updatePreviewForm} />
 				<Contact updatePreview= {this.props.updatePreviewForm} />
 				<Experience updatePreview= {this.props.updatePreviewForm}/>
-				<Additional />
-				<Personalize />
+				<Additional updatePreview= {this.props.updatePreviewForm} />
+				<Personalize updateThemeState = {this.props.saveTheme}/>
 			</form>
 		);
 	}

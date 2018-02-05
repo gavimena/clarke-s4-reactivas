@@ -12,6 +12,7 @@ class App extends React.Component {
 		super(props);
 		this.handleClickShowPreview = this.handleClickShowPreview.bind(this);
 		this.updateState = this.updateState.bind(this);
+		this.saveTheme = this.saveTheme.bind(this);
 		this.scrollSlow = this.scrollSlow.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleImageChange = this.handleImageChange.bind(this);
@@ -19,7 +20,8 @@ class App extends React.Component {
 			visible: false,
 			scroll: false,
 			file:'',
-			imagePreviewUrl:''
+			imagePreviewUrl:'',
+			themeSt: ''
 		}
 	}
 
@@ -59,6 +61,11 @@ class App extends React.Component {
 		reader.readAsDataURL(file)
 	}
 
+	saveTheme(x) {
+		const selectedThemeSt = x;
+		this.setState({themeSt: selectedThemeSt});
+	}
+
 	render() {
 
 		return (
@@ -68,23 +75,24 @@ class App extends React.Component {
 					<Hero scroll={this.scrollSlow} />
 					<div className="resume-container" id="empezar">
 						<div className="split-div">
-							<Form updatePreviewForm = {this.updateState} scroll={this.state.scroll} submit={this.handleSubmit} imageChange={this.handleImageChange} />
+							<Form updatePreviewForm = {this.updateState} scroll={this.state.scroll} submit={this.handleSubmit} imageChange={this.handleImageChange} saveTheme = {this.saveTheme} />
 							<Preview visible={this.state.visible}
 								closePreview={this.handleClickShowPreview}
-								namePrev={this.state.name}
-								surname={this.state.lastname}
+								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession}
 								submit={this.handleSubmit} imagePreviewUrl={this.state.imagePreviewUrl}
-								job={this.state.profession}
 								summary={this.state.summary}
 								phone={this.state.telephone}
 								mail={this.state.email}
-								position={this.state.position}
-								company={this.state.company}
-								monthStart={this.state.monthStart}
-								monthEnd={this.state.monthEnd}
-								yearStart={this.state.yearStart}
-								yearEnd={this.state.yearEnd} />
-						</div>
+								jobs={this.state.jobList}
+								skills1={this.state.skills1}
+								idlevel1={this.state.idlevel1}
+								skills2={this.state.skills2}
+								idlevel2={this.state.idlevel2}
+								skills3={this.state.skills3}
+								idlevel3={this.state.idlevel3}
+								selectedTheme={this.state.themeSt}
+								/>
+							</div>
 					</div>
 				</main>
 				<Footer />

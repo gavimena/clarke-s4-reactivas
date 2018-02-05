@@ -32,12 +32,8 @@ class Experience extends React.Component {
 		const currentYear = currentDate.getFullYear();
 		const currentMonth = currentDate.getMonth();
 
-		for (let i = currentYear-50; i < currentYear+50; i++) {
-			if (i === currentYear) {
-				yearOptions.push(<option value={i} selected>{i}</option>);
-			} else {
+		for (let i = currentYear; i >= currentYear-30; i--) {
 				yearOptions.push(<option value={i}>{i}</option>);
-			}
 		}
 
 		let months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo',
@@ -45,11 +41,7 @@ class Experience extends React.Component {
 							     'Noviembre', 'Diciembre'];
 		let monthOptions = [];
 		for (let i = 0; i < months.length; i++) {
-			if (i === currentMonth){
-				monthOptions.push(<option value={i}  selected>{months[i]}</option>);
-			} else {
-				monthOptions.push(<option value={i}>{months[i]}</option>);
-			}
+				monthOptions.push(<option value={months[i]}>{months[i]}</option>);
 		}
 
 		return(
@@ -71,9 +63,11 @@ class Experience extends React.Component {
 									<label>Fecha de inicio</label>
 									<div className="form__experience--startDate">
 										<select className="month select" name="start-month" id="monthStart" onChange={this.handleChange}>
+											<option value="">-Mes-</option>
 											{monthOptions}
 										</select>
 										<select className="year select" name="start-year" id="yearStart" onChange={this.handleChange}>
+											<option value="">-Año-</option>
 											{yearOptions}
 										</select>
 									</div>
@@ -82,9 +76,11 @@ class Experience extends React.Component {
 									<label>Fecha de fin</label>
 									<div className="form__experience--endDate">
 										<select className="month select" name="end-month" id="monthEnd" onChange={this.handleChange}>
+											<option value="">-Mes-</option>
 											{monthOptions}
 										</select>
 										<select className="year select" name="end-year" id="yearEnd" onChange={this.handleChange}>
+											<option value="">-Año-</option>
 											{yearOptions}
 										</select>
 									</div>

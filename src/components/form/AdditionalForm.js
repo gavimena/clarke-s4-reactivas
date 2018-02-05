@@ -4,6 +4,7 @@ class Additional extends React.Component {
 	constructor(props){
 		super(props);
 		this.editForm=this.editForm.bind(this);
+		this.handleChangeSkill=this.handleChangeSkill.bind(this);
 		this.state = {
 			editForm: false
 }
@@ -12,6 +13,10 @@ class Additional extends React.Component {
 	editForm() {
 		this.setState({editForm: !this.state.editForm})
 	}
+
+	handleChangeSkill(event) {
+				 this.props.updatePreview(event.target.id,event.target.value);
+	 }
 
 	render(){
 		return(
@@ -28,7 +33,6 @@ class Additional extends React.Component {
 						<div className="form__newItem">
 							<input className="education" type="text" name="education" placeholder="Estudios" />
 							<input className="education_university" type="text" name="education_university" placeholder="Institucion" />
-							<img className="prueba" src="images/more.png" alt="botonprueba" title="prueba" />
 						</div>
 					</div>
 
@@ -37,25 +41,22 @@ class Additional extends React.Component {
 							<input className="languages" type="text" name="languages" placeholder="Idiomas" />
 							<label for="level">Nivel</label>
 							<select id="level" className="select level" name="level"></select>
-							<img className="prueba_language" src="images/more.png" alt="botonprueba" title="prueba" />
 						</div>
 					</div>
 
 					<div className="input-skill">
-						<input type="text" id="skills1" className="skills" name="skills1" placeholder="Habilidad" />
-						<input className="level_skills" type="text" name="level_skills1" value="" placeholder="Nivel del 1 al 100" />
-						<input type="text" id="skills2" className="skills" name="skills2" placeholder="Habilidad" />
-						<input className="level_skills" type="text" name="level_skills2" value="" placeholder="Nivel del 1 al 100" />
-						<input type="text" id="skills3" className="skills" name="skills3" placeholder="Habilidad" />
-						<input className="level_skills" type="text" name="level_skills3" value="" placeholder="Nivel del 1 al 100" />
+						<input type="text" id="skills1" className="skills" name="skills1" placeholder="Habilidad 1" onChange={this.handleChangeSkill}/>
+						<input className="level_skills" id="idlevel1" type="text" name="level_skills1" placeholder="Nivel del 1 al 100" onChange={this.handleChangeSkill} />
+						<input type="text" id="skills2" className="skills" name="skills2" placeholder="Habilidad 2" onChange={this.handleChangeSkill}/>
+						<input className="level_skills" id="idlevel2" type="text" name="level_skills2" placeholder="Nivel del 1 al 100" onChange={this.handleChangeSkill}/>
+						<input type="text" id="skills3" className="skills" name="skills3" placeholder="Habilidad 3" onChange={this.handleChangeSkill}/>
+						<input className="level_skills" id="idlevel3" type="text" name="level_skills3" placeholder="Nivel del 1 al 100" onChange={this.handleChangeSkill}/>
 					</div>
 					<div className="addMore">
 						<div className="form__newItem">
 							<input id="interest" type="text" name="interest" placeholder="Intereses" />
-							<img className="prueba_interest" src="images/more.png" alt="botonprueba" title="prueba" />
 						</div>
 					</div>
-					<input type="button" name="save" value="Guardar" className="saveMore form__button--saveDeleteClose" />
 					<input type="button" name="delete" value="Borrar" className="delete-additional form__button--saveDeleteClose" />
 				</div> : null }
 			</div>
