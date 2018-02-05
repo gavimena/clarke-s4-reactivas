@@ -1,17 +1,34 @@
 import React from 'react';
 
 class Additional extends React.Component {
+	constructor(props){
+		super(props);
+		this.editForm=this.editForm.bind(this);
+		this.handleChangeSkill=this.handleChangeSkill.bind(this);
+		this.state = {
+			editForm: false
+}
+	}
+
+	editForm() {
+		this.setState({editForm: !this.state.editForm})
+	}
+
+	handleChangeSkill(event) {
+				 this.props.updatePreview(event.target.id,event.target.value);
+	 }
+
 	render(){
 		return(
 			<div className="additional section">
 				<div className="info">
 					<h2 className="section-title">Más información</h2>
 					<div className="section-buttons">
-						<input type="button" className="form__button--edit" value="Editar" onclick="editar('content-additional')" />
+						<button type="button" className="form__button--edit" value="Editar" onClick={this.editForm}> { this.state.editForm? 'Cerrar':'Editar'}  </button>
 					</div>
 				</div>
 
-				<div id="content-additional" className="form__sectionContent">
+				{ this.state.editForm === true ? <div id="content-additional" className="form__sectionContent">
 					<div className="addMore">
 						<div className="form__newItem">
 							<input className="education" type="text" name="education" placeholder="Estudios" />
@@ -30,12 +47,12 @@ class Additional extends React.Component {
 					</div>
 
 					<div className="input-skill">
-						<input type="text" id="skills1" className="skills" name="skills1" placeholder="Habilidad" />
-						<input className="level_skills" type="text" name="level_skills1" value="" placeholder="Nivel del 1 al 100" />
-						<input type="text" id="skills2" className="skills" name="skills2" placeholder="Habilidad" />
-						<input className="level_skills" type="text" name="level_skills2" value="" placeholder="Nivel del 1 al 100" />
-						<input type="text" id="skills3" className="skills" name="skills3" placeholder="Habilidad" />
-						<input className="level_skills" type="text" name="level_skills3" value="" placeholder="Nivel del 1 al 100" />
+						<input type="text" id="skills1" className="skills" name="skills1" placeholder="Habilidad 1" onChange={this.handleChangeSkill}/>
+						<input className="level_skills" id="idlevel1" type="text" name="level_skills1" placeholder="Nivel del 1 al 100" onChange={this.handleChangeSkill} />
+						<input type="text" id="skills2" className="skills" name="skills2" placeholder="Habilidad 2" onChange={this.handleChangeSkill}/>
+						<input className="level_skills" id="idlevel2" type="text" name="level_skills2" placeholder="Nivel del 1 al 100" onChange={this.handleChangeSkill}/>
+						<input type="text" id="skills3" className="skills" name="skills3" placeholder="Habilidad 3" onChange={this.handleChangeSkill}/>
+						<input className="level_skills" id="idlevel3" type="text" name="level_skills3" placeholder="Nivel del 1 al 100" onChange={this.handleChangeSkill}/>
 					</div>
 					<div className="addMore">
 						<div className="form__newItem">
@@ -45,8 +62,7 @@ class Additional extends React.Component {
 					</div>
 					<input type="button" name="save" value="Guardar" className="saveMore form__button--saveDeleteClose" />
 					<input type="button" name="delete" value="Borrar" className="delete-additional form__button--saveDeleteClose" />
-					<input type="button" value="cerrar" className="form__button--saveDeleteClose" onclick="cerrar('content-additional')" />
-				</div>
+				</div> : null }
 			</div>
 
 		);

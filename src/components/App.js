@@ -33,7 +33,6 @@ class App extends React.Component {
 
 	saveTheme(x) {
 		const selectedThemeSt = x;
-
 		this.setState({themeSt: selectedThemeSt});
 	}
 
@@ -48,7 +47,15 @@ class App extends React.Component {
 							<Form updatePreviewForm = {this.updateState} saveTheme = {this.saveTheme}/>
 							<Preview visible={this.state.visible}
 								closePreview={this.handleClickShowPreview}
-								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession} selectedTheme={this.state.themeSt}/>
+								namePrev={this.state.name} surname={this.state.lastname} job={this.state.profession}
+								summary={this.state.summary}
+								skills1={this.state.skills1}
+								idlevel1={this.state.idlevel1}
+								skills2={this.state.skills2}
+								idlevel2={this.state.idlevel2}
+								skills3={this.state.skills3}
+								idlevel3={this.state.idlevel3}
+								selectedTheme={this.state.themeSt}/>
 						</div>
 					</div>
 				</main>
