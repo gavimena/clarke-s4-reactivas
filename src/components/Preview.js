@@ -24,7 +24,7 @@ class Preview extends React.Component {
 						<hr className="line__top" />
 						<Summary summary={this.props.summary}/>
 						<Contact />
-						<Experience experience={this.props.experience} position={this.props.position} />
+						<Experience experience={this.props.experience} 				position={this.props.position}							company={this.props.company} monthStart={this.props.monthStart} yearStart={this.props.yearStart}							monthEnd={this.props.monthEnd}							yearEnd={this.props.yearEnd}/>
 						<Additional />
 					</div>
             </div>
