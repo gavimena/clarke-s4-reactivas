@@ -25,6 +25,19 @@ class App extends React.Component {
 		}
 	}
 
+	componentWillMount(){
+		console.log('componentWillMount');
+		let savedState = localStorage.getItem('state');
+		if (savedState) {
+			this.setState(savedState);
+		}
+	}
+
+	componentWillUnmount(){
+		console.log('componentWillUnmount');
+		localStorage.setItem('state', this.state);
+	}
+
 	handleClickShowPreview(){
 		this.setState({visible: !this.state.visible})
 	}
