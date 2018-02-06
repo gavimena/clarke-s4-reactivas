@@ -4,7 +4,8 @@ import add from '../../images/more.png';
 class Experience extends React.Component {
 	constructor(props) {
 		super(props);
-		this.editForm= this.editForm.bind(this);
+		this.editForm=this.editForm.bind(this);
+		this.handleDelete = this.handleDelete.bind(this);
 		this.handleChange = this.handleChange.bind(this);
 		this.addJob = this.addJob.bind(this);
 		this.state = {
@@ -16,6 +17,25 @@ class Experience extends React.Component {
 	editForm() {
 		this.setState({editForm: !this.state.editForm})
 	}
+
+
+	handleDelete(event) {
+      this.props.updatePreview("position", "");
+			this.props.updatePreview("company", "");
+			this.props.updatePreview("monthStart", "");
+			this.props.updatePreview("yearStart", "");
+			this.props.updatePreview("monthEnd", "");
+			this.props.updatePreview("yearEnd", "");
+			this.props.updatePreview("actuality", "");
+			this.refs.position.value = "";
+			this.refs.company.value = "";
+			this.refs.monthStart.value = "";
+			this.refs.yearStart.value = "";
+			this.refs.monthEnd.value = "";
+			this.refs.yearEnd.value = "";
+			this.refs.actuality.value = "";
+	}
+
 
 	handleChange(event) {
 		const currentJobId = this.refs.jobId.value;
@@ -38,6 +58,7 @@ class Experience extends React.Component {
 		this.refs.monthEnd.value = '';
 		this.refs.yearEnd.value = '';
 	}
+
 
 	render(){
 		let yearOptions = [];
@@ -99,10 +120,9 @@ class Experience extends React.Component {
 										</select>
 									</div>
 								</div>
-
 								<div className="form__experience--currentContainer">
 									<label>Actualmente</label>
-									<input className="form__experience--currentCheckbox" id="actuality" type="checkbox" value="" name="actual" />
+									<input className="form__experience--currentCheckbox" id="actuality" type="checkbox" value="" name="actual" ref="actuality" />
 									<div className="buttonrelative">
 										<img className="prueba_experience" src={add} alt="botonprueba" title="prueba" onClick={this.addJob} />
 									</div>
@@ -110,7 +130,7 @@ class Experience extends React.Component {
 							</div>
 						</div>
 					</div>
-					<input type="button" name="delete" value="Borrar" className="delete-experience form__button--saveDeleteClose" />
+					<input type="button" value="Borrar" className="delete-profile form__button--saveDeleteClose" onClick={this.handleDelete}/>
 				</div> :null }
 			</div>
 		);
