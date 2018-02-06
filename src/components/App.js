@@ -94,12 +94,17 @@ class App extends React.Component {
 								phone={this.state.telephone}
 								mail={this.state.email}
 								jobList={this.state.jobList}
+								studies={this.state.studies}
+								school={this.state.school}
+								language={this.state.language}
+								languagelevel={this.state.languagelevel}
 								skills1={this.state.skills1}
 								idlevel1={this.state.idlevel1}
 								skills2={this.state.skills2}
 								idlevel2={this.state.idlevel2}
 								skills3={this.state.skills3}
 								idlevel3={this.state.idlevel3}
+								interest={this.state.interest}
 								selectedTheme={this.state.themeSt}
 								/>
 							</div>
