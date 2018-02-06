@@ -21,11 +21,9 @@ class Profile extends React.Component {
       this.props.updatePreview("name", "");
 			this.props.updatePreview("lastname", "");
 			this.props.updatePreview("profession", "");
-			this.props.updatePreview("photo", "");
 			this.refs.name.value = "";
 			this.refs.lastname.value = "";
 			this.refs.profession.value = "";
-			this.refs.photo.value = "";
 
 	}
 
@@ -58,7 +56,7 @@ class Profile extends React.Component {
 					<input type="text" id="name" placeholder="Nombre" ref="name" onChange={this.handleChange} />
 					<input type="text" id="lastname" placeholder="Apellidos" onChange={this.handleChange} ref="lastname"/>
 					<input type="text" id="profession" placeholder="Profesión" onChange={this.handleChange} ref="profession" />
-					<input className="fileImput" type="file" id="photo" placeholder="Foto" onChange={this.props.imageChange} ref="photo" />
+					<input className="fileImput" type="file" id="photo" placeholder="Foto" onChange={this.props.imageChange} />
 					<input type="button" value="Borrar" className="delete-profile form__button--saveDeleteClose" onClick={this.handleDelete}/>
 				</div> : null }
 			</div>
