@@ -5,9 +5,12 @@ class Additional extends React.Component {
 		super(props);
 		this.editForm=this.editForm.bind(this);
 		this.handleChangeSkill=this.handleChangeSkill.bind(this);
+		this.handleChangeFormation=this.handleChangeFormation.bind(this);
+		this.handleChangeInterest=this.handleChangeInterest.bind(this);
+
 		this.state = {
 			editForm: false
-}
+		}
 	}
 
 	editForm() {
@@ -17,6 +20,14 @@ class Additional extends React.Component {
 	handleChangeSkill(event) {
 				 this.props.updatePreview(event.target.id,event.target.value);
 	 }
+
+	 handleChangeFormation(event) {
+					this.props.updatePreview(event.target.id,event.target.value);
+		}
+
+		handleChangeInterest(event) {
+					 this.props.updatePreview(event.target.id,event.target.value);
+		 }
 
 	render(){
 		return(
@@ -31,16 +42,23 @@ class Additional extends React.Component {
 				{ this.state.editForm === true ? <div id="content-additional" className="form__sectionContent">
 					<div className="addMore">
 						<div className="form__newItem">
-							<input className="education" type="text" name="education" placeholder="Estudios" />
-							<input className="education_university" type="text" name="education_university" placeholder="Institucion" />
+							<input className="education" id="studies" type="text" name="education" placeholder="Estudios" onChange={this.handleChangeFormation} />
+							<input className="education_university" id="school" type="text" name="education_university" placeholder="Institución" onChange={this.handleChangeFormation} />
 						</div>
 					</div>
 
 					<div className="addMore">
 						<div className="form__newItem">
-							<input className="languages" type="text" name="languages" placeholder="Idiomas" />
+							<input className="languages" id="language" type="text" name="languages" placeholder="Idiomas" onChange={this.handleChangeSkill} />
 							<label for="level">Nivel</label>
-							<select id="level" className="select level" name="level"></select>
+							<select id="languagelevel" className="select level" name="level" onChange={this.handleChangeSkill}>
+								<option value="A1">A1</option>
+								<option value="A2">A2</option>
+								<option value="B1">B1</option>
+								<option value="B2">B2</option>
+								<option value="C1">C1</option>
+								<option value="C2">C2</option>
+							</select>
 						</div>
 					</div>
 
@@ -54,7 +72,7 @@ class Additional extends React.Component {
 					</div>
 					<div className="addMore">
 						<div className="form__newItem">
-							<input id="interest" type="text" name="interest" placeholder="Intereses" />
+							<input id="interest" type="text" name="interest" placeholder="Intereses" onChange={this.handleChangeInterest}/>
 						</div>
 					</div>
 					<input type="button" name="delete" value="Borrar" className="delete-additional form__button--saveDeleteClose" />

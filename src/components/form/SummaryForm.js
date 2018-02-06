@@ -31,7 +31,7 @@ class Summary extends React.Component {
 				<div className="info">
 					<h2 className="section-title">Extracto</h2>
 					<div className="section-buttons">
-						<button type="button" className="form__button--edit" value="Editar" onClick={this.editForm}> { this.state.editForm? 'Cerrar':'Editar'}  </button>
+						<button type="button" className="form__button--edit" value="Editar" onClick={this.editForm}> { this.state.editForm ? 'Cerrar':'Editar'}  </button>
 					</div>
 				</div>
 

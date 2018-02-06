@@ -13,8 +13,8 @@ class Profile extends React.Component {
 		};
 	}
 
-	handleChange(event) {
-        this.props.updatePreview(event.target.id,event.target.value);
+ handleChange(event) {
+        this.props.updatePreview(event.target.id, event.target.value);
   }
 
 	handleDelete(event) {

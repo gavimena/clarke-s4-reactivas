@@ -25,6 +25,17 @@ class App extends React.Component {
 		}
 	}
 
+	componentWillMount(){
+		let savedState = localStorage.getItem('state');
+		if (savedState) {
+			this.setState(savedState);
+		}
+	}
+
+	componentWillUnmount(){
+		localStorage.setItem('state', this.state);
+	}
+
 	handleClickShowPreview(){
 		this.setState({visible: !this.state.visible})
 	}
@@ -47,7 +58,6 @@ class App extends React.Component {
 
 
 	handleImageChange(event){
-		debugger
 		event.preventDefault();
 		let reader = new FileReader();
 		let file = event.target.files[0];
@@ -83,12 +93,7 @@ class App extends React.Component {
 								summary={this.state.summary}
 								phone={this.state.telephone}
 								mail={this.state.email}
-								position={this.state.position}
-								company={this.state.company}
-								monthStart={this.state.monthStart}
-								monthEnd={this.state.monthEnd}
-								yearStart={this.state.yearStart}
-								yearEnd={this.state.yearEnd}
+								jobList={this.state.jobList}
 								skills1={this.state.skills1}
 								idlevel1={this.state.idlevel1}
 								skills2={this.state.skills2}
@@ -96,8 +101,8 @@ class App extends React.Component {
 								skills3={this.state.skills3}
 								idlevel3={this.state.idlevel3}
 								selectedTheme={this.state.themeSt}
-							/>
-						</div>
+								/>
+							</div>
 					</div>
 				</main>
 				<Footer />
