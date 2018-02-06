@@ -4,6 +4,7 @@ class Experience extends React.Component {
 	constructor(props) {
 		super(props);
 		this.editForm=this.editForm.bind(this);
+		this.handleDelete = this.handleDelete.bind(this);
 		this.state = {
 			editForm: false
 }
@@ -11,6 +12,23 @@ class Experience extends React.Component {
 
 	editForm() {
 		this.setState({editForm: !this.state.editForm})
+	}
+
+	handleDelete(event) {
+      this.props.updatePreview("position", "");
+			this.props.updatePreview("experience", "");
+			this.props.updatePreview("montStart", "");
+			this.props.updatePreview("year", "");
+			this.props.updatePreview("monthEnd", "");
+			this.props.updatePreview("year-end", "");
+			this.props.updatePreview("actuality", "");
+			this.refs.position.value = "";
+			this.refs.experience.value = "";
+			this.refs.montStart.value = "";
+			this.refs.year.value = "";
+			this.refs.monthEnd.value = "";
+			this.refs.yearEnd.value = "";
+			this.refs.actuality.value = "";
 	}
 
 
@@ -28,26 +46,26 @@ class Experience extends React.Component {
 					<div className="addMore">
 						<div className="form__newItem">
 							<div className="work">
-								<input id="position" type="text" name="name" placeholder="Cargo" />
-								<input id="experience" type="text" name="name" placeholder="Empresa" />
+								<input id="position" type="text" name="name" placeholder="Cargo" ref="position" />
+								<input id="experience" type="text" name="name" placeholder="Empresa" ref="experience" />
 								<div className="form__experience--startBlock">
 									<label>Fecha de inicio</label>
 									<div className="form__experience--startDate">
-										<select className="month select" name="start-month" id="month-start"></select>
-										<select className="year select" name="start-year" id="year"></select>
+										<select className="month select" name="start-month" id="montStart" ref="montStart"></select>
+										<select className="year select" name="start-year" id="year" ref="year"></select>
 									</div>
 								</div>
 								<div className="form__experience--endBlock">
 									<label>Fecha de fin</label>
 									<div className="form__experience--endDate">
-										<select className="month select" name="end-month" id="month-end"></select>
-										<select className="year select" name="end-year" id="year-end"></select>
+										<select className="month select" name="end-month" id="monthEnd" ref="monthEnd"></select>
+										<select className="year select" name="end-year" id="yearEnd" ref="yearEnd"></select>
 									</div>
 								</div>
 
 								<div className="form__experience--currentContainer">
 									<label>Actualmente</label>
-									<input className="form__experience--currentCheckbox" id="actuality" type="checkbox" value="" name="actual" />
+									<input className="form__experience--currentCheckbox" id="actuality" type="checkbox" value="" name="actual" ref="actuality" />
 									<div className="buttonrelative">
 										<img className="prueba_experience" src="images/more.png" alt="botonprueba" title="prueba" />
 									</div>
@@ -55,9 +73,7 @@ class Experience extends React.Component {
 							</div>
 						</div>
 					</div>
-
-					<input type="button" name="save" value="Guardar" className="saveExperience form__button--saveDeleteClose" />
-					<input type="button" name="delete" value="Borrar" className="delete-experience form__button--saveDeleteClose" />
+					<input type="button" value="Borrar" className="delete-profile form__button--saveDeleteClose" onClick={this.handleDelete}/>
 				</div> :null }
 			</div>
 		);
