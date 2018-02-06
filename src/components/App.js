@@ -17,7 +17,7 @@ class App extends React.Component {
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleImageChange = this.handleImageChange.bind(this);
 		this.state = {
-			visible: true, //HACK: Remove after testing...
+			visible: false,
 			scroll: false,
 			file:'',
 			imagePreviewUrl:'',
@@ -26,7 +26,6 @@ class App extends React.Component {
 	}
 
 	componentWillMount(){
-		console.log('componentWillMount');
 		let savedState = localStorage.getItem('state');
 		if (savedState) {
 			this.setState(savedState);
@@ -34,7 +33,6 @@ class App extends React.Component {
 	}
 
 	componentWillUnmount(){
-		console.log('componentWillUnmount');
 		localStorage.setItem('state', this.state);
 	}
 
@@ -60,7 +58,6 @@ class App extends React.Component {
 
 
 	handleImageChange(event){
-		debugger
 		event.preventDefault();
 		let reader = new FileReader();
 		let file = event.target.files[0];
